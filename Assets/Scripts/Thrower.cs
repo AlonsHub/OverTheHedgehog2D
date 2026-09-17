@@ -13,12 +13,50 @@ public class Thrower : MonoBehaviour
     //request new hog from magazine?
 
     [SerializeField] private bool isLoaded; //this is also isActive
+    public bool IsLoaded { get { return isLoaded; } }
     //[SerializeField] private bool ;
-
+    [SerializeField] float throwForce;
+    [SerializeField] private Transform anchor;
     [SerializeField] private HogStock stock;
     [SerializeField] private Grabber grabber;
 
+    private Hog _loadedHog;
     //private bool isGrabbing => grabber.isGrabbing;
 
+    private void Start()
+    {
+        LoadHogFromStock();
+    }
+
+    [ContextMenu("Load Next Hog!")]
+    public void LoadHogFromStock()
+    {
+        Hog hog = stock.GetNextHog();
+
+        if(hog == null)
+        {
+            //game over
+        }
+
+        _loadedHog = hog;
+        _loadedHog.transform.parent = grabber.transform;
+        _loadedHog.transform.localPosition = Vector3.zero;
+
+        isLoaded = true;
+    }
+    public void Throw()
+    {
+        isLoaded = false;
+
+        _loadedHog.transform.SetParent(null);
+        _loadedHog.rb.simulated = true;
+
+        Vector3 force = (anchor.position - grabber.transform.position ) * throwForce;
+
+        _loadedHog.rb.AddForce(force, ForceMode2D.Impulse);
+
+        //start loadingNextHog sequence
+        LoadHogFromStock();
+    }
 
 }

@@ -4,12 +4,23 @@ using UnityEngine;
 public class HogStock : MonoBehaviour
 {
     //holds the upcoming Hogs to load
-    //[SerializeField] private List<Hog> magazine;
+    [SerializeField] private List<Hog> hogsToQueue;
     [SerializeField] private Queue<Hog> magazine;
+
+    private void Awake()
+    {
+        magazine = new Queue<Hog>();
+
+        foreach (var hog in hogsToQueue)
+        {
+            //magazine.Enqueue(hog);
+            LoadHogToStock(hog);
+        }
+    }
 
     public void LoadHogToStock(Hog hog)
     {
-        if(magazine == null) magazine = new Queue<Hog>();
+        //if(magazine == null) magazine = new Queue<Hog>();
 
         magazine.Enqueue(hog);
     }
