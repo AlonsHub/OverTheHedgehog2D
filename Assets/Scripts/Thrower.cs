@@ -20,6 +20,8 @@ public class Thrower : MonoBehaviour
     [SerializeField] float snapTime;
     [SerializeField] float snapTimeAddPerDistnace;
     [SerializeField] float snapAcceleration;
+    [SerializeField] float overshootFactor;
+    [SerializeField] float overshootTime;
     [SerializeField] private Transform anchor;
     [SerializeField] private HogStock stock;
     [SerializeField] private Grabber grabber;
@@ -64,10 +66,10 @@ public class Thrower : MonoBehaviour
     IEnumerator ThrowCoroutine(Vector3 delta)
     {
         //float delta = (anchor.position - grabber.transform.position).sqrMagnitude;
-        float distnace = delta.sqrMagnitude;
+        float _distnace = delta.sqrMagnitude;
         float t = 0f;
         Vector3 ogPos = grabber.transform.position;
-        float fullTime = snapTime + distnace * snapTimeAddPerDistnace;
+        float fullTime = snapTime + _distnace * snapTimeAddPerDistnace;
         //while (Mathf.Approximately(distnace, 0.0f))
         float accel = 0f;
         while (t<= fullTime)
@@ -86,6 +88,33 @@ public class Thrower : MonoBehaviour
         _loadedHog.rb.AddForce(delta * throwForce, ForceMode2D.Impulse);
 
         isLoaded = false;
+
+        //start Warmup animation for the next hog - weave it!
+        Vector3 os_Destination = anchor.position + delta * overshootFactor;
+        Vector3 og_Pos = grabber.transform.position;
+
+        float _halfOvershootTime = overshootTime/2;
+        t = 0f;
+        while (t <= _halfOvershootTime)
+        {
+            //overshoot
+            grabber.transform.position = Vector3.Lerp(og_Pos, os_Destination, t / _halfOvershootTime);
+
+
+            yield return null;
+            t += Time.deltaTime;
+        }
+        t = 0f;
+        while (t <= _halfOvershootTime)
+        {
+            //back
+            grabber.transform.position = Vector3.Lerp(os_Destination, og_Pos, t / _halfOvershootTime);
+
+
+            yield return null;
+            t += Time.deltaTime;
+        }
+
 
         //start loadingNextHog sequence
         LoadHogFromStock();
