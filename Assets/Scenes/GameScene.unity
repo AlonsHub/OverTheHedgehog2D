@@ -2008,12 +2008,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405265694}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1497169631}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &1405265696
 LineRenderer:
@@ -2066,7 +2066,7 @@ LineRenderer:
   m_MaskInteraction: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: -5.02, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -2150,11 +2150,10 @@ Transform:
   m_GameObject: {fileID: 1497169630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.782, z: 0}
+  m_LocalPosition: {x: 0, y: 1.249, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1405265695}
+  m_Children: []
   m_Father: {fileID: 1719401248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1544013515
@@ -2500,6 +2499,7 @@ GameObject:
   - component: {fileID: 1719401248}
   - component: {fileID: 1719401247}
   - component: {fileID: 1719401249}
+  - component: {fileID: 1719401250}
   m_Layer: 0
   m_Name: Thrower
   m_TagString: Untagged
@@ -2575,7 +2575,7 @@ Transform:
   m_GameObject: {fileID: 1719401244}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.76, y: -3.1848, z: 0}
+  m_LocalPosition: {x: -5.45, y: -3.1848, z: 0}
   m_LocalScale: {x: 0.3151751, y: 1.5504, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2595,10 +2595,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   isLoaded: 0
-  throwForce: 3
+  throwForce: 4
+  snapTime: 0.1
+  snapTimeAddPerDistnace: 0
+  snapAcceleration: 0
   anchor: {fileID: 1497169631}
   stock: {fileID: 1187597539}
   grabber: {fileID: 1989192131}
+--- !u!114 &1719401250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719401244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8de25705f6ac094c85fac53d686ff7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RubberBand
+  lineRenderer: {fileID: 1405265696}
+  grabberTrans: {fileID: 1989192133}
+  throwerTrans: {fileID: 1497169631}
 --- !u!1 &1789450647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,6 +2950,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 360462953}
   - {fileID: 1789450648}
+  - {fileID: 1405265695}
   - {fileID: 1719401248}
   - {fileID: 1989192133}
   - {fileID: 870311297}
