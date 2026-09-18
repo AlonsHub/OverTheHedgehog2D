@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5809341740978876914}
   m_Layer: 0
   m_Name: GFX
-  m_TagString: Untagged
+  m_TagString: Hog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 21359099738352003}
   m_Layer: 0
   m_Name: Hedgehog_01
-  m_TagString: Untagged
+  m_TagString: Hog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
