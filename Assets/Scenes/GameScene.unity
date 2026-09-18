@@ -2360,6 +2360,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hedgehog_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6185352465659768135, guid: ef225340fe92f5a48b7d26d754508d0f, type: 3}
+      propertyPath: m_Size.x
+      value: 3.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185352465659768135, guid: ef225340fe92f5a48b7d26d754508d0f, type: 3}
+      propertyPath: m_Size.y
+      value: 2.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
