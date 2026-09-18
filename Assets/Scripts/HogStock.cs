@@ -4,6 +4,8 @@ using UnityEngine;
 public class HogStock : MonoBehaviour
 {
     //holds the upcoming Hogs to load
+    [SerializeField] private Transform stockPoint_A;
+    [SerializeField] private float hogWidth;
     [SerializeField] private List<Hog> hogsToQueue;
     [SerializeField] private Queue<Hog> magazine;
 
@@ -15,6 +17,13 @@ public class HogStock : MonoBehaviour
         {
             //magazine.Enqueue(hog);
             LoadHogToStock(hog);
+        }
+
+        Vector3 pos = stockPoint_A.position;
+        foreach (var hog in magazine)
+        {
+            hog.transform.position = pos;
+            pos.x -= hogWidth;
         }
     }
 

@@ -65,6 +65,9 @@ public class Thrower : MonoBehaviour
 
     IEnumerator ThrowCoroutine(Vector3 delta)
     {
+        //Sending the Fly here lets the tearie eyed anim to s
+        _loadedHog.Fly();
+
         //float delta = (anchor.position - grabber.transform.position).sqrMagnitude;
         float _distnace = delta.sqrMagnitude;
         float t = 0f;
@@ -81,6 +84,9 @@ public class Thrower : MonoBehaviour
             accel += snapAcceleration * Time.deltaTime;
             //distnace = (anchor.position - grabber.transform.position).sqrMagnitude;
         }
+
+        //this could be a good time to send a message to the hog to play its fly animation
+        // _loadedHog.Fly();
 
         _loadedHog.transform.SetParent(null);
         _loadedHog.rb.simulated = true;

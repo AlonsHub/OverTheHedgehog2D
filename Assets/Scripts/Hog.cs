@@ -8,8 +8,25 @@ public class Hog : MonoBehaviour
 
     //state?
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+            Impact();
+    }
+
     public void Walk()
     {
         //moves one step forward
     }
+    public void Fly()
+    {
+        anim.SetTrigger("Fly");
+    }
+    public void Impact()
+    {
+        anim.SetTrigger("Impact");
+
+        //start fading away now or after a delay?
+    }
+    
+
 }
