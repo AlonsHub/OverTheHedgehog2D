@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: 75a809a4c70a79c4db9ed43f4e06e9d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3883052664044692553
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_0
+  - first:
+      213: 8728488086623538623
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_1
+  - first:
+      213: 7956582892322144433
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_2
+  - first:
+      213: -3659847736497688501
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_3
+  - first:
+      213: -5194613444049671623
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_4
+  - first:
+      213: 6917187024267631571
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_5
+  - first:
+      213: -7970673308765913244
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_6
+  - first:
+      213: -2122164657270482596
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_7
+  - first:
+      213: 8000566421266647089
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_8
+  - first:
+      213: -7037808998250475827
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_9
+  - first:
+      213: -1083842252109064730
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_10
+  - first:
+      213: -4416473664686478605
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_11
+  - first:
+      213: 1999063668073658879
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_12
+  - first:
+      213: 1596108881639030021
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_13
+  - first:
+      213: -6515204771677911438
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_14
+  - first:
+      213: -7941273776707548057
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_15
+  - first:
+      213: -3063978842813752641
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_16
+  - first:
+      213: -1201525046854881273
+    second: ChatGPT Image Sep 18, 2026, 03_23_30 AM_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlyingAndRolling_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 897
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6ee64682458f6449f707b17ad10393
+      internalID: 978636737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 897
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0894af7e95955e84db8daea290125b56
+      internalID: -1989500463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 897
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb2627dee113c7459dd68cec1a040f0
+      internalID: -765544381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_3
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 898
+        width: 301
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae402cb29919a10489332ae54943380c
+      internalID: 784200431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 576
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119de7713854ccd4d8307be9a513eb12
+      internalID: -577749355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 576
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b491373a16adb4d88c1dd5af0dbcaa
+      internalID: 834897615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 570
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b84c8a91138f041ab62d959429a24d
+      internalID: -1528387647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_7
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 570
+        width: 301
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e597615445bd37429dfbbe460dbad2d
+      internalID: -688132591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 299
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9ea8a7320e65c48a64a05fb711995f
+      internalID: -798734211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_9
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 299
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca317260d68aa24a8bf6f8880ad59e2
+      internalID: -770588064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_10
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 299
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b370c0d52dbc2842b99fb85baa12d87
+      internalID: 1888031768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_11
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 299
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46efc04de64ea0f4ba652909ab38bca7
+      internalID: -1650993409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 30
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb99f602d1b1d1f48b24543829443f3f
+      internalID: 365644083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_13
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 30
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96cc01ded973a34b953b834e3ddc692
+      internalID: 199404254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_14
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 30
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31b2b361696e614f97b54571dd70f5a
+      internalID: -1480532470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingAndRolling_15
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 30
+        width: 313
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a34e2b1279b0774ca731ff573d81477
+      internalID: -1394142729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7b54fc6215373494692a2d68a5e3e3e5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":313.0,"y":266.0},"gridSpriteOffset":{"x":0.0,"y":91.0},"gridSpritePadding":{"x":0.0,"y":33.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      FlyingAndRolling_0: 978636737
+      FlyingAndRolling_1: -1989500463
+      FlyingAndRolling_10: 1888031768
+      FlyingAndRolling_11: -1650993409
+      FlyingAndRolling_12: 365644083
+      FlyingAndRolling_13: 199404254
+      FlyingAndRolling_14: -1480532470
+      FlyingAndRolling_15: -1394142729
+      FlyingAndRolling_2: -765544381
+      FlyingAndRolling_3: 784200431
+      FlyingAndRolling_4: -577749355
+      FlyingAndRolling_5: 834897615
+      FlyingAndRolling_6: -1528387647
+      FlyingAndRolling_7: -688132591
+      FlyingAndRolling_8: -798734211
+      FlyingAndRolling_9: -770588064
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

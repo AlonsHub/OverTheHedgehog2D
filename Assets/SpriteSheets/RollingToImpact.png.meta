@@ -1,0 +1,558 @@
+fileFormatVersion: 2
+guid: 8731573fa11101b4d9ddb7d41c1db4c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4160607703395267560
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_0
+  - first:
+      213: -7028992467861741611
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_1
+  - first:
+      213: -5344573801945871770
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_2
+  - first:
+      213: 1413003399468206125
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_3
+  - first:
+      213: 3943689619298525975
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_4
+  - first:
+      213: -2247915059723456236
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_5
+  - first:
+      213: -5826928139417383369
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_6
+  - first:
+      213: 1236782939422144483
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_7
+  - first:
+      213: 7192024283063977930
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_8
+  - first:
+      213: 5359229483417508016
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_9
+  - first:
+      213: 5199775263169749224
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_10
+  - first:
+      213: 2850363840771166125
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_11
+  - first:
+      213: -7159242599996911451
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_12
+  - first:
+      213: -5296001556660672144
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_13
+  - first:
+      213: 1045448853218572247
+    second: ChatGPT Image Sep 18, 2026, 03_22_23 AM_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RollingToImpact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 924
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d67b16efdeded41b1c782579cbbb58
+      internalID: 1187566774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 924
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0eb5294d2ecfc4083ae5641afa1441
+      internalID: -1678364384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_2
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 924
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff63009a2f33f649a5c569adcd570ee
+      internalID: -172538978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_3
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 925
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe68cef87420b94bbd0bf89488b72f8
+      internalID: -1312191324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 621
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0202c5b01028cc3428a3e86653648105
+      internalID: -1694626602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 621
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdde4b7f42ba6ce4ebb255579a676491
+      internalID: 1833552228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_6
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 621
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88198451f293294408504039d86f05ba
+      internalID: 1056531026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_7
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 621
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d867370ce963fe48b71d004f026ef6a
+      internalID: 407726187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 339
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc320e601b6db149be997ec6817928a
+      internalID: -1611108090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_9
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 339
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31f60a28f92c2446a577f302a75040b
+      internalID: -1153067144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_10
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 339
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516e2bac2edc72c429ee31be05d7a48f
+      internalID: -939818543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_11
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 339
+        width: 304
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b25bb883fad0a14b9e630171bec20a5
+      internalID: 1235191536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 48
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3557f4c86fd57864dba1e968370e7eb6
+      internalID: -744652861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_13
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 48
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050b9b107791086438ed747795eb8101
+      internalID: -2146536831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_14
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 48
+        width: 313
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0f83a689143fa4fac7a3cc9a714d33
+      internalID: 2090466895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollingToImpact_15
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 48
+        width: 301
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ebe4ee8eaa3f646bcb1a0b0c06c2d7
+      internalID: 159761071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a7aeb2f9cd60c9449a2d2cd125073560
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":313.0,"y":313.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      RollingToImpact_0: 1187566774
+      RollingToImpact_1: -1678364384
+      RollingToImpact_10: -939818543
+      RollingToImpact_11: 1235191536
+      RollingToImpact_12: -744652861
+      RollingToImpact_13: -2146536831
+      RollingToImpact_14: 2090466895
+      RollingToImpact_15: 159761071
+      RollingToImpact_2: -172538978
+      RollingToImpact_3: -1312191324
+      RollingToImpact_4: -1694626602
+      RollingToImpact_5: 1833552228
+      RollingToImpact_6: 1056531026
+      RollingToImpact_7: 407726187
+      RollingToImpact_8: -1611108090
+      RollingToImpact_9: -1153067144
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

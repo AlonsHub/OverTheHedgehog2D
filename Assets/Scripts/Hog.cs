@@ -3,16 +3,13 @@ using UnityEngine;
 public class Hog : MonoBehaviour
 {
     public Rigidbody2D rb;
+    [SerializeField] private Animator anim;
+    [SerializeField] private float walkSpeed;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    //state?
 
-    // Update is called once per frame
-    void Update()
+    public void Walk()
     {
-        
+        //moves one step forward
     }
 }
