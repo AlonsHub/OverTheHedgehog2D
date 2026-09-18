@@ -38,7 +38,15 @@ public class HogStock : MonoBehaviour
     {
         if( magazine == null || magazine.Count==0)
             return null;
+        Hog toReturn = magazine.Dequeue();
 
-        return magazine.Dequeue();
+        Vector3 pos = stockPoint_A.position;
+        foreach (var hog in magazine)
+        {
+            hog.transform.position = pos;
+            pos.x -= hogWidth;
+        }
+
+        return toReturn;
     }
 }
