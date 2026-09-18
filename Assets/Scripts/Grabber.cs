@@ -4,6 +4,7 @@ public class Grabber : MonoBehaviour
 {
     [SerializeField] private Camera m_Camera;
     [SerializeField] private Thrower thrower;
+    [SerializeField] private Trajectory trajectory;
 
     public bool isGrabbing;
 
@@ -20,6 +21,7 @@ public class Grabber : MonoBehaviour
         if (thrower.IsLoaded)
         {
             isGrabbing = true;
+            trajectory.gameObject.SetActive(true);
         }
     }
     private void OnMouseDrag()
@@ -35,10 +37,10 @@ public class Grabber : MonoBehaviour
             Vector3 point = hit.point;
             point.z = 0;
             transform.position = point;
-            
         }
 
-        
+        trajectory.DrawTrajectory(thrower.anchor.position, (thrower.anchor.position - transform.position) * thrower.throwForce, .1f, 30
+        );   
     }
 
     private void OnMouseUp()

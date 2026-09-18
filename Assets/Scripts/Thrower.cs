@@ -16,13 +16,13 @@ public class Thrower : MonoBehaviour
     [SerializeField] private bool isLoaded; //this is also isActive
     public bool IsLoaded { get { return isLoaded; } }
     //[SerializeField] private bool ;
-    [SerializeField] float throwForce;
+    [SerializeField] public float throwForce;
     [SerializeField] float snapTime;
     [SerializeField] float snapTimeAddPerDistnace;
     [SerializeField] float snapAcceleration;
     [SerializeField] float overshootFactor;
     [SerializeField] float overshootTime;
-    [SerializeField] private Transform anchor;
+    [SerializeField] public Transform anchor;
     [SerializeField] private HogStock stock;
     [SerializeField] private Grabber grabber;
     //[SerializeField] private LineRenderer lineRenderer;
