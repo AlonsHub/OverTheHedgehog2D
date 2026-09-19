@@ -197,7 +197,7 @@ Rigidbody2D:
   m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.2
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -227,3 +227,4 @@ MonoBehaviour:
   rb: {fileID: 3492873765522434687}
   anim: {fileID: 5809341740978876914}
   walkSpeed: 1
+  col: {fileID: 8610338905562065781}

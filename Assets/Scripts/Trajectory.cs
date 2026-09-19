@@ -10,7 +10,7 @@ public class Trajectory : MonoBehaviour
         for (int i = 0; i < maxSteps; i++)
         {
             float t = i * timeStep;
-            points[i] = startPosition + (startVelocity * t + (0.5f * Physics2D.gravity * t * t))/mass;
+            points[i] = startPosition + (startVelocity * t + (0.5f * Physics2D.gravity * t * t));
         }
 
         lineRenderer.SetPositions(points);
