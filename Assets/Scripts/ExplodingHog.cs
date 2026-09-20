@@ -16,5 +16,6 @@ public class ExplodingHog : Hog
            collider.attachedRigidbody?.AddForce((collider.transform.position - transform.position) * explosionForce, ForceMode2D.Impulse);
         }
 
+        //spawn vfx 
     }
 }

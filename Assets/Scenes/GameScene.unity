@@ -2171,7 +2171,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1631036047559405304, guid: a213def4b23bb0f47b090e09256a493b, type: 3}
       propertyPath: blastUpSpeed
-      value: 10
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1631036047559405304, guid: a213def4b23bb0f47b090e09256a493b, type: 3}
+      propertyPath: explosionForce
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1631036047559405304, guid: a213def4b23bb0f47b090e09256a493b, type: 3}
       propertyPath: blastToScreenSpeed

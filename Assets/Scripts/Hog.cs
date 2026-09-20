@@ -13,11 +13,15 @@ public class Hog : MonoBehaviour
     [SerializeField] private Collider2D col;
 
     //state?
+    bool _impacted = false;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if(_impacted) return;
+        
+        _impacted = true;
             Impact();
-            col.enabled = false;
+            // col.enabled = false;
 
             Destroy(gameObject, ttl);
     }
@@ -57,6 +61,7 @@ public class Hog : MonoBehaviour
     {
         Camera camera = Camera.main;
         rb.simulated = true;
+        col.enabled = false;
 
         Vector3 dir = (camera.transform.position - transform.position).normalized;
         dir += Random.Range(-0.3f, 0.3f) * Vector3.right;
