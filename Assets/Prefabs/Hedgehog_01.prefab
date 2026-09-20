@@ -227,4 +227,7 @@ MonoBehaviour:
   rb: {fileID: 3492873765522434687}
   anim: {fileID: 5809341740978876914}
   walkSpeed: 1
+  blastToScreenSpeed: 0.05
+  blastUpSpeed: 10
+  ttl: 5
   col: {fileID: 8610338905562065781}
