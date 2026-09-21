@@ -45,8 +45,7 @@ public class Grabber : MonoBehaviour
             transform.position = point;
         }
 
-        trajectory.DrawTrajectory(thrower.anchor.position, (thrower.anchor.position - transform.position) * thrower.throwForce, .1f, 30
-        );
+        trajectory.DrawTrajectory(thrower.anchor.position, (thrower.anchor.position - transform.position) * thrower.throwForce);
 
         float stretch = Vector3.Distance(thrower.anchor.position, transform.position);
         if (stretch > _creakedAt + creakEvery)
@@ -62,5 +61,6 @@ public class Grabber : MonoBehaviour
         //Throw!
         thrower.Throw();
         isGrabbing = false;
+        trajectory.Hide();
     }
 }

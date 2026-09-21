@@ -31,6 +31,8 @@ and say "FIRST"/"SECOND" in the prompt.
   makes a sprite render smaller than its collider.
 - `node Tools/ArtDirector/variant.mjs <in.png> <out.png> [--lighten 0.35] [--desat 0.2]` makes a lighter colour
   variant that keeps the outline and silhouette (the edits endpoint re-frames and washes out `--ref` recolours).
+- `node Tools/ArtDirector/tile.mjs <in.png> <out.png> [--size 256] [--fill 0.5]` shrinks a sprite onto a square
+  transparent canvas for textures that repeat along a LineRenderer (the aim dots): the margin is the gap.
 - In Unity, `SpriteSheetImporter.ImportBands(path, ppu)` slices a sheet by detecting the frame rows/columns
   (grids come out slightly uneven); `ImportGrid` for scattered frames (particle bursts); `ImportSingle` for
   single sprites. `ContentBuilder` (menu *Over The Hedgehog > Build > Everything*) rebuilds clips, controllers,
