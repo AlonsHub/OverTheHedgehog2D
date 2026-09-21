@@ -135,8 +135,9 @@ public static partial class ContentBuilder
         SetRef(cluster, typeof(ClusterHog), "miniPrefab", mini.GetComponent<Hog>());
         SetRef(cluster, typeof(ClusterHog), "splitVfx", dust);
         SetInt(cluster, typeof(ClusterHog), "pieces", 5);
-        SetFloat(cluster, typeof(ClusterHog), "spreadAngle", 70f);
-        SetFloat(cluster, typeof(ClusterHog), "burstSpeed", 4f);
+        SetFloat(cluster, typeof(ClusterHog), "fanFrom", -5f);
+        SetFloat(cluster, typeof(ClusterHog), "fanTo", -80f);
+        SetFloat(cluster, typeof(ClusterHog), "burstSpeed", 5f);
         EditorUtility.SetDirty(cluster);
 
         AssetDatabase.SaveAssets();

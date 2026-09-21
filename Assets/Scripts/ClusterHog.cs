@@ -1,21 +1,26 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-//cluster bomb: click anywhere while it's in the air and it bursts into a fan of mini hogs.
-//if the player never clicks it bursts on whatever it hits instead. the minis are plain Hogs
-//(they don't split again), they just fly on and pop like everyone else
+//cluster bomb: click anywhere while it's in the air and it bursts into a fan of mini hogs that rain
+//down and to the right. if the player never clicks it bursts on whatever it hits instead. the minis are
+//plain Hogs (they don't split again): they fly until they hit something, then pop like everyone else
 public class ClusterHog : Hog
 {
     [Header("Cluster")]
     [SerializeField] private Hog miniPrefab;
     [Min(1)]
     [SerializeField] private int pieces = 5;
-    [Tooltip("Total fan angle the minis spread over, centred on our current direction of travel")]
-    [SerializeField] private float spreadAngle = 70f;
-    [Tooltip("How much of our current velocity each mini keeps")]
+    [Tooltip("Fan of directions the minis leave along, in degrees (0 = right, -90 = straight down)")]
+    [SerializeField] private float fanFrom = -5f;
+    [SerializeField] private float fanTo = -80f;
+    [Tooltip("How much of our forward (x) speed each mini keeps, so a fast throw still carries them")]
     [Range(0f, 1.5f)]
-    [SerializeField] private float inheritVelocity = 0.8f;
-    [Tooltip("Extra speed each mini gets along its own fan direction")]
-    [SerializeField] private float burstSpeed = 4f;
+    [SerializeField] private float inheritForward = 0.6f;
+    [Tooltip("Speed each mini gets along its own fan direction")]
+    [SerializeField] private float burstSpeed = 5f;
+    [Tooltip("Landed without a click: fan the minis up and out instead so they don't just sit there")]
+    [SerializeField] private float impactFanFrom = 80f;
+    [SerializeField] private float impactFanTo = 10f;
     [Tooltip("Spawned where we split")]
     [SerializeField] private GameObject splitVfx;
 
@@ -29,7 +34,7 @@ public class ClusterHog : Hog
             Split();
     }
 
-    //landed without being clicked: burst anyway, the minis scatter off the impact point
+    //landed without being clicked: burst anyway
     public override void Impact()
     {
         Split(true);
@@ -38,37 +43,51 @@ public class ClusterHog : Hog
     [ContextMenu("Split")]
     public void Split() => Split(false);
 
-    //upwards: we've just hit something, so fan up and out instead of along our (now bounced) velocity
-    public void Split(bool upwards)
+    public void Split(bool onImpact)
     {
         if (_split) return;
         _split = true;
 
-        Vector2 velocity = rb.linearVelocity;
-        float heading;
-        if (upwards)
-        {
-            heading = 90f;
-            velocity = new Vector2(velocity.x * 0.3f, 0f);
-        }
-        else
-        {
-            //fan around where we're heading; if we're somehow stationary just fan upwards
-            heading = velocity.sqrMagnitude > 0.01f ? Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg : 90f;
-        }
+        //nothing else may bump into the husk while the minis are born
+        col.enabled = false;
+        rb.simulated = false;
 
+        Vector2 velocity = rb.linearVelocity;
+        Vector2 carry = new Vector2(Mathf.Max(0f, velocity.x) * inheritForward, 0f);
+        float from = onImpact ? impactFanFrom : fanFrom;
+        float to = onImpact ? impactFanTo : fanTo;
+
+        var minis = new List<Hog>(pieces);
+        var dirs = new List<Vector2>(pieces);
         for (int i = 0; i < pieces; i++)
         {
-            //evenly spaced across the fan, a single piece goes straight ahead
+            //evenly spaced across the fan, a single piece goes down the middle
             float t = pieces == 1 ? 0.5f : (float)i / (pieces - 1);
-            float angle = heading + Mathf.Lerp(-spreadAngle * 0.5f, spreadAngle * 0.5f, t);
+            float angle = Mathf.Lerp(from, to, t);
             Vector2 dir = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
+            dirs.Add(dir);
 
-            Hog mini = Instantiate(miniPrefab, transform.position + (Vector3)dir * 0.2f, Quaternion.identity);
+            //born a little way out along their own direction so they don't start inside each other
+            Hog mini = Instantiate(miniPrefab, transform.position + (Vector3)dir * 0.45f, Quaternion.identity);
             mini.name = miniPrefab.name;
-            mini.Fly();
+            minis.Add(mini);
+        }
+
+        //the litter never collides with itself, only with the world: a mini popping on a sibling's
+        //nose the moment it's born is no fun for anyone
+        foreach (var a in minis)
+        {
+            var colA = a.GetComponent<Collider2D>();
+            Physics2D.IgnoreCollision(colA, col, true);
+            foreach (var b in minis)
+                if (a != b) Physics2D.IgnoreCollision(colA, b.GetComponent<Collider2D>(), true);
+        }
+
+        for (int i = 0; i < minis.Count; i++)
+        {
+            minis[i].Fly();
             //Launch adds an impulse, so scale the wanted velocity by the mini's mass
-            mini.Launch((velocity * inheritVelocity + dir * burstSpeed) * mini.rb.mass);
+            minis[i].Launch((carry + dirs[i] * burstSpeed) * minis[i].rb.mass);
         }
 
         if (splitVfx != null)

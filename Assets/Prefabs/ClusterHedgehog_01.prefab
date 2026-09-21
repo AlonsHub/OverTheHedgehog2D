@@ -127,9 +127,12 @@ MonoBehaviour:
   popRandomness: 0.35
   miniPrefab: {fileID: 7122325555257580660, guid: e9340a6d8bfb9ef42907a708db4e8500, type: 3}
   pieces: 5
-  spreadAngle: 70
-  inheritVelocity: 0.8
-  burstSpeed: 4
+  fanFrom: -5
+  fanTo: -80
+  inheritForward: 0.6
+  burstSpeed: 5
+  impactFanFrom: 80
+  impactFanTo: 10
   splitVfx: {fileID: 492571090762709907, guid: 35537b193e045ee448a23a45d12317e8, type: 3}
 --- !u!1 &6310887447962489762
 GameObject:
