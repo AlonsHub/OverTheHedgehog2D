@@ -1,73 +1,55 @@
 fileFormatVersion: 2
-guid: e75b4a75e3806ee42b48fc489847a0f7
+guid: 707c61ebbe175054f818dcc6b631aa8c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3628660362576404315
-    second: WoodBeam_03_0
+      213: 239878967038639339
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_0
   - first:
-      213: -5598790432851613778
-    second: WoodBeam_03_1
+      213: -1726534611090124455
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_1
   - first:
-      213: -5723812682933095379
-    second: WoodBeam_03_2
+      213: -1895687177415534764
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_2
   - first:
-      213: -2242634218792245682
-    second: WoodBeam_03_3
+      213: -2640748181075570542
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_3
   - first:
-      213: -2186389600671472486
-    second: WoodBeam_03_4
+      213: -6180067508973222572
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_4
   - first:
-      213: -6192594249288367826
-    second: WoodBeam_03_5
+      213: -8525141970616939234
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_5
   - first:
-      213: -6486802221921667667
-    second: WoodBeam_03_6
+      213: 4941774292840451012
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_6
   - first:
-      213: -7439379547782271281
-    second: WoodBeam_03_7
+      213: -4094216868109510821
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_7
   - first:
-      213: 8056616328128466430
-    second: WoodBeam_03_8
+      213: -565776572832116562
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_8
   - first:
-      213: -932748271191114390
-    second: WoodBeam_03_9
+      213: 5023898550020704447
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_9
   - first:
-      213: 7496079533172847211
-    second: WoodBeam_03_10
+      213: -6689862739133760342
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_10
   - first:
-      213: 5568692290516973742
-    second: WoodBeam_03_11
+      213: 7913698197458417319
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_11
   - first:
-      213: 4341824236214949680
-    second: WoodBeam_03_12
+      213: 7398641001270674915
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_12
   - first:
-      213: -1784354273367773623
-    second: WoodBeam_03_13
+      213: -5473251564219671987
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_13
   - first:
-      213: -1938420102981299286
-    second: WoodBeam_03_14
+      213: -1079911488139950533
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_14
   - first:
-      213: -5746304143309900194
-    second: WoodBeam_03_15
-  - first:
-      213: 6228790275947969975
-    second: WoodBeam_03_16
-  - first:
-      213: 8260863906063831651
-    second: WoodBeam_03_17
-  - first:
-      213: 6541782048108703473
-    second: WoodBeam_03_18
-  - first:
-      213: 3797229226057897079
-    second: WoodBeam_03_19
-  - first:
-      213: -5596142162221559185
-    second: WoodBeam_03_20
-  - first:
-      213: 1295607460167986441
-    second: WoodBeam_03_21
+      213: -8999990106706454802
+    second: ChatGPT Image Sep 21, 2026, 12_56_53 AM_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,15 +85,15 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -189,319 +171,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WoodBeam_03_0
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 25
-        width: 1665
-        height: 916
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a0e71e20a864adc0800000000000000
-      internalID: -3628660362576404315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_1
-      rect:
-        serializedVersion: 2
-        x: 1664
-        y: 727
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea72606d3c91d42b0800000000000000
-      internalID: -5598790432851613778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_2
-      rect:
-        serializedVersion: 2
-        x: 1099
-        y: 392
-        width: 17
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d24b5e0e0bee090b0800000000000000
-      internalID: -5723812682933095379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_3
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 392
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e46a0cb5f0090e0e0800000000000000
-      internalID: -2242634218792245682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_4
-      rect:
-        serializedVersion: 2
-        x: 1204
-        y: 386
-        width: 17
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a946e5ffd3268a1e0800000000000000
-      internalID: -2186389600671472486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_5
-      rect:
-        serializedVersion: 2
-        x: 1204
-        y: 370
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e214a0d075c7f0aa0800000000000000
-      internalID: -6192594249288367826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_6
-      rect:
-        serializedVersion: 2
-        x: 1236
-        y: 360
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da5f42a6fbf3af5a0800000000000000
-      internalID: -6486802221921667667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_7
-      rect:
-        serializedVersion: 2
-        x: 1372
-        y: 374
-        width: 14
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fcea12187b302c890800000000000000
-      internalID: -7439379547782271281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_8
-      rect:
-        serializedVersion: 2
-        x: 1252
-        y: 340
-        width: 21
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: efd85b95dd9decf60800000000000000
-      internalID: 8056616328128466430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_9
-      rect:
-        serializedVersion: 2
-        x: 1525
-        y: 346
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6d3bc6a3663e03f0800000000000000
-      internalID: -932748271191114390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_10
-      rect:
-        serializedVersion: 2
-        x: 1579
-        y: 355
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b62f7d69e9c670860800000000000000
-      internalID: 7496079533172847211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_11
-      rect:
-        serializedVersion: 2
-        x: 1590
-        y: 354
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea878bf4228f74d40800000000000000
-      internalID: 5568692290516973742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_12
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 323
-        width: 9
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03716cc8322414c30800000000000000
-      internalID: 4341824236214949680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_13
-      rect:
-        serializedVersion: 2
-        x: 1441
-        y: 336
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94ea6760e33bc37e0800000000000000
-      internalID: -1784354273367773623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_14
-      rect:
-        serializedVersion: 2
-        x: 1575
-        y: 334
+        x: 86
+        y: 678
         width: 16
         height: 15
       alignment: 0
@@ -512,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa3d250cf295915e0800000000000000
-      internalID: -1938420102981299286
+      spriteID: becfc6b46a8345300800000000000000
+      internalID: 239878967038639339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodBeam_03_15
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_1
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 321
-        width: 15
-        height: 26
+        x: 111
+        y: 663
+        width: 129
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -534,20 +208,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5678aea3d60140b0800000000000000
-      internalID: -5746304143309900194
+      spriteID: 9515e853bed1a08e0800000000000000
+      internalID: -1726534611090124455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodBeam_03_16
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_2
       rect:
         serializedVersion: 2
-        x: 1630
-        y: 338
+        x: 543
+        y: 663
+        width: 198
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45752e05e8a21b5e0800000000000000
+      internalID: -1895687177415534764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_3
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 659
+        width: 183
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2905bb5458d2a5bd0800000000000000
+      internalID: -2640748181075570542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_4
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 691
         width: 11
-        height: 14
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -556,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7bd394221cb117650800000000000000
-      internalID: 6228790275947969975
+      spriteID: 455c7bf085dfb3aa0800000000000000
+      internalID: -6180067508973222572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodBeam_03_17
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_5
       rect:
         serializedVersion: 2
-        x: 231
-        y: 323
-        width: 11
-        height: 12
+        x: 1267
+        y: 665
+        width: 67
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,20 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 362d7c264fb74a270800000000000000
-      internalID: 8260863906063831651
+      spriteID: e1d8a9dbb8c90b980800000000000000
+      internalID: -8525141970616939234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodBeam_03_18
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_6
       rect:
         serializedVersion: 2
-        x: 1501
-        y: 323
-        width: 21
-        height: 14
+        x: 1427
+        y: 651
+        width: 183
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -600,40 +318,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1feeb87ec1419ca50800000000000000
-      internalID: 6541782048108703473
+      spriteID: 4cb89e46985b49440800000000000000
+      internalID: 4941774292840451012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodBeam_03_19
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_7
       rect:
         serializedVersion: 2
-        x: 1583
-        y: 325
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77499edccd772b430800000000000000
-      internalID: 3797229226057897079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WoodBeam_03_20
-      rect:
-        serializedVersion: 2
-        x: 715
-        y: 137
+        x: 987
+        y: 675
         width: 6
         height: 6
       alignment: 0
@@ -644,18 +340,128 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6292346a528652b0800000000000000
-      internalID: -5596142162221559185
+      spriteID: b579be6537b6e27c0800000000000000
+      internalID: -4094216868109510821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodBeam_03_21
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_8
       rect:
         serializedVersion: 2
-        x: 1348
-        y: 52
+        x: 1001
+        y: 659
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea09a126435f528f0800000000000000
+      internalID: -565776572832116562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_9
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 635
+        width: 60
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8859d0d1978b540800000000000000
+      internalID: 5023898550020704447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 2172
+        height: 651
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac7fcd7845d823a0800000000000000
+      internalID: -6689862739133760342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_11
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 644
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6782ff49a13dd60800000000000000
+      internalID: 7913698197458417319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_12
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 642
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5016d7ac04da660800000000000000
+      internalID: 7398641001270674915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_13
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 648
         width: 17
         height: 19
       alignment: 0
@@ -666,8 +472,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90da8afde1ceaf110800000000000000
-      internalID: 1295607460167986441
+      spriteID: d4ad55c63ba1b04b0800000000000000
+      internalID: -5473251564219671987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_14
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 639
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b360e8029326301f0800000000000000
+      internalID: -1079911488139950533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChatGPT Image Sep 21, 2026, 12_56_53 AM_15
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 628
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee65bb39eac991380800000000000000
+      internalID: -8999990106706454802
       vertices: []
       indices: 
       edges: []
@@ -686,28 +536,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WoodBeam_03_0: -3628660362576404315
-      WoodBeam_03_1: -5598790432851613778
-      WoodBeam_03_10: 7496079533172847211
-      WoodBeam_03_11: 5568692290516973742
-      WoodBeam_03_12: 4341824236214949680
-      WoodBeam_03_13: -1784354273367773623
-      WoodBeam_03_14: -1938420102981299286
-      WoodBeam_03_15: -5746304143309900194
-      WoodBeam_03_16: 6228790275947969975
-      WoodBeam_03_17: 8260863906063831651
-      WoodBeam_03_18: 6541782048108703473
-      WoodBeam_03_19: 3797229226057897079
-      WoodBeam_03_2: -5723812682933095379
-      WoodBeam_03_20: -5596142162221559185
-      WoodBeam_03_21: 1295607460167986441
-      WoodBeam_03_3: -2242634218792245682
-      WoodBeam_03_4: -2186389600671472486
-      WoodBeam_03_5: -6192594249288367826
-      WoodBeam_03_6: -6486802221921667667
-      WoodBeam_03_7: -7439379547782271281
-      WoodBeam_03_8: 8056616328128466430
-      WoodBeam_03_9: -932748271191114390
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_0: 239878967038639339
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_1: -1726534611090124455
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_10: -6689862739133760342
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_11: 7913698197458417319
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_12: 7398641001270674915
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_13: -5473251564219671987
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_14: -1079911488139950533
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_15: -8999990106706454802
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_2: -1895687177415534764
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_3: -2640748181075570542
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_4: -6180067508973222572
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_5: -8525141970616939234
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_6: 4941774292840451012
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_7: -4094216868109510821
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_8: -565776572832116562
+      ChatGPT Image Sep 21, 2026, 12_56_53 AM_9: 5023898550020704447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
