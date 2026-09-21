@@ -41,6 +41,9 @@ Hedgehog is round, compact, big-headed, with a cream face and small stubby paws.
 - **Hen (enemy)**: one big fluffy cream feather ball (`#F3E9D2`, shadow `#D9B57A`), tiny red comb/wattle, orange beak and feet, half-lidded grumpy stare with one raised brow, faces left. Pops into a burst of feathers, wholesome.
 - **Boss rooster**: huge, puffy, dark-green + terracotta tail, tall red comb, golden beak, bushy silly-angry brows, golden bell on a jute rope.
 
+### Character sheet framing rule (agreed with the AD, 2026-09-21)
+Pivot at the **visual body centre** (ignore sparks, fuses, hats), and keep **one cell size for every frame** of a sheet so a character never changes size or bobs. In practice: import with `SpriteSheetImporter.ImportBands(path, ppu, uniform: true, bottomAlign: true for idle/impact, false for fly/roll)` and pick the PPU so the body is ~1.5 units wide like the neutral hog (exploding 160, cluster 175, mini 330).
+
 ### Generation workflow that works
 Always generate character sheets with `--ref` and an existing sheet (see Tools/ArtDirector/README.md): "Redraw the attached sheet keeping everything identical EXCEPT ...". Ask for "no background, no ground shadow, no glow" and run cleanalpha afterwards. Sheets come back as 4x4 or 4x3 grids; that's fine, the importer detects frames.
 
@@ -52,6 +55,9 @@ Always generate character sheets with `--ref` and an existing sheet (see Tools/A
 - Props that get stacked/physicsed (beams, boxes, pots) need simple convex silhouettes and clear top/bottom faces.
 - **Physics blocks** (posts/beams) are separate horizontal and vertical sprites, never one rotated: light stays upper-left and grain runs along the length. Generate the beam at 1536x1024 and the post at 1024x1536 spanning the full long axis, trim to alpha, and keep every detail (worn ends, a nail, the daisy, moss) inside the outer 25% end caps; the middle 50% is plain grain because it is 9-sliced and stretched up to 11:1. Nothing may poke outside the rectangle (what you see is what collides). **Chosen 2026-09-21: natural honey oak** (`Assets/Art/Blocks/Oak_*`) with a sun-bleached `OakLight_*` variant (made with variant.mjs) mixed in per block so structures don't read as one slab. Rejected options WhiteWood and Birch stay in Assets/Art/Generated/Blocks for reference.
 - Sizes for generation: use 1024x1024 for single props/textures, 1536x1024 for wide props (fences, signs, ground strips), 1024x1536 for tall ones (posts, towers).
+
+## Aim trajectory
+Terracotta pebble dots (`Assets/Art/Thrower/AimDot_Tile.png`, brown outline, upper-left highlight) tiled along the arc, scrolling toward the landing point and fading out over the last stretch. Never a solid line, never green.
 
 ## UI (when it comes up)
 Same world materials: rounded wooden plank panels with jute-rope hangers, cream parchment for text areas, daisy/leaf corner accents, chunky rounded buttons in terracotta or leaf green with the same brown outline. Font feel: soft rounded sans or a friendly hand-lettered display face. No glossy, glassy, neon, or sci-fi UI.

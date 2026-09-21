@@ -55,7 +55,10 @@ public static class SpriteSheetImporter
 
     //band detection. rows/cols are hints: 0 = detect. mergeWiderThan splits a band that's obviously two
     //touching frames (wider than this multiple of the median band width) down the middle
-    public static int ImportBands(string assetPath, float pixelsPerUnit, int alphaThreshold = 24, int minGap = 4, float splitWiderThan = 1.6f, Vector2? pivot = null)
+    //uniform: every frame gets the same cell size (the largest band), so a character never changes size or
+    //bobs between frames. bottomAlign keeps feet on the row's floor (idle/impact sheets); otherwise the
+    //content is centred in the cell (flying/rolling sheets, where the curled ball should stay centred)
+    public static int ImportBands(string assetPath, float pixelsPerUnit, int alphaThreshold = 24, int minGap = 4, float splitWiderThan = 1.6f, Vector2? pivot = null, bool uniform = false, bool bottomAlign = false)
     {
         var tex = LoadReadable(assetPath);
         var pixels = tex.GetPixels32();
@@ -82,6 +85,22 @@ public static class SpriteSheetImporter
 
             foreach (var (x0, x1) in colBands)
                 frames.Add(new Frame { rect = new RectInt(x0, y0, x1 - x0 + 1, y1 - y0 + 1) });
+        }
+
+        if (uniform && frames.Count > 0)
+        {
+            int cw = 0, ch = 0;
+            foreach (var fr in frames) { cw = Mathf.Max(cw, fr.rect.width); ch = Mathf.Max(ch, fr.rect.height); }
+            for (int i = 0; i < frames.Count; i++)
+            {
+                var r = frames[i].rect;
+                int x = r.x + r.width / 2 - cw / 2;
+                int y = bottomAlign ? r.y : r.y + r.height / 2 - ch / 2;
+                //cells may poke past the texture edge on the outer frames; clamp (Unity rejects rects outside)
+                x = Mathf.Clamp(x, 0, Mathf.Max(0, w - cw));
+                y = Mathf.Clamp(y, 0, Mathf.Max(0, h - ch));
+                frames[i] = new Frame { rect = new RectInt(x, y, Mathf.Min(cw, w), Mathf.Min(ch, h)) };
+            }
         }
 
         Object.DestroyImmediate(tex);
@@ -186,14 +205,19 @@ public static class SpriteSheetImporter
         provider.InitSpriteEditorDataProvider();
 
         string baseName = Path.GetFileNameWithoutExtension(assetPath);
+        //re-slicing keeps each frame's id so clips and prefabs that point at "<sheet>_n" survive
+        var existingIds = new Dictionary<string, GUID>();
+        foreach (var old in provider.GetSpriteRects())
+            if (!existingIds.ContainsKey(old.name)) existingIds.Add(old.name, old.spriteID);
         var rects = new List<SpriteRect>();
         for (int i = 0; i < frames.Count; i++)
         {
             var r = frames[i].rect;
+            string frameName = $"{baseName}_{i}";
             rects.Add(new SpriteRect
             {
-                name = $"{baseName}_{i}",
-                spriteID = GUID.Generate(),
+                name = frameName,
+                spriteID = existingIds.TryGetValue(frameName, out var id) ? id : GUID.Generate(),
                 rect = new Rect(r.x, r.y, r.width, r.height),
                 alignment = SpriteAlignment.Custom,
                 pivot = pivot ?? new Vector2(0.5f, 0.5f),

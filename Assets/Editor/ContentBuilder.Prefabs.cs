@@ -55,7 +55,14 @@ public static partial class ContentBuilder
 
         var saved = PrefabUtility.SaveAsPrefabAsset(root, path);
         Object.DestroyImmediate(root);
-        return saved;
+
+        //the sprite set on the unpacked instance doesn't survive the save (the animator-driven renderer keeps
+        //the source's sprite), so set it on the asset itself
+        var contents = PrefabUtility.LoadPrefabContents(path);
+        contents.transform.Find("GFX").GetComponent<SpriteRenderer>().sprite = idleSprite;
+        PrefabUtility.SaveAsPrefabAsset(contents, path);
+        PrefabUtility.UnloadPrefabContents(contents);
+        return AssetDatabase.LoadAssetAtPath<GameObject>(path);
     }
 
     static void SetRef(GameObject prefab, System.Type componentType, string field, Object value)

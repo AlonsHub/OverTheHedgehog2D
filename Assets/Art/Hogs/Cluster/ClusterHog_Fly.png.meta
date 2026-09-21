@@ -93,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 175
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -193,9 +193,9 @@ TextureImporter:
       name: ClusterHog_Fly_1
       rect:
         serializedVersion: 2
-        x: 317
+        x: 315
         y: 750
-        width: 257
+        width: 261
         height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
@@ -215,9 +215,9 @@ TextureImporter:
       name: ClusterHog_Fly_2
       rect:
         serializedVersion: 2
-        x: 596
+        x: 568
         y: 750
-        width: 205
+        width: 261
         height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
@@ -237,9 +237,9 @@ TextureImporter:
       name: ClusterHog_Fly_3
       rect:
         serializedVersion: 2
-        x: 801
+        x: 763
         y: 750
-        width: 206
+        width: 261
         height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
@@ -259,10 +259,10 @@ TextureImporter:
       name: ClusterHog_Fly_4
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 493
-        width: 256
-        height: 222
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: ClusterHog_Fly_5
       rect:
         serializedVersion: 2
-        x: 311
+        x: 302
         y: 493
-        width: 242
-        height: 222
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: ClusterHog_Fly_6
       rect:
         serializedVersion: 2
-        x: 574
+        x: 552
         y: 493
-        width: 217
-        height: 222
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,10 +325,10 @@ TextureImporter:
       name: ClusterHog_Fly_7
       rect:
         serializedVersion: 2
-        x: 795
+        x: 763
         y: 493
-        width: 201
-        height: 222
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,10 +347,10 @@ TextureImporter:
       name: ClusterHog_Fly_8
       rect:
         serializedVersion: 2
-        x: 43
-        y: 257
-        width: 236
-        height: 200
+        x: 31
+        y: 246
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,10 +369,10 @@ TextureImporter:
       name: ClusterHog_Fly_9
       rect:
         serializedVersion: 2
-        x: 307
-        y: 257
-        width: 226
-        height: 200
+        x: 290
+        y: 246
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +391,10 @@ TextureImporter:
       name: ClusterHog_Fly_10
       rect:
         serializedVersion: 2
-        x: 559
-        y: 257
-        width: 209
-        height: 200
+        x: 533
+        y: 246
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,10 +413,10 @@ TextureImporter:
       name: ClusterHog_Fly_11
       rect:
         serializedVersion: 2
-        x: 787
-        y: 257
-        width: 206
-        height: 200
+        x: 760
+        y: 246
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: ClusterHog_Fly_12
       rect:
         serializedVersion: 2
-        x: 50
-        y: 32
-        width: 214
-        height: 201
+        x: 27
+        y: 21
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: ClusterHog_Fly_13
       rect:
         serializedVersion: 2
-        x: 298
-        y: 32
-        width: 217
-        height: 201
+        x: 276
+        y: 21
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: ClusterHog_Fly_14
       rect:
         serializedVersion: 2
-        x: 553
-        y: 32
-        width: 211
-        height: 201
+        x: 528
+        y: 21
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,10 +501,10 @@ TextureImporter:
       name: ClusterHog_Fly_15
       rect:
         serializedVersion: 2
-        x: 790
-        y: 32
-        width: 205
-        height: 201
+        x: 762
+        y: 21
+        width: 261
+        height: 223
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

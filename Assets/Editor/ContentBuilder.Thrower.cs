@@ -13,6 +13,11 @@ public static partial class ContentBuilder
     static readonly Vector2 TipRight = new Vector2(0.72f, 2.48f);
     static readonly Vector2 LoopLeft = new Vector2(-0.5f, -0.17f);
     static readonly Vector2 LoopRight = new Vector2(0.5f, -0.17f);
+    //the pouch's own stretch (the player's tuning): wide and deep enough to hold a hog. lives on a Cup
+    //child so the hog parented to the grabber stays unit scale
+    static readonly Vector3 CupScale = new Vector3(1.82f, 1.24f, 1f);
+    //the loaded hog rests this far below the fork tips
+    const float RestDrop = 0.37f;
     static readonly Color Jute = new Color32(0x9C, 0x6B, 0x3A, 0xFF);
 
     static Transform Child(Transform parent, string name, Vector3 localPos)
@@ -56,8 +61,8 @@ public static partial class ContentBuilder
         tsr.drawMode = SpriteDrawMode.Simple;
         tsr.color = Color.white;
         tsr.sortingOrder = 1;
-        //the band anchor sits between the fork tips
-        thrower.anchor.position = tt.position + (Vector3)((TipLeft + TipRight) * 0.5f);
+        //the band anchor sits between the fork tips, a little down: a loaded pouch sags
+        thrower.anchor.position = tt.position + (Vector3)((TipLeft + TipRight) * 0.5f) + Vector3.down * RestDrop;
         thrower.anchor.localScale = Vector3.one;
         var tipL = Child(tt, "TipLeft", TipLeft);
         var tipR = Child(tt, "TipRight", TipRight);
@@ -65,22 +70,32 @@ public static partial class ContentBuilder
         //the grabber carries the cup, drawn in front of the loaded hog. unit scale so hogs stay unit scale
         var gt = grabber.transform;
         gt.localScale = Vector3.one;
-        var gsr = gt.GetComponent<SpriteRenderer>();
-        if (gsr == null) gsr = gt.gameObject.AddComponent<SpriteRenderer>();
+        //the grabber root used to draw the cup itself; the art now lives on the Cup child
+        var rootSr = gt.GetComponent<SpriteRenderer>();
+        var material = rootSr != null ? rootSr.sharedMaterial : null;
+        if (rootSr != null) Object.DestroyImmediate(rootSr);
+        var cupT = Child(gt, "Cup", Vector3.zero);
+        cupT.localScale = CupScale;
+        var gsr = cupT.GetComponent<SpriteRenderer>();
+        if (gsr == null) gsr = cupT.gameObject.AddComponent<SpriteRenderer>();
         gsr.sprite = cupFront;
         gsr.drawMode = SpriteDrawMode.Simple;
         gsr.color = Color.white;
+        if (material != null) gsr.sharedMaterial = material;
         gsr.sortingOrder = 5; //hogs draw at 4: front half over, back half under
-        var backT = Child(gt, "CupBack", Vector3.zero);
+        var oldBack = gt.Find("CupBack"); if (oldBack != null) Object.DestroyImmediate(oldBack.gameObject);
+        var backT = Child(cupT, "CupBack", Vector3.zero);
         var bsr = backT.GetComponent<SpriteRenderer>();
         if (bsr == null) bsr = backT.gameObject.AddComponent<SpriteRenderer>();
         bsr.sprite = cupBack;
         bsr.sharedMaterial = gsr.sharedMaterial;
         bsr.sortingOrder = 3;
         var sphere = gt.GetComponent<SphereCollider>();
-        if (sphere != null) sphere.radius = 0.6f;
-        var loopL = Child(gt, "LoopLeft", LoopLeft);
-        var loopR = Child(gt, "LoopRight", LoopRight);
+        if (sphere != null) sphere.radius = 0.7f;
+        //loops ride on the cup so they stretch with it
+        foreach (var n in new[] { "LoopLeft", "LoopRight" }) { var old = gt.Find(n); if (old != null) Object.DestroyImmediate(old.gameObject); }
+        var loopL = Child(cupT, "LoopLeft", LoopLeft);
+        var loopR = Child(cupT, "LoopRight", LoopRight);
         gt.position = thrower.anchor.position;
 
         //the band: rope coloured, behind the hog and cup, in front of the fork
