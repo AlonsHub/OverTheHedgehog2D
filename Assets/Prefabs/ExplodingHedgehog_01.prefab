@@ -226,7 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ExplodingHog
   rb: {fileID: 7610211238476731859}
   anim: {fileID: 908806649283104393}
-  walkSpeed: 0
+  walkSpeed: 1
   col: {fileID: 827611309123278446}
   explosionRadius: 3
   explosionForce: 1.5

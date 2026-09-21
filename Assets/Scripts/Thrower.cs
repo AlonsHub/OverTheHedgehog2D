@@ -26,7 +26,7 @@ public class Thrower : MonoBehaviour
     [SerializeField] private HogStock stock;
     [SerializeField] private Grabber grabber;
     //[SerializeField] private LineRenderer lineRenderer;
-    private Hog _loadedHog;
+    public Hog loadedHog;
     //private bool isGrabbing => grabber.isGrabbing;
 
     private void Start()
@@ -42,11 +42,13 @@ public class Thrower : MonoBehaviour
         if(hog == null)
         {
             //game over
+            isLoaded = false;
+            return;
         }
 
-        _loadedHog = hog;
-        _loadedHog.transform.parent = grabber.transform;
-        _loadedHog.transform.localPosition = Vector3.zero;
+        loadedHog = hog;
+        loadedHog.transform.parent = grabber.transform;
+        loadedHog.transform.localPosition = Vector3.zero;
 
         isLoaded = true;
     }
@@ -66,7 +68,7 @@ public class Thrower : MonoBehaviour
     IEnumerator ThrowCoroutine(Vector3 delta)
     {
         //Sending the Fly here lets the tearie eyed anim to s
-        _loadedHog.Fly();
+        loadedHog.Fly();
 
         //float delta = (anchor.position - grabber.transform.position).sqrMagnitude;
         float _distnace = delta.sqrMagnitude;
@@ -85,13 +87,15 @@ public class Thrower : MonoBehaviour
             //distnace = (anchor.position - grabber.transform.position).sqrMagnitude;
         }
 
+        grabber.transform.position = anchor.position;
+
         //this could be a good time to send a message to the hog to play its fly animation
         // _loadedHog.Fly();
 
-        _loadedHog.transform.SetParent(null);
-        _loadedHog.rb.simulated = true;
+        loadedHog.transform.SetParent(null);
+        loadedHog.rb.simulated = true;
 
-        _loadedHog.rb.AddForce(delta * throwForce, ForceMode2D.Impulse);
+        loadedHog.rb.AddForce(delta * throwForce, ForceMode2D.Impulse);
 
         isLoaded = false;
 

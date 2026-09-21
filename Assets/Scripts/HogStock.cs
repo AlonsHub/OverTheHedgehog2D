@@ -6,30 +6,38 @@ public class HogStock : MonoBehaviour
     //holds the upcoming Hogs to load
     [SerializeField] private Transform stockPoint_A;
     [SerializeField] private float hogWidth;
-    [SerializeField] private List<Hog> hogsToQueue;
-    [SerializeField] private Queue<Hog> magazine;
+    [SerializeField] private HogFactory factory;
+    [SerializeField] private HogLoadout loadout;
+    [Tooltip("Gap between each hog starting to walk, so the line shuffles up one by one instead of sliding as a block")]
+    [SerializeField] private float shuffleDelayPerHog = 0.05f;
+
+    private Queue<Hog> magazine;
+
+    public int Count => magazine == null ? 0 : magazine.Count;
 
     private void Awake()
     {
         magazine = new Queue<Hog>();
 
-        foreach (var hog in hogsToQueue)
+        if (factory == null || loadout == null)
         {
-            //magazine.Enqueue(hog);
-            LoadHogToStock(hog);
+            Debug.LogError("HogStock needs a HogFactory and a HogLoadout assigned", this);
+            return;
         }
 
-        Vector3 pos = stockPoint_A.position;
-        foreach (var hog in magazine)
+        foreach (HogType type in loadout.Expand())
         {
-            hog.transform.position = pos;
-            pos.x -= hogWidth;
+            Hog hog = factory.Create(type, transform);
+            if (hog != null)
+                LoadHogToStock(hog);
         }
     }
 
+    //adds a hog to the back of the line
     public void LoadHogToStock(Hog hog)
     {
-        //if(magazine == null) magazine = new Queue<Hog>();
+        hog.transform.SetParent(transform);
+        hog.transform.position = SlotPosition(magazine.Count);
 
         magazine.Enqueue(hog);
     }
@@ -39,14 +47,22 @@ public class HogStock : MonoBehaviour
         if( magazine == null || magazine.Count==0)
             return null;
         Hog toReturn = magazine.Dequeue();
+        toReturn.StopWalking(); //might still be shuffling up - the thrower owns it now
 
-        Vector3 pos = stockPoint_A.position;
+        //everyone else walks one spot forward
+        int slot = 0;
         foreach (var hog in magazine)
         {
-            hog.transform.position = pos;
-            pos.x -= hogWidth;
+            hog.WalkTo(SlotPosition(slot), slot * shuffleDelayPerHog);
+            slot++;
         }
 
         return toReturn;
+    }
+
+    //slot 0 is the front of the line (stockPoint_A), the rest trail off behind it
+    private Vector3 SlotPosition(int slot)
+    {
+        return stockPoint_A.position + Vector3.left * (hogWidth * slot);
     }
 }
