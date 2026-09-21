@@ -73,6 +73,7 @@ public class ClusterHog : Hog
 
         if (splitVfx != null)
             Vfx.Spawn(splitVfx, transform.position);
+        Sfx.Play("cluster_split");
 
         //the minis carry on, the parent is done
         Destroy(gameObject);

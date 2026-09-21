@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2911128824635491958}
   - component: {fileID: 3450031414374505912}
   - component: {fileID: 5658668144619909154}
+  - component: {fileID: 1115039359583541100}
   m_Layer: 0
   m_Name: Crate_3
   m_TagString: Untagged
@@ -166,6 +167,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1115039359583541100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233345975031897809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &1179071616211318306
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +195,7 @@ GameObject:
   - component: {fileID: 467611935776671768}
   - component: {fileID: 6804858623382846830}
   - component: {fileID: 3258651199845085431}
+  - component: {fileID: 7488113959462704012}
   m_Layer: 0
   m_Name: Perch_L
   m_TagString: Untagged
@@ -332,6 +350,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7488113959462704012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179071616211318306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &2069326549949627971
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +378,7 @@ GameObject:
   - component: {fileID: 2452912176696895108}
   - component: {fileID: 7421038477875994349}
   - component: {fileID: 1424073690694867968}
+  - component: {fileID: 470195928470918284}
   m_Layer: 0
   m_Name: Crate_2
   m_TagString: Untagged
@@ -498,6 +533,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &470195928470918284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069326549949627971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &3211030234025528665
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +561,7 @@ GameObject:
   - component: {fileID: 9142649169608451898}
   - component: {fileID: 779131776403604142}
   - component: {fileID: 747647061654792843}
+  - component: {fileID: 2741909739839273055}
   m_Layer: 0
   m_Name: Ridge
   m_TagString: Untagged
@@ -664,6 +716,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2741909739839273055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211030234025528665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &3610918197953563763
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,13 +767,13 @@ Transform:
   - {fileID: 237495822863287066}
   - {fileID: 4609586817557729400}
   - {fileID: 7832780581471877708}
-  - {fileID: 7766368459939110626}
+  - {fileID: 2283566190476428320}
   - {fileID: 1406881256283429938}
   - {fileID: 3300425949743962028}
   - {fileID: 8757690593222188101}
-  - {fileID: 1008494738813126279}
+  - {fileID: 997404016003614119}
   - {fileID: 2963353340639667617}
-  - {fileID: 5222871206178243800}
+  - {fileID: 2231078582767391675}
   - {fileID: 5416230250965831010}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -721,6 +789,7 @@ GameObject:
   - component: {fileID: 4866325377597399137}
   - component: {fileID: 8979961719554431351}
   - component: {fileID: 2333600212719164162}
+  - component: {fileID: 4317492572317647457}
   m_Layer: 0
   m_Name: Crate_Back
   m_TagString: Untagged
@@ -875,6 +944,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4317492572317647457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5364198786483642099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &6039545534379339878
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +972,7 @@ GameObject:
   - component: {fileID: 6983523912766685316}
   - component: {fileID: 8012746046919567965}
   - component: {fileID: 4141257142683559781}
+  - component: {fileID: 5800927462599426177}
   m_Layer: 0
   m_Name: Wall_R
   m_TagString: Untagged
@@ -1041,6 +1127,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5800927462599426177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039545534379339878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &7604681148394672856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1155,7 @@ GameObject:
   - component: {fileID: 4725973439072495477}
   - component: {fileID: 4907060600451335243}
   - component: {fileID: 8966176817610224120}
+  - component: {fileID: 5865818170731038596}
   m_Layer: 0
   m_Name: Roof
   m_TagString: Untagged
@@ -1207,6 +1310,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5865818170731038596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7604681148394672856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &7948922344320346600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,6 +1338,7 @@ GameObject:
   - component: {fileID: 6535217719747190067}
   - component: {fileID: 6731416436735521443}
   - component: {fileID: 9093604363417048333}
+  - component: {fileID: 213093183610351714}
   m_Layer: 0
   m_Name: Perch_R
   m_TagString: Untagged
@@ -1373,6 +1493,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &213093183610351714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7948922344320346600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &8692119757833465902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1521,7 @@ GameObject:
   - component: {fileID: 8652183640864187394}
   - component: {fileID: 4810522489360878068}
   - component: {fileID: 8017561125147240259}
+  - component: {fileID: 3887238604438728318}
   m_Layer: 0
   m_Name: Crate_1
   m_TagString: Untagged
@@ -1539,6 +1676,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3887238604438728318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692119757833465902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &9034776646778514868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1704,7 @@ GameObject:
   - component: {fileID: 4557486531661265988}
   - component: {fileID: 4707638979541373078}
   - component: {fileID: 8551656908057476587}
+  - component: {fileID: 9185325984242422342}
   m_Layer: 0
   m_Name: Wall_L
   m_TagString: Untagged
@@ -1705,68 +1859,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1001 &541283231615623771
-PrefabInstance:
+--- !u!114 &9185325984242422342
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2716105173089758392}
-    m_Modifications:
-    - target: {fileID: 4595815007152073465, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_Name
-      value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.3699999
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
---- !u!4 &7766368459939110626 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
-  m_PrefabInstance: {fileID: 541283231615623771}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034776646778514868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1001 &552428791497761147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1824,12 +1932,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b661cbf0a50758498f4ce22ea8c12c2, type: 3}
---- !u!4 &1008494738813126279 stripped
+--- !u!4 &997404016003614119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 756009507001050332, guid: 4b661cbf0a50758498f4ce22ea8c12c2, type: 3}
   m_PrefabInstance: {fileID: 552428791497761147}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4757700152075182084
+--- !u!1001 &1480418200105039719
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1886,12 +1994,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b661cbf0a50758498f4ce22ea8c12c2, type: 3}
---- !u!4 &5222871206178243800 stripped
+--- !u!4 &2231078582767391675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 756009507001050332, guid: 4b661cbf0a50758498f4ce22ea8c12c2, type: 3}
-  m_PrefabInstance: {fileID: 4757700152075182084}
+  m_PrefabInstance: {fileID: 1480418200105039719}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8355430295189878937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2716105173089758392}
+    m_Modifications:
+    - target: {fileID: 4595815007152073465, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3699999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+--- !u!4 &2283566190476428320 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7801546050084601017, guid: 18847b09342c8b34a9375b8fe71e37d5, type: 3}
+  m_PrefabInstance: {fileID: 8355430295189878937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8427693098055943702
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1951,5 +2121,5 @@ PrefabInstance:
 --- !u!4 &8757690593222188101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 756009507001050332, guid: 4b661cbf0a50758498f4ce22ea8c12c2, type: 3}
-  m_PrefabInstance: {fileID: 8355430295189878937}
+  m_PrefabInstance: {fileID: 8427693098055943702}
   m_PrefabAsset: {fileID: 0}

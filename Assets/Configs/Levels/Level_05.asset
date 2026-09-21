@@ -18,3 +18,4 @@ MonoBehaviour:
   blockSetPosition: {x: 2.63, y: -3.968, z: 0}
   loadout: {fileID: 11400000, guid: c7f35b23af791094f970130c24c20c84, type: 2}
   isBoss: 1
+  isTutorial: 0

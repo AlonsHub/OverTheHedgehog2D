@@ -24,7 +24,27 @@ public static class LevelProgress
         private set { PlayerPrefs.SetInt(UnlockedKey, value); PlayerPrefs.Save(); }
     }
 
-    public static bool IsUnlocked(int index) => index <= UnlockedIndex;
+    //tutorials are always open and never gate what comes after them
+    public static bool IsUnlocked(int index)
+    {
+        var catalogue = LevelCatalogue.Load();
+        var level = catalogue?.Get(index);
+        if (level != null && level.isTutorial) return true;
+        return index <= Mathf.Max(UnlockedIndex, FirstRealLevel);
+    }
+
+    //index of the first level that isn't a tutorial
+    public static int FirstRealLevel
+    {
+        get
+        {
+            var catalogue = LevelCatalogue.Load();
+            if (catalogue == null) return 0;
+            for (int i = 0; i < catalogue.Count; i++)
+                if (!catalogue.Get(i).isTutorial) return i;
+            return 0;
+        }
+    }
 
     public static int BestScore(int index) => PlayerPrefs.GetInt(BestKeyPrefix + index, 0);
     public static bool IsCompleted(int index) => BestScore(index) > 0;

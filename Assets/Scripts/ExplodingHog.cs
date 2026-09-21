@@ -21,6 +21,7 @@ public class ExplodingHog : Hog
         rb.bodyType = RigidbodyType2D.Kinematic;
         col.enabled = false;
 
+        Sfx.Play("fuse");
         Invoke(nameof(Explode), fuseDelay);
     }
 
@@ -43,6 +44,7 @@ public class ExplodingHog : Hog
 
         if (explosionVfx != null)
             Vfx.Spawn(explosionVfx, at);
+        Sfx.Play("explosion");
 
         //the sprite sheet's last frames are the puff cloud dissolving, so let them play out before we go
         Destroy(gameObject, 0.5f);

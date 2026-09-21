@@ -38,6 +38,7 @@ public class ResultWindow : MonoBehaviour
 
         bool boss = GameManager.Instance != null && GameManager.Instance.Level != null && GameManager.Instance.Level.isBoss;
         if (titleLabel) titleLabel.text = won ? (boss ? bossWinTitle : winTitle) : loseTitle;
+        Sfx.PlayDelayed(won ? (boss ? "boss_win" : "win") : "lose", dropDuration * 0.5f);
         if (scoreLabel) scoreLabel.text = $"Score  {score:N0}";
         if (bestLabel) bestLabel.text = $"Best  {best:N0}";
         if (bonusLabel)
@@ -63,6 +64,7 @@ public class ResultWindow : MonoBehaviour
             stars[i].color = i < earned ? Color.white : new Color(0.35f, 0.3f, 0.25f, 0.5f);
             stars[i].transform.localScale = Vector3.zero;
             stars[i].transform.DOScale(1f, 0.35f).SetEase(Ease.OutBack).SetDelay(dropDuration + 0.15f * i).SetUpdate(true).SetLink(gameObject);
+            if (i < earned) Sfx.PlayDelayed("star", dropDuration + 0.15f * i, 1f);
         }
 
         //swing in from above

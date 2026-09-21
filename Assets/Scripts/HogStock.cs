@@ -58,6 +58,7 @@ public class HogStock : MonoBehaviour
         toReturn.StopWalking(); //might still be shuffling up - the thrower owns it now
 
         //everyone else walks one spot forward
+        if (magazine.Count > 0) Sfx.Play("hog_walk");
         int slot = 0;
         foreach (var hog in magazine)
         {

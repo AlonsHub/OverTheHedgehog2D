@@ -116,6 +116,8 @@ MonoBehaviour:
   col: {fileID: 8213933602170575312}
   impactVfx: {fileID: 492571090762709907, guid: 35537b193e045ee448a23a45d12317e8, type: 3}
   killY: -15
+  impactSound: hog_impact
+  popSound: hog_pop
   popVelocity: {x: -3, y: 8}
   popDepthSpeed: 6
   towardCameraChance: 0.6

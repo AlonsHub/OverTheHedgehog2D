@@ -20,7 +20,12 @@ public class LevelNodeUI : MonoBehaviour
         _index = index;
 
         if (pot != null) pot.sprite = unlocked ? unlockedSprite : lockedSprite;
-        if (numberLabel != null) numberLabel.text = level != null && level.isBoss ? "!" : (index + 1).ToString();
+        if (numberLabel != null)
+        {
+            //tutorials don't count towards the numbering
+            int shown = index + 1 - (LevelProgress.FirstRealLevel > index ? 0 : LevelProgress.FirstRealLevel);
+            numberLabel.text = level != null && level.isTutorial ? "?" : level != null && level.isBoss ? "!" : shown.ToString();
+        }
         if (bestLabel != null)
         {
             bestLabel.gameObject.SetActive(best > 0);

@@ -19,6 +19,10 @@ public class Hog : MonoBehaviour
     [Tooltip("Below this world y we're gone for good and get cleaned up")]
     [SerializeField] private float killY = -15f;
 
+    [Header("Sounds")]
+    [SerializeField] private string impactSound = "hog_impact";
+    [SerializeField] private string popSound = "hog_pop";
+
     [Header("Death pop")]
     [Tooltip("Launch velocity off the impact point, units/sec. Negative x = knocked back the way it came, y = up. Gravity takes it from there")]
     [SerializeField] private Vector2 popVelocity = new Vector2(-3f, 8f);
@@ -51,6 +55,9 @@ public class Hog : MonoBehaviour
         if(_impacted) return;
 
         _impacted = true;
+
+        //harder landings thud louder
+        Sfx.Play(impactSound, Mathf.Clamp(collision.relativeVelocity.magnitude / 8f, 0.4f, 1f));
 
         if (impactVfx != null)
         {
@@ -120,6 +127,8 @@ public class Hog : MonoBehaviour
         //the tween owns the transform from here on, physics would only fight it
         rb.simulated = false;
         col.enabled = false;
+
+        Sfx.Play(popSound);
 
         //one launch velocity: back the way it came, up, and in or out of the screen
         float toCamera = Mathf.Sign(Camera.main.transform.position.z - transform.position.z);

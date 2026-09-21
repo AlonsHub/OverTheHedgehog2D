@@ -115,10 +115,15 @@ MonoBehaviour:
   col: {fileID: 1396351753893489304}
   rb: {fileID: 5907328806576128305}
   hitPoints: 1
-  crushSpeed: 4
+  crushSpeed: 5
+  settleGrace: 1.5
   hitCooldown: 0.5
   scoreOnPop: 1000
   scoreOnHit: 250
+  hitSound: hen_hit
+  popSound: hen_pop
+  cluckSound: hen_cluck
+  cluckEvery: {x: 4, y: 11}
   popDuration: 1.15
   feathersVfx: {fileID: 6655054507863649914, guid: d314af55c52fbb24f8fe14a82930aaef, type: 3}
   hitVfx: {fileID: 492571090762709907, guid: 35537b193e045ee448a23a45d12317e8, type: 3}

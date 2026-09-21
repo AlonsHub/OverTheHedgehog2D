@@ -115,10 +115,15 @@ MonoBehaviour:
   col: {fileID: 951367588519283692}
   rb: {fileID: 6164152139711524188}
   hitPoints: 3
-  crushSpeed: 4
+  crushSpeed: 5
+  settleGrace: 1.5
   hitCooldown: 0.5
   scoreOnPop: 5000
   scoreOnHit: 250
+  hitSound: boss_hit
+  popSound: boss_pop
+  cluckSound: 
+  cluckEvery: {x: 4, y: 11}
   popDuration: 1.15
   feathersVfx: {fileID: 6655054507863649914, guid: d314af55c52fbb24f8fe14a82930aaef, type: 3}
   hitVfx: {fileID: 492571090762709907, guid: 35537b193e045ee448a23a45d12317e8, type: 3}

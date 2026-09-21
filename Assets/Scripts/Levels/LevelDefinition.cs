@@ -12,4 +12,6 @@ public class LevelDefinition : ScriptableObject
     public HogLoadout loadout;
     [Tooltip("Marks it on the map and ups the fanfare")]
     public bool isBoss;
+    [Tooltip("Shows the hint plank, and never blocks the level after it")]
+    public bool isTutorial;
 }

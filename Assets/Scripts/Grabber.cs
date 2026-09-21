@@ -8,6 +8,10 @@ public class Grabber : MonoBehaviour
 
     public bool isGrabbing;
 
+    //the band creaks as it's pulled further, one creak per this much extra stretch
+    [SerializeField] private float creakEvery = 0.6f;
+    float _creakedAt;
+
     private void Awake()
     {
         if(m_Camera == null)
@@ -22,6 +26,8 @@ public class Grabber : MonoBehaviour
         {
             isGrabbing = true;
             trajectory.gameObject.SetActive(true);
+            Sfx.Play("grab");
+            _creakedAt = 0f;
         }
     }
     private void OnMouseDrag()
@@ -40,7 +46,15 @@ public class Grabber : MonoBehaviour
         }
 
         trajectory.DrawTrajectory(thrower.anchor.position, (thrower.anchor.position - transform.position) * thrower.throwForce, .1f, 30
-        );   
+        );
+
+        float stretch = Vector3.Distance(thrower.anchor.position, transform.position);
+        if (stretch > _creakedAt + creakEvery)
+        {
+            _creakedAt = stretch;
+            //higher and tighter the further it's pulled
+            Sfx.Play("stretch", 0.8f, 0.9f + 0.08f * stretch);
+        }
     }
 
     private void OnMouseUp()
@@ -49,4 +63,4 @@ public class Grabber : MonoBehaviour
         thrower.Throw();
         isGrabbing = false;
     }
-}
+}

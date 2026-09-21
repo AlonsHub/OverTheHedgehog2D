@@ -244,6 +244,24 @@ public static partial class ContentBuilder
         rso.ApplyModifiedPropertiesWithoutUndo();
         rwGo.SetActive(false);
 
+        //tutorial plank: top centre, only wakes up on tutorial levels
+        var oldTut = GameObject.Find("TutorialHints"); if (oldTut != null) Object.DestroyImmediate(oldTut);
+        var tutGo = UiObject("TutorialHints", canvas.transform);
+        Rect(tutGo, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -20f), new Vector2(10f, 10f));
+        var plank = ImageAt("Plank", tutGo.transform, UiSprite("Panel_Planks"), new Vector2(0.5f, 1f), new Vector2(0f, -100f), new Vector2(980f, 190f), false);
+        plank.type = Image.Type.Sliced;
+        plank.pixelsPerUnitMultiplier = 3f;
+        var hintText = Label("Hint", plank.transform, "", 30, Ink, new Vector2(0.5f, 0.5f), new Vector2(-70f, 6f), new Vector2(720f, 150f));
+        var skip = ButtonAt("SkipButton", plank.transform, UiSprite("Button_Terracotta"), "Skip", new Vector2(1f, 0.5f), new Vector2(-105f, 0f), new Vector2(150f, 64f), 24);
+        var tut = tutGo.AddComponent<TutorialHints>();
+        var tso = new SerializedObject(tut);
+        tso.FindProperty("panel").objectReferenceValue = plank.rectTransform;
+        tso.FindProperty("label").objectReferenceValue = hintText;
+        tso.FindProperty("skipButton").objectReferenceValue = skip;
+        tso.ApplyModifiedPropertiesWithoutUndo();
+
+        AddButtonSounds(canvas.transform);
+
         //factory: every HogType needs its prefab
         var factory = Object.FindFirstObjectByType<HogFactory>();
         if (factory != null)
@@ -313,6 +331,7 @@ public static partial class ContentBuilder
         var play = ButtonAt("PlayButton", canvas.transform, UiSprite("Button_Green"), "Play", new Vector2(0.5f, 0f), new Vector2(0f, 150f), new Vector2(420f, 170f), 56);
         var reset = ButtonAt("ResetButton", canvas.transform, UiSprite("Button_Terracotta"), "Reset progress", new Vector2(0f, 0f), new Vector2(150f, 50f), new Vector2(240f, 80f), 22);
 
+        AddButtonSounds(canvas.transform);
         var menu = canvas.gameObject.AddComponent<StartMenu>();
         var so = new SerializedObject(menu);
         so.FindProperty("sign").objectReferenceValue = sign.rectTransform;
@@ -352,6 +371,7 @@ public static partial class ContentBuilder
         var bestT = Label("Best", go.transform, "0", 24, Ink, new Vector2(0.5f, 0f), new Vector2(0f, -18f), new Vector2(220f, 36f));
         var badge = ImageAt("BossBadge", go.transform, UiSprite("Star"), new Vector2(1f, 1f), new Vector2(-10f, -10f), new Vector2(64f, 64f));
 
+        AddButtonSounds(go.transform);
         var node = go.AddComponent<LevelNodeUI>();
         var so = new SerializedObject(node);
         so.FindProperty("button").objectReferenceValue = btn;
@@ -408,6 +428,7 @@ public static partial class ContentBuilder
         var hogSprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/SpriteSheets/Idle.png");
         var marker = ImageAt("HedgehogMarker", canvas.transform, hogSprite, new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(120f, 110f));
 
+        AddButtonSounds(canvas.transform);
         var ui = canvas.gameObject.AddComponent<LevelMapUI>();
         var so = new SerializedObject(ui);
         var arr = so.FindProperty("nodeAnchors");
@@ -437,6 +458,7 @@ public static partial class ContentBuilder
     [MenuItem("Over The Hedgehog/Build/Everything")]
     public static void BuildAll()
     {
+        BuildSoundBank();
         BuildVfx();
         BuildHogPrefabs();
         BuildEnemyPrefabs();

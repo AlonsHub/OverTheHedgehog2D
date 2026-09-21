@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ec950f654457743aef4f2f0786387b, type: 3}
+  m_Name: Level_00_Tutorial
+  m_EditorClassIdentifier: Assembly-CSharp::LevelDefinition
+  title: Garden Lesson
+  blurb: 'Optional. Learn the ropes: a throw, a boom, and a split.'
+  blockSet: {fileID: 4709564997032249905, guid: bbd0ddb33c06be74bae780d87a2e4c58, type: 3}
+  blockSetPosition: {x: 2.63, y: -3.968, z: 0}
+  loadout: {fileID: 11400000, guid: 4edf76e9a66c293408fa27f4a00b8a4d, type: 2}
+  isBoss: 0
+  isTutorial: 1

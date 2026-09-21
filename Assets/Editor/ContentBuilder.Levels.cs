@@ -10,7 +10,14 @@ public static partial class ContentBuilder
     static readonly Vector3 SetOrigin = new Vector3(2.63f, -3.968f, 0f);
     const float GroundY = 0.32f;
 
-    //the hand-placed sets have plain-copy hens (green circles). swap them for the real hen prefab
+    static void AddWoodKnock(GameObject block)
+    {
+        if (block.GetComponent<Rigidbody2D>() != null && block.GetComponent<WoodKnock>() == null)
+            block.AddComponent<WoodKnock>();
+    }
+
+    //the hand-placed sets have plain-copy hens (green circles). swap them for the real hen prefab,
+    //and give every block its knock
     public static void ReplaceEnemiesInBlockSets()
     {
         var henPrefab = LoadOrThrow<GameObject>($"{PrefabDir}/Enemy_01.prefab");
@@ -41,6 +48,8 @@ public static partial class ContentBuilder
                 hen.transform.SetSiblingIndex(sibling);
                 swapped++;
             }
+            foreach (Transform c in root.transform)
+                if (c.GetComponent<Enemy>() == null) AddWoodKnock(c.gameObject);
             PrefabUtility.SaveAsPrefabAsset(root, path);
             PrefabUtility.UnloadPrefabContents(root);
             Debug.Log($"ContentBuilder: {name}: swapped {swapped} hens");
@@ -73,6 +82,7 @@ public static partial class ContentBuilder
         if (material != null) block.GetComponent<SpriteRenderer>().sharedMaterial = material;
         var rb = block.GetComponent<Rigidbody2D>();
         if (rb != null) rb.mass = Mathf.Max(0.5f, width * height);
+        AddWoodKnock(block);
         return block;
     }
 
@@ -91,6 +101,18 @@ public static partial class ContentBuilder
         var bossPrefab = LoadOrThrow<GameObject>($"{PrefabDir}/Enemy_Boss.prefab");
         var boxMat = AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Environment/Static/BoxesMat.mat");
         var woodMat = AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Environment/Static/BrightWoodMat.mat");
+
+        //BlockSet_Tutorial: one hen up a post, one on the ground behind a crate. easy pickings
+        {
+            var root = new GameObject("BlockSet_Tutorial");
+            var t = root.transform;
+            float g = GroundY;
+            Block(template, t, "Post", -1.2f, g, 0.5f, 1.6f, woodMat);
+            Hen(henPrefab, t, "Hen_Post", -1.2f, g + 1.6f);
+            Block(template, t, "Crate", 1.4f, g, 0.9f, 0.9f, boxMat);
+            Hen(henPrefab, t, "Hen_Ground", 2.5f, g);
+            SavePrefab(root, $"{PrefabDir}/BlockSet_Tutorial.prefab");
+        }
 
         //BlockSet_04 "Potting shelves": a wide two-storey shelf with hens on every level and one balanced on top
         {
@@ -175,7 +197,7 @@ public static partial class ContentBuilder
         return loadout;
     }
 
-    static LevelDefinition Level(string fileName, string title, string blurb, string blockSet, HogLoadout loadout, bool boss)
+    static LevelDefinition Level(string fileName, string title, string blurb, string blockSet, HogLoadout loadout, bool boss, bool tutorial = false)
     {
         string path = $"{LevelDir}/{fileName}.asset";
         var level = AssetDatabase.LoadAssetAtPath<LevelDefinition>(path);
@@ -190,6 +212,7 @@ public static partial class ContentBuilder
         level.blockSetPosition = SetOrigin;
         level.loadout = loadout;
         level.isBoss = boss;
+        level.isTutorial = tutorial;
         EditorUtility.SetDirty(level);
         return level;
     }
@@ -198,6 +221,8 @@ public static partial class ContentBuilder
     {
         var levels = new List<LevelDefinition>
         {
+            Level("Level_00_Tutorial", "Garden Lesson", "Optional. Learn the ropes: a throw, a boom, and a split.", "BlockSet_Tutorial",
+                Loadout("Tutorial", (HogType.Neutral, 1), (HogType.Exploding, 1), (HogType.Cluster, 1), (HogType.Neutral, 1)), false, true),
             Level("Level_01", "The Garden Gate", "Two hens on a wobbly stand. Knock them off.", "BlockSet_01",
                 Loadout("L1", (HogType.Neutral, 4)), false),
             Level("Level_02", "Fence Post", "Same stand, fewer hogs. Make them count.", "BlockSet_02",

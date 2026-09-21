@@ -39,6 +39,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int scoreOnPop = 1000;
     [SerializeField] private int scoreOnHit = 250;
 
+    [Header("Sounds")]
+    [SerializeField] private string hitSound = "hen_hit";
+    [SerializeField] private string popSound = "hen_pop";
+    [Tooltip("Idle chatter, leave empty for the strong silent type")]
+    [SerializeField] private string cluckSound = "hen_cluck";
+    [SerializeField] private Vector2 cluckEvery = new Vector2(4f, 11f);
+
     [Header("Pop")]
     [Tooltip("How long the Pop animation runs before we're removed")]
     [SerializeField] private float popDuration = 1.2f;
@@ -48,6 +55,7 @@ public class Enemy : MonoBehaviour
     bool _dying = false;
     float _lastHitTime = -10f;
     float _spawnTime;
+    float _nextCluck;
     int _hp;
 
     public bool IsDead => _dying;
@@ -68,6 +76,17 @@ public class Enemy : MonoBehaviour
     void OnDestroy()
     {
         enemies.Remove(this);
+    }
+
+    void Update()
+    {
+        if (_dying || string.IsNullOrEmpty(cluckSound)) return;
+        if (_nextCluck <= 0f) _nextCluck = Time.time + Random.Range(cluckEvery.x, cluckEvery.y);
+        if (Time.time >= _nextCluck)
+        {
+            _nextCluck = Time.time + Random.Range(cluckEvery.x, cluckEvery.y);
+            Sfx.Play(cluckSound, 0.5f, Random.Range(0.9f, 1.15f));
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -102,7 +121,8 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        //still standing: flinch, so the player sees the hit landed
+        //still standing: flinch, so the player sees (and hears) the hit landed
+        Sfx.Play(hitSound);
         GameManager.Instance?.AddScore(scoreOnHit);
         if (hitVfx != null) Vfx.Spawn(hitVfx, transform.position, 0.6f);
 
@@ -130,6 +150,7 @@ public class Enemy : MonoBehaviour
 
         if (feathersVfx != null) Vfx.Spawn(feathersVfx, transform.position, transform.lossyScale.x);
         if (anim != null) anim.SetTrigger("Pop");
+        Sfx.Play(popSound);
 
         DOVirtual.DelayedCall(popDuration, () =>
             {

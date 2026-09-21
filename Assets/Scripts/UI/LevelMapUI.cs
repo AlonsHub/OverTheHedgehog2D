@@ -19,7 +19,7 @@ public class LevelMapUI : MonoBehaviour
         var catalogue = LevelCatalogue.Load();
         if (catalogue == null || nodePrefab == null) return;
 
-        int furthest = Mathf.Min(LevelProgress.UnlockedIndex, catalogue.Count - 1);
+        int furthest = Mathf.Min(Mathf.Max(LevelProgress.UnlockedIndex, LevelProgress.FirstRealLevel), catalogue.Count - 1);
 
         for (int i = 0; i < catalogue.Count; i++)
         {
@@ -34,6 +34,8 @@ public class LevelMapUI : MonoBehaviour
             //stagger them sprouting up the path
             rect.localScale = Vector3.zero;
             rect.DOScale(1f, 0.35f).SetEase(Ease.OutBack).SetDelay(0.08f * i).SetLink(node.gameObject);
+            //each pot pops up a touch higher than the last
+            Sfx.PlayDelayed("node_pop", 0.08f * i, 0.7f);
         }
 
         //the hedgehog sits on the furthest stone reached

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7404977255858190407}
   - component: {fileID: 4506988589807006807}
   - component: {fileID: 3893574518438122467}
+  - component: {fileID: 4962001267946855389}
   m_Layer: 0
   m_Name: Block (4)
   m_TagString: Untagged
@@ -166,6 +167,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4962001267946855389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879660991305452854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &6427149929978658779
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +195,7 @@ GameObject:
   - component: {fileID: 1679549215796933385}
   - component: {fileID: 7281796151115027163}
   - component: {fileID: 3603578519412884000}
+  - component: {fileID: 4022094688522000931}
   m_Layer: 0
   m_Name: Block (1)
   m_TagString: Untagged
@@ -332,6 +350,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4022094688522000931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6427149929978658779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &6955655586901868140
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +378,7 @@ GameObject:
   - component: {fileID: 7064000277177225376}
   - component: {fileID: 978690471535387522}
   - component: {fileID: 5526785403213198060}
+  - component: {fileID: 4224558776780060518}
   m_Layer: 0
   m_Name: Block (2)
   m_TagString: Untagged
@@ -498,6 +533,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4224558776780060518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955655586901868140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &7055118390399864391
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +561,7 @@ GameObject:
   - component: {fileID: 7076893082206894324}
   - component: {fileID: 883150419928596797}
   - component: {fileID: 7248459113440083094}
+  - component: {fileID: 453130824741971826}
   m_Layer: 0
   m_Name: Block (5)
   m_TagString: Untagged
@@ -664,6 +716,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &453130824741971826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055118390399864391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &7471576393174095150
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +744,7 @@ GameObject:
   - component: {fileID: 3575961622412575321}
   - component: {fileID: 4713057401899857407}
   - component: {fileID: 4982674984896577672}
+  - component: {fileID: 5491112932419157764}
   m_Layer: 0
   m_Name: Block (3)
   m_TagString: Untagged
@@ -830,6 +899,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5491112932419157764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7471576393174095150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1 &8368711659195324129
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +966,7 @@ GameObject:
   - component: {fileID: 550800496436446796}
   - component: {fileID: 1497516906345561216}
   - component: {fileID: 1038830264791391096}
+  - component: {fileID: 3575029076913706761}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -1035,6 +1121,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3575029076913706761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9147689696863798097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5a0d6051b9624faa31382911d25f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodKnock
+  sound: wood_knock
+  minSpeed: 1.5
+  fullSpeed: 8
+  cooldown: 0.12
 --- !u!1001 &4610923967631124582
 PrefabInstance:
   m_ObjectHideFlags: 0

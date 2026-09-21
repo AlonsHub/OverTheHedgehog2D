@@ -30,6 +30,7 @@ public class ScoreHUD : MonoBehaviour
 
     void OnScoreChanged(int score)
     {
+        Sfx.Play("score_tick");
         _count?.Kill();
         _count = DOVirtual.Int(_shown, score, countUpTime, Refresh).SetEase(Ease.OutQuad).SetLink(gameObject);
 

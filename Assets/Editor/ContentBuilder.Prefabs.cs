@@ -124,6 +124,8 @@ public static partial class ContentBuilder
         mso.FindProperty("popVelocity").vector2Value = new Vector2(-2f, 5f);
         mso.FindProperty("popDepthSpeed").floatValue = 3f;
         mso.FindProperty("popDuration").floatValue = 1.1f;
+        mso.FindProperty("impactSound").stringValue = "mini_impact";
+        mso.FindProperty("popSound").stringValue = "mini_squeak";
         mso.ApplyModifiedPropertiesWithoutUndo();
         EditorUtility.SetDirty(mini);
 
@@ -142,7 +144,7 @@ public static partial class ContentBuilder
     }
 
     //hen prefabs: the root keeps physics, a GFX child carries the sprite + animator + breathing
-    static GameObject BuildEnemyPrefab(string name, Sprite idle, AnimatorController controller, float radius, float mass, int hitPoints, int scoreOnPop, float gfxScale, GameObject feathers, GameObject hitVfx)
+    static GameObject BuildEnemyPrefab(string name, Sprite idle, AnimatorController controller, float radius, float mass, int hitPoints, int scoreOnPop, float gfxScale, GameObject feathers, GameObject hitVfx, string hitSound = "hen_hit", string popSound = "hen_pop", string cluckSound = "hen_cluck")
     {
         string path = $"{PrefabDir}/{name}.prefab";
 
@@ -177,6 +179,9 @@ public static partial class ContentBuilder
         so.FindProperty("feathersVfx").objectReferenceValue = feathers;
         so.FindProperty("hitVfx").objectReferenceValue = hitVfx;
         so.FindProperty("popDuration").floatValue = 1.15f;
+        so.FindProperty("hitSound").stringValue = hitSound;
+        so.FindProperty("popSound").stringValue = popSound;
+        so.FindProperty("cluckSound").stringValue = cluckSound;
         so.ApplyModifiedPropertiesWithoutUndo();
 
         var saved = PrefabUtility.SaveAsPrefabAsset(root, path);
@@ -195,7 +200,8 @@ public static partial class ContentBuilder
 
         //Enemy_01 is rebuilt in place under the same path (the old one was a green circle)
         BuildEnemyPrefab("Enemy_01", hen, controllers["Hen"], 0.38f, 1f, 1, 1000, 1f, feathers, dust);
-        BuildEnemyPrefab("Enemy_Boss", boss, controllers["BossHen"], 1.0f, 4f, 3, 5000, 3f, feathers, dust);
+        //the boss is above idle chatter
+        BuildEnemyPrefab("Enemy_Boss", boss, controllers["BossHen"], 1.0f, 4f, 3, 5000, 3f, feathers, dust, "boss_hit", "boss_pop", "");
 
         AssetDatabase.SaveAssets();
         Debug.Log("ContentBuilder: enemy prefabs built");

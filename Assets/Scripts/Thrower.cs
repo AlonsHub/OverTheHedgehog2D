@@ -60,6 +60,7 @@ public class Thrower : MonoBehaviour
         Vector3 delta = (anchor.position - grabber.transform.position );
 
         IsThrowing = true;
+        Sfx.Play("launch");
         StartCoroutine(ThrowCoroutine(delta));
 
         //_loadedHog.rb.AddForce(force, ForceMode2D.Impulse);
