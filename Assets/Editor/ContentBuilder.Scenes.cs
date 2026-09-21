@@ -252,12 +252,27 @@ public static partial class ContentBuilder
         plank.type = Image.Type.Sliced;
         plank.pixelsPerUnitMultiplier = 3f;
         var hintText = Label("Hint", plank.transform, "", 30, Ink, new Vector2(0.5f, 0.5f), new Vector2(-70f, 6f), new Vector2(720f, 150f));
-        var skip = ButtonAt("SkipButton", plank.transform, UiSprite("Button_Terracotta"), "Skip", new Vector2(1f, 0.5f), new Vector2(-105f, 0f), new Vector2(150f, 64f), 24);
+        var next = ButtonAt("NextButton", plank.transform, UiSprite("Button_Green"), "Next  >", new Vector2(1f, 0.5f), new Vector2(-105f, 0f), new Vector2(150f, 64f), 24);
+        //skip the whole lesson: tucked in the bottom-right, out of the way of the slingshot
+        var skipAll = ButtonAt("SkipTutorialButton", canvas.transform, UiSprite("Button_Terracotta"), "Skip tutorial", new Vector2(1f, 0f), new Vector2(-150f, 60f), new Vector2(240f, 70f), 24);
+        skipAll.transform.SetParent(tutGo.transform, true);
+        //the pointing hand lives in the world so it can hover next to hogs and hens
+        var oldPtr = GameObject.Find("TutorialPointer"); if (oldPtr != null) Object.DestroyImmediate(oldPtr);
+        SpriteSheetImporter.ImportSingle("Assets/Art/UI/Pointer.png", 800f, new Vector2(0.17f, 0.15f));
+        var ptrGo = new GameObject("TutorialPointer");
+        ptrGo.transform.localScale = Vector3.one * 1.3f;
+        var ptr = ptrGo.AddComponent<SpriteRenderer>();
+        ptr.sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/UI/Pointer.png");
+        ptr.sortingOrder = 20;
+        ptr.enabled = false;
         var tut = tutGo.AddComponent<TutorialHints>();
         var tso = new SerializedObject(tut);
         tso.FindProperty("panel").objectReferenceValue = plank.rectTransform;
         tso.FindProperty("label").objectReferenceValue = hintText;
-        tso.FindProperty("skipButton").objectReferenceValue = skip;
+        tso.FindProperty("nextButton").objectReferenceValue = next;
+        tso.FindProperty("nextLabel").objectReferenceValue = next.GetComponentInChildren<Text>();
+        tso.FindProperty("skipTutorialButton").objectReferenceValue = skipAll;
+        tso.FindProperty("pointer").objectReferenceValue = ptr;
         tso.ApplyModifiedPropertiesWithoutUndo();
 
         AddButtonSounds(canvas.transform);

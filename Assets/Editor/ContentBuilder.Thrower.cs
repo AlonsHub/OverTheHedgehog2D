@@ -33,9 +33,12 @@ public static partial class ContentBuilder
     {
         //slingshot: base pivot, ~2.65 units tall. cup: pivot just under the rim so the hog peeks out
         SpriteSheetImporter.ImportSingle($"{ThrowerArtDir}/Slingshot.png", 580f, new Vector2(0.5f, 0f));
-        SpriteSheetImporter.ImportSingle($"{ThrowerArtDir}/Cup.png", 880f, new Vector2(0.5f, 0.707f));
+        //the pouch is two halves on one canvas (Tools/ArtDirector/splitcup.mjs): back behind the hog, front over it
+        SpriteSheetImporter.ImportSingle($"{ThrowerArtDir}/Cup_Back.png", 880f, new Vector2(0.5f, 0.707f));
+        SpriteSheetImporter.ImportSingle($"{ThrowerArtDir}/Cup_Front.png", 880f, new Vector2(0.5f, 0.707f));
         var slingshot = LoadOrThrow<Sprite>($"{ThrowerArtDir}/Slingshot.png");
-        var cup = LoadOrThrow<Sprite>($"{ThrowerArtDir}/Cup.png");
+        var cupFront = LoadOrThrow<Sprite>($"{ThrowerArtDir}/Cup_Front.png");
+        var cupBack = LoadOrThrow<Sprite>($"{ThrowerArtDir}/Cup_Back.png");
 
         var thrower = Object.FindFirstObjectByType<Thrower>();
         var grabber = Object.FindFirstObjectByType<Grabber>();
@@ -52,7 +55,7 @@ public static partial class ContentBuilder
         tsr.sprite = slingshot;
         tsr.drawMode = SpriteDrawMode.Simple;
         tsr.color = Color.white;
-        tsr.sortingOrder = 2;
+        tsr.sortingOrder = 1;
         //the band anchor sits between the fork tips
         thrower.anchor.position = tt.position + (Vector3)((TipLeft + TipRight) * 0.5f);
         thrower.anchor.localScale = Vector3.one;
@@ -64,10 +67,16 @@ public static partial class ContentBuilder
         gt.localScale = Vector3.one;
         var gsr = gt.GetComponent<SpriteRenderer>();
         if (gsr == null) gsr = gt.gameObject.AddComponent<SpriteRenderer>();
-        gsr.sprite = cup;
+        gsr.sprite = cupFront;
         gsr.drawMode = SpriteDrawMode.Simple;
         gsr.color = Color.white;
-        gsr.sortingOrder = 5;
+        gsr.sortingOrder = 5; //hogs draw at 4: front half over, back half under
+        var backT = Child(gt, "CupBack", Vector3.zero);
+        var bsr = backT.GetComponent<SpriteRenderer>();
+        if (bsr == null) bsr = backT.gameObject.AddComponent<SpriteRenderer>();
+        bsr.sprite = cupBack;
+        bsr.sharedMaterial = gsr.sharedMaterial;
+        bsr.sortingOrder = 3;
         var sphere = gt.GetComponent<SphereCollider>();
         if (sphere != null) sphere.radius = 0.6f;
         var loopL = Child(gt, "LoopLeft", LoopLeft);
@@ -92,7 +101,7 @@ public static partial class ContentBuilder
                 lr.startColor = lr.endColor = Jute;
                 lr.numCornerVertices = 4;
                 lr.numCapVertices = 4;
-                lr.sortingOrder = 3;
+                lr.sortingOrder = 2;
             }
         }
 
