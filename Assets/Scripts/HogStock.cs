@@ -33,6 +33,14 @@ public class HogStock : MonoBehaviour
         }
     }
 
+    //the level decides what we start with. has to be called before our Awake (the GameManager runs early for this)
+    public void SetLoadout(HogLoadout newLoadout)
+    {
+        if (magazine != null && magazine.Count > 0)
+            Debug.LogWarning("HogStock: loadout set after the stock was already filled, it won't take effect", this);
+        loadout = newLoadout;
+    }
+
     //adds a hog to the back of the line
     public void LoadHogToStock(Hog hog)
     {

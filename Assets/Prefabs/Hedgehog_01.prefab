@@ -227,7 +227,13 @@ MonoBehaviour:
   rb: {fileID: 3492873765522434687}
   anim: {fileID: 5809341740978876914}
   walkSpeed: 1
-  blastToScreenSpeed: 0.05
-  blastUpSpeed: 10
-  ttl: 5
   col: {fileID: 8610338905562065781}
+  impactVfx: {fileID: 492571090762709907, guid: 35537b193e045ee448a23a45d12317e8, type: 3}
+  killY: -15
+  popVelocity: {x: -3, y: 8}
+  popDepthSpeed: 6
+  towardCameraChance: 0.6
+  popSpin: 300
+  popDuration: 1.5
+  popFadeFraction: 0.3
+  popRandomness: 0.35

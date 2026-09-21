@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: 1079327aab23aaf46b59584b937a66df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3533097469036388394
+    second: ExplodingHog_Idle_0
+  - first:
+      213: -2949912396880784052
+    second: ExplodingHog_Idle_1
+  - first:
+      213: -136995386046264346
+    second: ExplodingHog_Idle_2
+  - first:
+      213: 8841880057110020150
+    second: ExplodingHog_Idle_3
+  - first:
+      213: -1850696653127023188
+    second: ExplodingHog_Idle_4
+  - first:
+      213: -7388501267452827718
+    second: ExplodingHog_Idle_5
+  - first:
+      213: -2365854755099601087
+    second: ExplodingHog_Idle_6
+  - first:
+      213: 3369245312911992755
+    second: ExplodingHog_Idle_7
+  - first:
+      213: -2238147481279048840
+    second: ExplodingHog_Idle_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 718
+        width: 235
+        height: 262
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3754b29f8eb92b649b6e4558c26f6662
+      internalID: -3533097469036388394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 718
+        width: 232
+        height: 262
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d895f1fe6c5161248812448bdaf6a690
+      internalID: -2949912396880784052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 718
+        width: 228
+        height: 262
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c46665481bba4419fc97b876ce017b
+      internalID: -136995386046264346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 718
+        width: 229
+        height: 262
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc1f7333d2568b4d91012a0580f6da6
+      internalID: 8841880057110020150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 409
+        width: 234
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a834829554a02844fb2f7dd7e513ffcd
+      internalID: -1850696653127023188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 409
+        width: 232
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dab3589268964439a46aa9950795a3
+      internalID: -7388501267452827718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 409
+        width: 227
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6971d1959ad1a84787e0e863d610c6f
+      internalID: -2365854755099601087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 409
+        width: 228
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60981e466ea7b074b8abd3491a867495
+      internalID: 3369245312911992755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 99
+        width: 236
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561bd46addd2bd54e9530b496f2dc388
+      internalID: -2238147481279048840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 99
+        width: 233
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5b8589ad29da94885baf2253e00a0d
+      internalID: -1653508208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 99
+        width: 226
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65530dc616bdf16478ad6cc67a97e164
+      internalID: -602195709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 99
+        width: 227
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebdd7abacc926bf4681958d6a8c17ba5
+      internalID: -1611209698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cf4b72f3131d486408882a3a27939fa0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ExplodingHog_Idle_0: -3533097469036388394
+      ExplodingHog_Idle_1: -2949912396880784052
+      ExplodingHog_Idle_10: -602195709
+      ExplodingHog_Idle_11: -1611209698
+      ExplodingHog_Idle_2: -136995386046264346
+      ExplodingHog_Idle_3: 8841880057110020150
+      ExplodingHog_Idle_4: -1850696653127023188
+      ExplodingHog_Idle_5: -7388501267452827718
+      ExplodingHog_Idle_6: -2365854755099601087
+      ExplodingHog_Idle_7: 3369245312911992755
+      ExplodingHog_Idle_8: -2238147481279048840
+      ExplodingHog_Idle_9: -1653508208
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

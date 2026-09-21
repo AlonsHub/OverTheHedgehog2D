@@ -1,0 +1,458 @@
+fileFormatVersion: 2
+guid: f81cfbf899e9d6c4eae0ffc76a815578
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1415616330278736275
+    second: ClusterHog_Idle_0
+  - first:
+      213: 2811903789705270939
+    second: ClusterHog_Idle_1
+  - first:
+      213: 6943251077507365120
+    second: ClusterHog_Idle_2
+  - first:
+      213: 6179252171662492996
+    second: ClusterHog_Idle_3
+  - first:
+      213: -6585173552135099874
+    second: ClusterHog_Idle_4
+  - first:
+      213: 363989037416361071
+    second: ClusterHog_Idle_5
+  - first:
+      213: -2621408011276565712
+    second: ClusterHog_Idle_6
+  - first:
+      213: -2373073280480535074
+    second: ClusterHog_Idle_7
+  - first:
+      213: 3050056146977444970
+    second: ClusterHog_Idle_8
+  - first:
+      213: 2715648710018482013
+    second: ClusterHog_Idle_9
+  - first:
+      213: -4925195721398603167
+    second: ClusterHog_Idle_10
+  - first:
+      213: 6368911519674599416
+    second: ClusterHog_Idle_11
+  - first:
+      213: 3947405249699118840
+    second: ClusterHog_Idle_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ClusterHog_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 749
+        width: 264
+        height: 237
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd00aa3e70360f040a98893f2d4bd99f
+      internalID: 1415616330278736275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 749
+        width: 263
+        height: 237
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95252e632c2682143927bc481a0556c4
+      internalID: 2811903789705270939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 749
+        width: 263
+        height: 237
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13f1c578a20e79478bcacf691fc6840
+      internalID: 6943251077507365120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 491
+        width: 263
+        height: 233
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9b85a3ad28a2b4d97b70b4aabd7c62
+      internalID: 6179252171662492996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 491
+        width: 264
+        height: 233
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa12a037d15b954f994679d109f07a9
+      internalID: -6585173552135099874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 491
+        width: 263
+        height: 233
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378b74fe184f848439b55073a68ff413
+      internalID: 363989037416361071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 236
+        width: 263
+        height: 232
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a25e8709e4c8564c90967bea3206073
+      internalID: -2621408011276565712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 236
+        width: 262
+        height: 232
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b149a69e97f0ca4fb0311f338a137ba
+      internalID: -2373073280480535074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 236
+        width: 262
+        height: 232
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92e6ef6e73fc4546838d6c65da0f0fd
+      internalID: 3050056146977444970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 264
+        height: 212
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d6cbad44188d94f8610770fe8a04e2
+      internalID: 2715648710018482013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 263
+        height: 212
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0dce8a3ebbe424791169093b941bdc
+      internalID: -4925195721398603167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClusterHog_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 0
+        width: 265
+        height: 212
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a3fd6c1c14a924ea4b1ebbe0346a73
+      internalID: 6368911519674599416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 428f755e63b95594685f80e584bf69c3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ClusterHog_Idle_0: 1415616330278736275
+      ClusterHog_Idle_1: 2811903789705270939
+      ClusterHog_Idle_10: -4925195721398603167
+      ClusterHog_Idle_11: 6368911519674599416
+      ClusterHog_Idle_2: 6943251077507365120
+      ClusterHog_Idle_3: 6179252171662492996
+      ClusterHog_Idle_4: -6585173552135099874
+      ClusterHog_Idle_5: 363989037416361071
+      ClusterHog_Idle_6: -2621408011276565712
+      ClusterHog_Idle_7: -2373073280480535074
+      ClusterHog_Idle_8: 3050056146977444970
+      ClusterHog_Idle_9: 2715648710018482013
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 2f303034ff806d246bf7fc81ee53e957
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3501374048836981765
+    second: ExplodingHog_Fly_0
+  - first:
+      213: 3141587700024561100
+    second: ExplodingHog_Fly_1
+  - first:
+      213: -8709581066268210711
+    second: ExplodingHog_Fly_2
+  - first:
+      213: -3927393367748575667
+    second: ExplodingHog_Fly_3
+  - first:
+      213: -1916029394408297284
+    second: ExplodingHog_Fly_4
+  - first:
+      213: 2940646538102547788
+    second: ExplodingHog_Fly_5
+  - first:
+      213: -6681531003856129737
+    second: ExplodingHog_Fly_6
+  - first:
+      213: 4299782180421169574
+    second: ExplodingHog_Fly_7
+  - first:
+      213: -8033713270281291740
+    second: ExplodingHog_Fly_8
+  - first:
+      213: 1341462191092140069
+    second: ExplodingHog_Fly_9
+  - first:
+      213: 3263245707759674261
+    second: ExplodingHog_Fly_10
+  - first:
+      213: 476748703432162154
+    second: ExplodingHog_Fly_11
+  - first:
+      213: -8127516573873574096
+    second: ExplodingHog_Fly_12
+  - first:
+      213: -8064100284666792977
+    second: ExplodingHog_Fly_13
+  - first:
+      213: 5815478834846457427
+    second: ExplodingHog_Fly_14
+  - first:
+      213: -4534918824733782186
+    second: ExplodingHog_Fly_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 736
+        width: 219
+        height: 242
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdf13cd1f552a948ab59f30704b930a
+      internalID: -3501374048836981765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 736
+        width: 225
+        height: 242
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551e45b66b8a60b41b34dab95414c3d1
+      internalID: 3141587700024561100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_2
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 736
+        width: 214
+        height: 242
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf501e3d2a0cb641ac1ed6c1ac8b3e6
+      internalID: -8709581066268210711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_3
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 736
+        width: 206
+        height: 242
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beb4af0f643c444eb832523ef5fa66b
+      internalID: -3927393367748575667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 470
+        width: 210
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b04d2d103ea2549a2d68dbf76403e3
+      internalID: -1916029394408297284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_5
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 470
+        width: 194
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c705677f7ba024b9bb5925f0c41100
+      internalID: 2940646538102547788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_6
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 470
+        width: 199
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f04285ff8c0ae4d83d8f2ccd13466c
+      internalID: -6681531003856129737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_7
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 470
+        width: 191
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409387f6addb34c48b083292ae8238df
+      internalID: 4299782180421169574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 247
+        width: 190
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529d6a958ba3a9644a0c53a97c4c3b12
+      internalID: -8033713270281291740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 247
+        width: 200
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63adfbfd999a8a4d90e8e3beeb83c57
+      internalID: 1341462191092140069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_10
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 247
+        width: 187
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512cecd616c82474c860542d3a2ce4dd
+      internalID: 3263245707759674261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_11
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 247
+        width: 196
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a718b2053b17d4cab36191189bf289
+      internalID: 476748703432162154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_12
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 33
+        width: 190
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526ddd66cd316944aa1dc580ba6c6c9f
+      internalID: -8127516573873574096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_13
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 33
+        width: 189
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1255a7c60d76d40914558ab12b220b
+      internalID: -8064100284666792977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_14
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 33
+        width: 188
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09701073da5101548ac53032057b50f8
+      internalID: 5815478834846457427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Fly_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 33
+        width: 190
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0170a6911aaa07c4ebbe5110c3d87dfc
+      internalID: -4534918824733782186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2e0ec3c56949d9f4ca5d85323e6e3936
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ExplodingHog_Fly_0: -3501374048836981765
+      ExplodingHog_Fly_1: 3141587700024561100
+      ExplodingHog_Fly_10: 3263245707759674261
+      ExplodingHog_Fly_11: 476748703432162154
+      ExplodingHog_Fly_12: -8127516573873574096
+      ExplodingHog_Fly_13: -8064100284666792977
+      ExplodingHog_Fly_14: 5815478834846457427
+      ExplodingHog_Fly_15: -4534918824733782186
+      ExplodingHog_Fly_2: -8709581066268210711
+      ExplodingHog_Fly_3: -3927393367748575667
+      ExplodingHog_Fly_4: -1916029394408297284
+      ExplodingHog_Fly_5: 2940646538102547788
+      ExplodingHog_Fly_6: -6681531003856129737
+      ExplodingHog_Fly_7: 4299782180421169574
+      ExplodingHog_Fly_8: -8033713270281291740
+      ExplodingHog_Fly_9: 1341462191092140069
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

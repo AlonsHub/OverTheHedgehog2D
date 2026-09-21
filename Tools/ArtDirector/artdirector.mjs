@@ -4,7 +4,10 @@
 //
 // Usage:
 //   node Tools/ArtDirector/artdirector.mjs direct "<question or brief>"
-//   node Tools/ArtDirector/artdirector.mjs image "<prompt>" --out Assets/Art/Generated/name.png [--size 1024x1024] [--transparent] [--quality medium]
+//   node Tools/ArtDirector/artdirector.mjs image "<prompt>" --out Assets/Art/Generated/name.png [--size 1024x1024] [--transparent] [--quality medium] [--ref a.png,b.png]
+//
+// --ref passes one or more existing PNGs as style/character references (uses the images/edits endpoint),
+// which is the way to keep new sprites consistent with sprites we already have.
 //
 // Requires env var OPENAI_API_KEY. Optional: ART_DIRECTOR_MODEL (default gpt-4o), ART_IMAGE_MODEL (default gpt-image-1).
 
@@ -66,9 +69,43 @@ async function direct(prompt) {
   process.stdout.write(data.choices[0].message.content.trim() + "\n");
 }
 
+async function postForm(endpoint, form) {
+  const res = await fetch(`${API}${endpoint}`, {
+    method: "POST",
+    headers: { "Authorization": `Bearer ${key}` },
+    body: form,
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`${endpoint} -> HTTP ${res.status}: ${text}`);
+  }
+  return res.json();
+}
+
 async function image(prompt, opts) {
   const model = process.env.ART_IMAGE_MODEL || "gpt-image-1";
   const out = opts.out || `Assets/Art/Generated/${Date.now()}.png`;
+
+  //reference images -> edits endpoint (multipart)
+  if (opts.ref) {
+    const form = new FormData();
+    form.append("model", model);
+    form.append("prompt", prompt);
+    form.append("n", "1");
+    form.append("size", opts.size || "1024x1024");
+    form.append("quality", opts.quality || "medium");
+    if (opts.transparent) form.append("background", "transparent");
+    for (const ref of String(opts.ref).split(",")) {
+      const p = path.resolve(ref.trim());
+      form.append("image[]", new Blob([fs.readFileSync(p)], { type: "image/png" }), path.basename(p));
+    }
+    const data = await postForm("/images/edits", form);
+    fs.mkdirSync(path.dirname(out), { recursive: true });
+    fs.writeFileSync(out, Buffer.from(data.data[0].b64_json, "base64"));
+    console.log(`Saved ${out}`);
+    return;
+  }
+
   const body = {
     model,
     prompt,
@@ -92,7 +129,7 @@ try {
   if (cmd === "direct" && text) await direct(text);
   else if (cmd === "image" && text) await image(text, args);
   else {
-    console.error('Usage:\n  direct "<brief>"\n  image "<prompt>" --out <path.png> [--size WxH] [--transparent] [--quality low|medium|high]');
+    console.error('Usage:\n  direct "<brief>"\n  image "<prompt>" --out <path.png> [--size WxH] [--transparent] [--quality low|medium|high] [--ref a.png,b.png]');
     process.exit(1);
   }
 } catch (e) {

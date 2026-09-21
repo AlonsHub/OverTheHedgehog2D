@@ -1,0 +1,766 @@
+fileFormatVersion: 2
+guid: 7419333414a33524b988f3479fed9315
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8525183678994425693
+    second: Chicken_Pop_0
+  - first:
+      213: -7448030186047601566
+    second: Chicken_Pop_1
+  - first:
+      213: 6269164549851404344
+    second: Chicken_Pop_2
+  - first:
+      213: 3987770920030641950
+    second: Chicken_Pop_3
+  - first:
+      213: 1251238242822394531
+    second: Chicken_Pop_4
+  - first:
+      213: 2170218328289349917
+    second: Chicken_Pop_5
+  - first:
+      213: -6729400999832280745
+    second: Chicken_Pop_6
+  - first:
+      213: 3700858216925687184
+    second: Chicken_Pop_7
+  - first:
+      213: -566045647156540064
+    second: Chicken_Pop_8
+  - first:
+      213: 8222590490672198836
+    second: Chicken_Pop_9
+  - first:
+      213: 6774471965991372574
+    second: Chicken_Pop_10
+  - first:
+      213: -6833517492800900722
+    second: Chicken_Pop_11
+  - first:
+      213: -1609646816142223444
+    second: Chicken_Pop_12
+  - first:
+      213: -4084384955403958696
+    second: Chicken_Pop_13
+  - first:
+      213: -3545751577188816658
+    second: Chicken_Pop_14
+  - first:
+      213: -6787434124525831947
+    second: Chicken_Pop_15
+  - first:
+      213: 6926986421488697690
+    second: Chicken_Pop_16
+  - first:
+      213: -8295164473529753652
+    second: Chicken_Pop_17
+  - first:
+      213: 1783687008736579114
+    second: Chicken_Pop_18
+  - first:
+      213: 1871087622163003494
+    second: Chicken_Pop_19
+  - first:
+      213: -1735552983644692441
+    second: Chicken_Pop_20
+  - first:
+      213: -8705186761548055198
+    second: Chicken_Pop_21
+  - first:
+      213: -5076577539833323942
+    second: Chicken_Pop_22
+  - first:
+      213: -6592462297949008221
+    second: Chicken_Pop_23
+  - first:
+      213: -8915465467391323442
+    second: Chicken_Pop_24
+  - first:
+      213: 8147852329053738798
+    second: Chicken_Pop_25
+  - first:
+      213: -484587557486072388
+    second: Chicken_Pop_26
+  - first:
+      213: -3764677213730519345
+    second: Chicken_Pop_27
+  - first:
+      213: -4507875669439449782
+    second: Chicken_Pop_28
+  - first:
+      213: -8517525523002750835
+    second: Chicken_Pop_29
+  - first:
+      213: -9187098632372860968
+    second: Chicken_Pop_30
+  - first:
+      213: 5622256246444142532
+    second: Chicken_Pop_31
+  - first:
+      213: 8528016400119683476
+    second: Chicken_Pop_32
+  - first:
+      213: 3471578447451558567
+    second: Chicken_Pop_33
+  - first:
+      213: 1490905085382514376
+    second: Chicken_Pop_34
+  - first:
+      213: -5950105981991968203
+    second: Chicken_Pop_35
+  - first:
+      213: -2677962233926076784
+    second: Chicken_Pop_36
+  - first:
+      213: -3093006487870408678
+    second: Chicken_Pop_37
+  - first:
+      213: 86786051655887147
+    second: Chicken_Pop_38
+  - first:
+      213: 9041374097230505466
+    second: Chicken_Pop_39
+  - first:
+      213: -4451071403478658557
+    second: Chicken_Pop_40
+  - first:
+      213: 4111557484593764835
+    second: Chicken_Pop_41
+  - first:
+      213: -673502985684993455
+    second: Chicken_Pop_42
+  - first:
+      213: 2024333859281698773
+    second: Chicken_Pop_43
+  - first:
+      213: -3475823836405945096
+    second: Chicken_Pop_44
+  - first:
+      213: 5836746627762237768
+    second: Chicken_Pop_45
+  - first:
+      213: 6925451372996995823
+    second: Chicken_Pop_46
+  - first:
+      213: 4882922126026101222
+    second: Chicken_Pop_47
+  - first:
+      213: -6616245312435123549
+    second: Chicken_Pop_48
+  - first:
+      213: -7466367785527281022
+    second: Chicken_Pop_49
+  - first:
+      213: 6223861187268323393
+    second: Chicken_Pop_50
+  - first:
+      213: -7106278234878690433
+    second: Chicken_Pop_51
+  - first:
+      213: -7564975435634943969
+    second: Chicken_Pop_52
+  - first:
+      213: 4452004384314229206
+    second: Chicken_Pop_53
+  - first:
+      213: 2989401423362506022
+    second: Chicken_Pop_54
+  - first:
+      213: 903790012985514830
+    second: Chicken_Pop_55
+  - first:
+      213: -1262908210325978708
+    second: Chicken_Pop_56
+  - first:
+      213: -5364419843047361604
+    second: Chicken_Pop_57
+  - first:
+      213: 5999355805620235662
+    second: Chicken_Pop_58
+  - first:
+      213: -4442345009436622209
+    second: Chicken_Pop_59
+  - first:
+      213: 4253232734277065963
+    second: Chicken_Pop_60
+  - first:
+      213: 6848410077493056250
+    second: Chicken_Pop_61
+  - first:
+      213: 984158418047255092
+    second: Chicken_Pop_62
+  - first:
+      213: -4697491037550219876
+    second: Chicken_Pop_63
+  - first:
+      213: 4974842049086643982
+    second: Chicken_Pop_64
+  - first:
+      213: 8697072377326552778
+    second: Chicken_Pop_65
+  - first:
+      213: -6299180701862727113
+    second: Chicken_Pop_66
+  - first:
+      213: 1282517480810682865
+    second: Chicken_Pop_67
+  - first:
+      213: -2054513735480674189
+    second: Chicken_Pop_68
+  - first:
+      213: -7576679390457540289
+    second: Chicken_Pop_69
+  - first:
+      213: 8369935512191806811
+    second: Chicken_Pop_70
+  - first:
+      213: 8402156151206773488
+    second: Chicken_Pop_71
+  - first:
+      213: -1416527705759740970
+    second: Chicken_Pop_72
+  - first:
+      213: -3364027675720416623
+    second: Chicken_Pop_73
+  - first:
+      213: -1115792429842191679
+    second: Chicken_Pop_74
+  - first:
+      213: 1692010066211405408
+    second: Chicken_Pop_75
+  - first:
+      213: 2540824927778698686
+    second: Chicken_Pop_76
+  - first:
+      213: -7851612544053537873
+    second: Chicken_Pop_77
+  - first:
+      213: 3646521078222667343
+    second: Chicken_Pop_78
+  - first:
+      213: -7768076364477634223
+    second: Chicken_Pop_79
+  - first:
+      213: -1718703741836038688
+    second: Chicken_Pop_80
+  - first:
+      213: 2525851110686629130
+    second: Chicken_Pop_81
+  - first:
+      213: 3201905808531492359
+    second: Chicken_Pop_82
+  - first:
+      213: 6838095224701050341
+    second: Chicken_Pop_83
+  - first:
+      213: 4023276605476328228
+    second: Chicken_Pop_84
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chicken_Pop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8c95300051e354ba78e93a535a5c4d
+      internalID: -8525183678994425693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfef76a26da89c4da1dd52db93b321b
+      internalID: -7448030186047601566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c955ce60033a684fb791642cce70a84
+      internalID: 6269164549851404344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248046fc87d09424fa876e3dfcaafcee
+      internalID: 3987770920030641950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f908eb28ac10ec448cbbd96506c02c5
+      internalID: 1251238242822394531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198ba5810fbba064db02397fe2dee7fa
+      internalID: 2170218328289349917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2910c9401bd43c84d9293dc6bd1afdf1
+      internalID: -6729400999832280745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d67c2b8d832fdf43b5a1e38f688cf4f
+      internalID: 3700858216925687184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822b09b304b491f4c9315cb1a5303087
+      internalID: -566045647156540064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befeed5d54571b64fa39ca3550cce2eb
+      internalID: 8222590490672198836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d399ce5aa6c9aed448cb0b8c08882f14
+      internalID: 6774471965991372574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ea1705be0092a4d93eedb07a1c7b5d
+      internalID: -6833517492800900722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6a5cf31a6cc9d46a6c15dc850ad18f
+      internalID: -1609646816142223444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea708a27a473114bb9e758775c1edc1
+      internalID: -4084384955403958696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fb9da6917902b49b05bb9d796e8833
+      internalID: -3545751577188816658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_Pop_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2f2d4d600ff5a4da339edfdeabc542
+      internalID: -6787434124525831947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ca431ddd631f94844890da2a1f7e8237
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chicken_Pop_0: -8525183678994425693
+      Chicken_Pop_1: -7448030186047601566
+      Chicken_Pop_10: 6774471965991372574
+      Chicken_Pop_11: -6833517492800900722
+      Chicken_Pop_12: -1609646816142223444
+      Chicken_Pop_13: -4084384955403958696
+      Chicken_Pop_14: -3545751577188816658
+      Chicken_Pop_15: -6787434124525831947
+      Chicken_Pop_2: 6269164549851404344
+      Chicken_Pop_3: 3987770920030641950
+      Chicken_Pop_4: 1251238242822394531
+      Chicken_Pop_5: 2170218328289349917
+      Chicken_Pop_6: -6729400999832280745
+      Chicken_Pop_7: 3700858216925687184
+      Chicken_Pop_8: -566045647156540064
+      Chicken_Pop_9: 8222590490672198836
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

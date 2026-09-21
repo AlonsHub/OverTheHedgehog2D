@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: e82dc56879dd43b4d8eb4e016a880d42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5480623009762088400
+    second: Panel_Planks_0
+  - first:
+      213: -7871398042885952867
+    second: Panel_Planks_1
+  - first:
+      213: -4021724635139064356
+    second: Panel_Planks_2
+  - first:
+      213: 9074170414985010106
+    second: Panel_Planks_3
+  - first:
+      213: -3952944800813115323
+    second: Panel_Planks_4
+  - first:
+      213: 4545752058438586370
+    second: Panel_Planks_5
+  - first:
+      213: 5318520117696447430
+    second: Panel_Planks_6
+  - first:
+      213: -2737687961723060166
+    second: Panel_Planks_7
+  - first:
+      213: -2699410998251529642
+    second: Panel_Planks_8
+  - first:
+      213: -4835038925827912917
+    second: Panel_Planks_9
+  - first:
+      213: -8509786361935281071
+    second: Panel_Planks_10
+  - first:
+      213: -5850641519211155457
+    second: Panel_Planks_11
+  - first:
+      213: -6497878231189462754
+    second: Panel_Planks_12
+  - first:
+      213: -4825482287381128431
+    second: Panel_Planks_13
+  - first:
+      213: -2122344864900639002
+    second: Panel_Planks_14
+  - first:
+      213: 4781496848724049819
+    second: Panel_Planks_15
+  - first:
+      213: 4746666734313823193
+    second: Panel_Planks_16
+  - first:
+      213: -9169923930256266049
+    second: Panel_Planks_17
+  - first:
+      213: 3633747571192507615
+    second: Panel_Planks_18
+  - first:
+      213: -4962050309954902577
+    second: Panel_Planks_19
+  - first:
+      213: -8388557948100843791
+    second: Panel_Planks_20
+  - first:
+      213: 5295559940956749461
+    second: Panel_Planks_21
+  - first:
+      213: -3156778867282399938
+    second: Panel_Planks_22
+  - first:
+      213: 3546855686929408604
+    second: Panel_Planks_23
+  - first:
+      213: 716532532250544430
+    second: Panel_Planks_24
+  - first:
+      213: -3313042007711117705
+    second: Panel_Planks_25
+  - first:
+      213: 5637152841141163565
+    second: Panel_Planks_26
+  - first:
+      213: 7013684820544798018
+    second: Panel_Planks_27
+  - first:
+      213: 796872078992329132
+    second: Panel_Planks_28
+  - first:
+      213: 6541592903739610381
+    second: Panel_Planks_29
+  - first:
+      213: 8176977363430830948
+    second: Panel_Planks_30
+  - first:
+      213: -916658921926630129
+    second: Panel_Planks_31
+  - first:
+      213: 2746106308698320487
+    second: Panel_Planks_32
+  - first:
+      213: 8700361112760874509
+    second: Panel_Planks_33
+  - first:
+      213: -4028172651176891094
+    second: Panel_Planks_34
+  - first:
+      213: 3058641189923153854
+    second: Panel_Planks_35
+  - first:
+      213: -3312452484301991880
+    second: Panel_Planks_36
+  - first:
+      213: -7042639991743345862
+    second: Panel_Planks_37
+  - first:
+      213: 5062873653403706711
+    second: Panel_Planks_38
+  - first:
+      213: 16099141334961241
+    second: Panel_Planks_39
+  - first:
+      213: 6963590756702305993
+    second: Panel_Planks_40
+  - first:
+      213: 690731567564382990
+    second: Panel_Planks_41
+  - first:
+      213: 2400189636496857831
+    second: Panel_Planks_42
+  - first:
+      213: -4247337925148791589
+    second: Panel_Planks_43
+  - first:
+      213: 7323622470339469717
+    second: Panel_Planks_44
+  - first:
+      213: -6128409937049444373
+    second: Panel_Planks_45
+  - first:
+      213: -1138818257119433492
+    second: Panel_Planks_46
+  - first:
+      213: -5313932384045674151
+    second: Panel_Planks_47
+  - first:
+      213: 3629689428826868934
+    second: Panel_Planks_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 330, y: 400, z: 400, w: 300}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Panel_Planks_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 89
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a6c43096ae0f3b0800000000000000
+      internalID: -5480623009762088400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 493
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ae3183f2d23c290800000000000000
+      internalID: -7871398042885952867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 190
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd391a90c6ff28c0800000000000000
+      internalID: -4021724635139064356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 854
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb5a885aededed70800000000000000
+      internalID: 9074170414985010106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 814
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5489ec2b5a15429c0800000000000000
+      internalID: -3952944800813115323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 725
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2009b38a961c51f30800000000000000
+      internalID: 4545752058438586370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 710
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3c01a4edd2fc940800000000000000
+      internalID: 5318520117696447430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 678
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3042afbd47c10ad0800000000000000
+      internalID: -2737687961723060166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 630
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a5f6acff3c98ad0800000000000000
+      internalID: -2699410998251529642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 621
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b47dec6bd76ecb0800000000000000
+      internalID: -4835038925827912917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 486
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154426ef36a27e980800000000000000
+      internalID: -8509786361935281071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 470
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff644b49885ecea0800000000000000
+      internalID: -5850641519211155457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_12
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 453
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11653c0d26e2d5a0800000000000000
+      internalID: -6497878231189462754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 430
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b55b61d61780db0800000000000000
+      internalID: -4825482287381128431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 387
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e619bc079aeb82e0800000000000000
+      internalID: -2122344864900639002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 342
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9fb8daec0a4b5240800000000000000
+      internalID: 4781496848724049819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 310
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db50f5fe3c8fd140800000000000000
+      internalID: 4746666734313823193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 299
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbca8bf05c2edb080800000000000000
+      internalID: -9169923930256266049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_18
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 278
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc2e50e92aad6230800000000000000
+      internalID: 3633747571192507615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_19
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 267
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5658d7881432bb0800000000000000
+      internalID: -4962050309954902577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_20
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 238
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f66bad9dfad59b80800000000000000
+      internalID: -8388557948100843791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_21
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ef38f85bb9d7940800000000000000
+      internalID: 5295559940956749461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_22
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 222
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d2c25785ed034d0800000000000000
+      internalID: -3156778867282399938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_23
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 206
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5260098476f83130800000000000000
+      internalID: 3546855686929408604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_24
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 198
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e290eceaa82a1f900800000000000000
+      internalID: 716532532250544430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_25
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 182
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e8e64e8d5b502d0800000000000000
+      internalID: -3313042007711117705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_26
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 155
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d269dc064a03b3e40800000000000000
+      internalID: 5637152841141163565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 86
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d3f172f2d955160800000000000000
+      internalID: 7013684820544798018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_28
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9c3cf0fee0f0b00800000000000000
+      internalID: 796872078992329132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_29
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 806
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d059d9c461868ca50800000000000000
+      internalID: 6541592903739610381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_30
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 614
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46374bba6957a7170800000000000000
+      internalID: 8176977363430830948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 334
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05ee52319f5743f0800000000000000
+      internalID: -916658921926630129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_32
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 174
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e2c6563212c1620800000000000000
+      internalID: 2746106308698320487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 94
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06fbb7e554edb870800000000000000
+      internalID: 8700361112760874509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_34
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 70
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d68a0e05e0918c0800000000000000
+      internalID: -4028172651176891094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_35
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 886
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb76fb4f4f9727a20800000000000000
+      internalID: 3058641189923153854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_36
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 822
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830d1d1040ec702d0800000000000000
+      internalID: -3312452484301991880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_37
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 526
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b8d23bd34834e90800000000000000
+      internalID: -7042639991743345862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_38
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 462
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755efc573c0f24640800000000000000
+      internalID: 5062873653403706711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_39
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 446
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c85707512393000800000000000000
+      internalID: 16099141334961241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_40
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 406
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce3f6606e4a3a060800000000000000
+      internalID: 6963590756702305993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_41
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 246
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03e2d773b8f59900800000000000000
+      internalID: 690731567564382990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_42
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 166
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea18f4f1cf2f4120800000000000000
+      internalID: 2400189636496857831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_43
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 1442
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc267219ac6e05c0800000000000000
+      internalID: -4247337925148791589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_44
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 3
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59127a5a5dbb2a560800000000000000
+      internalID: 7323622470339469717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_45
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 3
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef9138c1a383faa0800000000000000
+      internalID: -6128409937049444373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_46
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecaaa034da1230f0800000000000000
+      internalID: -1138818257119433492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_47
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9515380b6ae1146b0800000000000000
+      internalID: -5313932384045674151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Panel_Planks_48
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 2
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc473afd4f3f5230800000000000000
+      internalID: 3629689428826868934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Panel_Planks_0: -5480623009762088400
+      Panel_Planks_1: -7871398042885952867
+      Panel_Planks_10: -8509786361935281071
+      Panel_Planks_11: -5850641519211155457
+      Panel_Planks_12: -6497878231189462754
+      Panel_Planks_13: -4825482287381128431
+      Panel_Planks_14: -2122344864900639002
+      Panel_Planks_15: 4781496848724049819
+      Panel_Planks_16: 4746666734313823193
+      Panel_Planks_17: -9169923930256266049
+      Panel_Planks_18: 3633747571192507615
+      Panel_Planks_19: -4962050309954902577
+      Panel_Planks_2: -4021724635139064356
+      Panel_Planks_20: -8388557948100843791
+      Panel_Planks_21: 5295559940956749461
+      Panel_Planks_22: -3156778867282399938
+      Panel_Planks_23: 3546855686929408604
+      Panel_Planks_24: 716532532250544430
+      Panel_Planks_25: -3313042007711117705
+      Panel_Planks_26: 5637152841141163565
+      Panel_Planks_27: 7013684820544798018
+      Panel_Planks_28: 796872078992329132
+      Panel_Planks_29: 6541592903739610381
+      Panel_Planks_3: 9074170414985010106
+      Panel_Planks_30: 8176977363430830948
+      Panel_Planks_31: -916658921926630129
+      Panel_Planks_32: 2746106308698320487
+      Panel_Planks_33: 8700361112760874509
+      Panel_Planks_34: -4028172651176891094
+      Panel_Planks_35: 3058641189923153854
+      Panel_Planks_36: -3312452484301991880
+      Panel_Planks_37: -7042639991743345862
+      Panel_Planks_38: 5062873653403706711
+      Panel_Planks_39: 16099141334961241
+      Panel_Planks_4: -3952944800813115323
+      Panel_Planks_40: 6963590756702305993
+      Panel_Planks_41: 690731567564382990
+      Panel_Planks_42: 2400189636496857831
+      Panel_Planks_43: -4247337925148791589
+      Panel_Planks_44: 7323622470339469717
+      Panel_Planks_45: -6128409937049444373
+      Panel_Planks_46: -1138818257119433492
+      Panel_Planks_47: -5313932384045674151
+      Panel_Planks_48: 3629689428826868934
+      Panel_Planks_5: 4545752058438586370
+      Panel_Planks_6: 5318520117696447430
+      Panel_Planks_7: -2737687961723060166
+      Panel_Planks_8: -2699410998251529642
+      Panel_Planks_9: -4835038925827912917
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

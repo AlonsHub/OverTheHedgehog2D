@@ -1,12 +1,23 @@
+using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
 public class Hog : MonoBehaviour
 {
+    //every hog that has been launched and hasn't popped yet (mini hogs included). the GameManager
+    //waits for this to empty before calling the level lost
+    public static readonly List<Hog> airborne = new List<Hog>();
+
     public Rigidbody2D rb;
-    [SerializeField] private Animator anim;
+    [SerializeField] protected Animator anim;
     [SerializeField] private float walkSpeed;
-    [SerializeField] private Collider2D col;
+    [SerializeField] protected Collider2D col;
+
+    [Header("VFX")]
+    [Tooltip("Spawned at the contact point when we hit something (dust poof)")]
+    [SerializeField] private GameObject impactVfx;
+    [Tooltip("Below this world y we're gone for good and get cleaned up")]
+    [SerializeField] private float killY = -15f;
 
     [Header("Death pop")]
     [Tooltip("Launch velocity off the impact point, units/sec. Negative x = knocked back the way it came, y = up. Gravity takes it from there")]
@@ -27,14 +38,39 @@ public class Hog : MonoBehaviour
 
     //state?
     bool _impacted = false;
+    bool _launched = false;
     Tween _walkTween;
+
+    public bool IsLaunched => _launched;
+    public bool HasImpacted => _impacted;
+    //in the air between the throw and whatever it hits first
+    public bool IsFlying => _launched && !_impacted;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(_impacted) return;
 
         _impacted = true;
+
+        if (impactVfx != null)
+        {
+            Vector3 at = collision.contactCount > 0 ? (Vector3)collision.GetContact(0).point : transform.position;
+            Vfx.Spawn(impactVfx, at);
+        }
+
         Impact();
+    }
+
+    void Update()
+    {
+        //fell off the world without ever hitting anything
+        if (_launched && !_impacted && transform.position.y < killY)
+            Destroy(gameObject);
+    }
+
+    void OnDestroy()
+    {
+        airborne.Remove(this);
     }
 
     //shuffles forward to a new spot in the stock line at a steady walkSpeed (no speed set = snap there)
@@ -57,6 +93,19 @@ public class Hog : MonoBehaviour
     {
         anim.SetTrigger("Fly");
     }
+
+    //lets go of whatever was holding us and sends us off with an impulse. from here on physics owns the hog
+    public void Launch(Vector2 impulse)
+    {
+        transform.SetParent(null);
+        rb.simulated = true;
+        rb.AddForce(impulse, ForceMode2D.Impulse);
+
+        _launched = true;
+        if (!airborne.Contains(this))
+            airborne.Add(this);
+    }
+
     public virtual void Impact()
     {
         anim.SetTrigger("Impact");

@@ -15,6 +15,8 @@ public class Thrower : MonoBehaviour
 
     [SerializeField] private bool isLoaded; //this is also isActive
     public bool IsLoaded { get { return isLoaded; } }
+    //between letting go and the next hog being loaded: the band is snapping, the hog is on its way
+    public bool IsThrowing { get; private set; }
     //[SerializeField] private bool ;
     [SerializeField] public float throwForce;
     [SerializeField] float snapTime;
@@ -57,6 +59,7 @@ public class Thrower : MonoBehaviour
 
         Vector3 delta = (anchor.position - grabber.transform.position );
 
+        IsThrowing = true;
         StartCoroutine(ThrowCoroutine(delta));
 
         //_loadedHog.rb.AddForce(force, ForceMode2D.Impulse);
@@ -80,7 +83,7 @@ public class Thrower : MonoBehaviour
         while (t<= fullTime)
         {
             grabber.transform.position = Vector3.Lerp(ogPos, anchor.position, t/fullTime) ;
-            
+
             yield return null;
             t += Time.deltaTime + accel;
             accel += snapAcceleration * Time.deltaTime;
@@ -92,10 +95,8 @@ public class Thrower : MonoBehaviour
         //this could be a good time to send a message to the hog to play its fly animation
         // _loadedHog.Fly();
 
-        loadedHog.transform.SetParent(null);
-        loadedHog.rb.simulated = true;
-
-        loadedHog.rb.AddForce(delta * throwForce, ForceMode2D.Impulse);
+        //the hog lets go of us and physics takes over
+        loadedHog.Launch(delta * throwForce);
 
         isLoaded = false;
 
@@ -128,6 +129,7 @@ public class Thrower : MonoBehaviour
 
         //start loadingNextHog sequence
         LoadHogFromStock();
+        IsThrowing = false;
     }
 
 }

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ec950f654457743aef4f2f0786387b, type: 3}
+  m_Name: Level_04
+  m_EditorClassIdentifier: Assembly-CSharp::LevelDefinition
+  title: Potting Shelves
+  blurb: Hens on every shelf. Tap a cluster hog mid-air to shower them.
+  blockSet: {fileID: 8558208184051131535, guid: eafef49c7e93c8f419ffaf7eecaf43dc, type: 3}
+  blockSetPosition: {x: 2.63, y: -3.968, z: 0}
+  loadout: {fileID: 11400000, guid: c29a12b711adf7d46aaecab665eb2e9d, type: 2}
+  isBoss: 0

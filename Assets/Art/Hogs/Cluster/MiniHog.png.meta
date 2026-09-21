@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 231c10aceb13ab2458d271282e39dfa8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1751045786949789861
+    second: MiniHog_0
+  - first:
+      213: -3835010829591696477
+    second: MiniHog_1
+  - first:
+      213: 5371228674380910916
+    second: MiniHog_2
+  - first:
+      213: 1104448017127049729
+    second: MiniHog_3
+  - first:
+      213: -6491323889708209949
+    second: MiniHog_4
+  - first:
+      213: 1825561304778085227
+    second: MiniHog_5
+  - first:
+      213: 8867538135394099134
+    second: MiniHog_6
+  - first:
+      213: -2402968866568130504
+    second: MiniHog_7
+  - first:
+      213: 2775924928278467524
+    second: MiniHog_8
+  - first:
+      213: -8165775775089282286
+    second: MiniHog_9
+  - first:
+      213: 5564836333805931701
+    second: MiniHog_10
+  - first:
+      213: 5593336397137906112
+    second: MiniHog_11
+  - first:
+      213: 1025119778712250212
+    second: MiniHog_12
+  - first:
+      213: -7943372024867696091
+    second: MiniHog_13
+  - first:
+      213: 8066312243743729053
+    second: MiniHog_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 330
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniHog_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 766
+        width: 257
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfaf48711fc225f4eb19a17c05e75a1d
+      internalID: -1751045786949789861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 766
+        width: 229
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0168c46d17717439f814fa1d35c34c
+      internalID: -3835010829591696477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_2
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 766
+        width: 233
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4317449f5132a2643848d0202487d025
+      internalID: 5371228674380910916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 515
+        width: 207
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361b136b6432d664ca1d686e620339fd
+      internalID: 1104448017127049729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_4
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 515
+        width: 202
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa4282ef9f2fd44390e961b4b76e671
+      internalID: -6491323889708209949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_5
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 515
+        width: 203
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045e7b0c47ac36a4abdc0a4ceae66c52
+      internalID: 1825561304778085227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_6
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 515
+        width: 192
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9452ca51ae4ec543b33e6b044ec4f5a
+      internalID: 8867538135394099134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_7
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 280
+        width: 202
+        height: 191
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe49aa4edf591944b52ca7dba514f98
+      internalID: -2402968866568130504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_8
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 280
+        width: 195
+        height: 191
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f3777b5f2779e4abe2e2ae05f1969a
+      internalID: 2775924928278467524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_9
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 280
+        width: 200
+        height: 191
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127b5061d8dc57843b586750a07aad9a
+      internalID: -8165775775089282286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_10
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 280
+        width: 199
+        height: 191
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1590c42a06c559499629459289ec7f6
+      internalID: 5564836333805931701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 44
+        width: 204
+        height: 195
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58aed48687c46c541b558481940e9ee6
+      internalID: 5593336397137906112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_12
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 44
+        width: 198
+        height: 195
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c94e03901ec699448898a79d906c8fb
+      internalID: 1025119778712250212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_13
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 44
+        width: 201
+        height: 195
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f86f5379a438043af75402b18c3939
+      internalID: -7943372024867696091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHog_14
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 44
+        width: 199
+        height: 195
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e1e93951a4fca48aef8e2344d09021
+      internalID: 8066312243743729053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ad1fd369f3e2f4841b4634332811f3fa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MiniHog_0: -1751045786949789861
+      MiniHog_1: -3835010829591696477
+      MiniHog_10: 5564836333805931701
+      MiniHog_11: 5593336397137906112
+      MiniHog_12: 1025119778712250212
+      MiniHog_13: -7943372024867696091
+      MiniHog_14: 8066312243743729053
+      MiniHog_2: 5371228674380910916
+      MiniHog_3: 1104448017127049729
+      MiniHog_4: -6491323889708209949
+      MiniHog_5: 1825561304778085227
+      MiniHog_6: 8867538135394099134
+      MiniHog_7: -2402968866568130504
+      MiniHog_8: 2775924928278467524
+      MiniHog_9: -8165775775089282286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

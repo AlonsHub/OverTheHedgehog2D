@@ -1,0 +1,3 @@
+Fredoka (https://github.com/google/fonts/tree/main/ofl/fredoka) is licensed under the SIL Open Font License 1.1.
+Copyright 2021 The Fredoka Project Authors (https://github.com/hafontia/Fredoka-One)
+Full license: https://openfontlicense.org

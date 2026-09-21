@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2156925872517047398, guid: 443f840a9a840f84fbec6e344e20c188, type: 3}
-  m_Color: {r: 1, g: 0.0047169924, b: 0.0047169924, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 5190005385850451832}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c5014c434c9bce748a871f1c9a354111, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0261ca7aab1f7e5418ff8b6961b656ca, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -228,5 +228,17 @@ MonoBehaviour:
   anim: {fileID: 908806649283104393}
   walkSpeed: 1
   col: {fileID: 827611309123278446}
-  explosionRadius: 3
-  explosionForce: 1.5
+  impactVfx: {fileID: 492571090762709907, guid: 35537b193e045ee448a23a45d12317e8, type: 3}
+  killY: -15
+  popVelocity: {x: -3, y: 8}
+  popDepthSpeed: 6
+  towardCameraChance: 0.6
+  popSpin: 300
+  popDuration: 1.5
+  popFadeFraction: 0.3
+  popRandomness: 0.35
+  explosionRadius: 4
+  explosionForce: 12
+  lethalRadius: 2.6
+  explosionVfx: {fileID: 3925434565071710494, guid: 9edd581fb4a27034398de4a9310d527e, type: 3}
+  fuseDelay: 1

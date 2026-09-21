@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ec950f654457743aef4f2f0786387b, type: 3}
+  m_Name: Level_03
+  m_EditorClassIdentifier: Assembly-CSharp::LevelDefinition
+  title: The Big Trellis
+  blurb: A whole trellis of hens. Time to go boom.
+  blockSet: {fileID: 8368711659195324129, guid: 8598462244d4619439b2891b78fe717d, type: 3}
+  blockSetPosition: {x: 2.63, y: -3.968, z: 0}
+  loadout: {fileID: 11400000, guid: 308a082fa1c1a4b40a20997aa4f8a775, type: 2}
+  isBoss: 0
