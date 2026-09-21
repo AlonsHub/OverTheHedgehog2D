@@ -26,6 +26,11 @@ and say "FIRST"/"SECOND" in the prompt.
 ## After generating
 - `node Tools/ArtDirector/cleanalpha.mjs <png...>` strips the soft glow halo the model leaves on
   transparent backgrounds (keeps anti-aliased edges).
+- `node Tools/ArtDirector/trimalpha.mjs <png...>` crops to the painted pixels. Do this for anything drawn in
+  sliced/fitted mode (blocks, panels): the model never fills the canvas, and a transparent margin is what
+  makes a sprite render smaller than its collider.
+- `node Tools/ArtDirector/variant.mjs <in.png> <out.png> [--lighten 0.35] [--desat 0.2]` makes a lighter colour
+  variant that keeps the outline and silhouette (the edits endpoint re-frames and washes out `--ref` recolours).
 - In Unity, `SpriteSheetImporter.ImportBands(path, ppu)` slices a sheet by detecting the frame rows/columns
   (grids come out slightly uneven); `ImportGrid` for scattered frames (particle bursts); `ImportSingle` for
   single sprites. `ContentBuilder` (menu *Over The Hedgehog > Build > Everything*) rebuilds clips, controllers,

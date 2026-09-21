@@ -479,6 +479,7 @@ public static partial class ContentBuilder
         BuildEnemyPrefabs();
         ReplaceEnemiesInBlockSets();
         BuildBlockSets();
+        SkinBlockSets();
         BuildLevels();
         BuildStartMenu();
         BuildLevelMap();

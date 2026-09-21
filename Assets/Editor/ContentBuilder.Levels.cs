@@ -79,7 +79,9 @@ public static partial class ContentBuilder
         block.transform.localPosition = new Vector3(x, bottomY + height * 0.5f, 0f);
         block.transform.localRotation = Quaternion.identity;
         block.transform.localScale = new Vector3(width, height, 1f);
-        if (material != null) block.GetComponent<SpriteRenderer>().sharedMaterial = material;
+        //skinned blocks keep their renderer on a GFX child
+        var sr = block.GetComponentInChildren<SpriteRenderer>();
+        if (material != null && sr != null) sr.sharedMaterial = material;
         var rb = block.GetComponent<Rigidbody2D>();
         if (rb != null) rb.mass = Mathf.Max(0.5f, width * height);
         AddWoodKnock(block);

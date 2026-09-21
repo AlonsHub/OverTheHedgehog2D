@@ -50,6 +50,7 @@ Always generate character sheets with `--ref` and an existing sheet (see Tools/A
 - Hedgehog / character sheets: ~300 px per frame, imported at **200 PPU**; sheets on a clean uniform grid with even padding.
 - Tileable textures (wood, clay, stone) are square, 1024–1254 px, seamless on all edges.
 - Props that get stacked/physicsed (beams, boxes, pots) need simple convex silhouettes and clear top/bottom faces.
+- **Physics blocks** (posts/beams) are separate horizontal and vertical sprites, never one rotated: light stays upper-left and grain runs along the length. Generate the beam at 1536x1024 and the post at 1024x1536 spanning the full long axis, trim to alpha, and keep every detail (worn ends, a nail, the daisy, moss) inside the outer 25% end caps; the middle 50% is plain grain because it is 9-sliced and stretched up to 11:1. Nothing may poke outside the rectangle (what you see is what collides). **Chosen 2026-09-21: natural honey oak** (`Assets/Art/Blocks/Oak_*`) with a sun-bleached `OakLight_*` variant (made with variant.mjs) mixed in per block so structures don't read as one slab. Rejected options WhiteWood and Birch stay in Assets/Art/Generated/Blocks for reference.
 - Sizes for generation: use 1024x1024 for single props/textures, 1536x1024 for wide props (fences, signs, ground strips), 1024x1536 for tall ones (posts, towers).
 
 ## UI (when it comes up)
