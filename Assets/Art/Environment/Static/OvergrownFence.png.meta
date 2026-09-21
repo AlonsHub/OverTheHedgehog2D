@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 702f064208441b54eadd6c3c0f62e520
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7215545177498556941
+    second: OvergrownFence_0
+  - first:
+      213: -3972541152377529223
+    second: OvergrownFence_1
+  - first:
+      213: -3108495217569404604
+    second: OvergrownFence_2
+  - first:
+      213: -3037306047376665459
+    second: OvergrownFence_3
+  - first:
+      213: 8930195587060504969
+    second: OvergrownFence_4
+  - first:
+      213: 4299404140321329259
+    second: OvergrownFence_5
+  - first:
+      213: 5100963753843863511
+    second: OvergrownFence_6
+  - first:
+      213: 8042612332401745909
+    second: OvergrownFence_7
+  - first:
+      213: 3565341546510787830
+    second: OvergrownFence_8
+  - first:
+      213: -4327613851933728334
+    second: OvergrownFence_9
+  - first:
+      213: -7548084561570304585
+    second: OvergrownFence_10
+  - first:
+      213: 1880670085780723062
+    second: OvergrownFence_11
+  - first:
+      213: 3677550762386877285
+    second: OvergrownFence_12
+  - first:
+      213: -6099597704254486645
+    second: OvergrownFence_13
+  - first:
+      213: 6742095229863739696
+    second: OvergrownFence_14
+  - first:
+      213: 8385904217585691215
+    second: OvergrownFence_15
+  - first:
+      213: 6366905677976950729
+    second: OvergrownFence_16
+  - first:
+      213: 7616272237389809242
+    second: OvergrownFence_17
+  - first:
+      213: -395558148743947046
+    second: OvergrownFence_18
+  - first:
+      213: -1077011628627230094
+    second: OvergrownFence_19
+  - first:
+      213: 8761243388950287044
+    second: OvergrownFence_20
+  - first:
+      213: -7260701262935398249
+    second: OvergrownFence_21
+  - first:
+      213: -2765644596868743317
+    second: OvergrownFence_22
+  - first:
+      213: -8216855422512719443
+    second: OvergrownFence_23
+  - first:
+      213: -7810984801150904390
+    second: OvergrownFence_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OvergrownFence_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1916
+        height: 821
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a959dfb14c22460800000000000000
+      internalID: 7215545177498556941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_1
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 787
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c9aec8ed2bed8c0800000000000000
+      internalID: -3972541152377529223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_2
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 806
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44966c2b1186cd4d0800000000000000
+      internalID: -3108495217569404604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_3
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 800
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84d7f30e3259d5d0800000000000000
+      internalID: -3037306047376665459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_4
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 790
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989908d729d6eeb70800000000000000
+      internalID: 8930195587060504969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_5
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 793
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6052b1594d8aab30800000000000000
+      internalID: 4299404140321329259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_6
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 787
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfa10012834ac640800000000000000
+      internalID: 5100963753843863511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_7
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 788
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff5bf20e491d9f60800000000000000
+      internalID: 8042612332401745909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_8
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 790
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4a7be1f33aa7130800000000000000
+      internalID: 3565341546510787830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_9
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 789
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b12e6e512a31f3c0800000000000000
+      internalID: -4327613851933728334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_10
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 772
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdedfc2511df3790800000000000000
+      internalID: -7548084561570304585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 756
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675d9a29a7b791a10800000000000000
+      internalID: 1880670085780723062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_12
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 665
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b69831fe8490330800000000000000
+      internalID: 3677550762386877285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_13
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 665
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b878f1d7430e95ba0800000000000000
+      internalID: -6099597704254486645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_14
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 653
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03142e1f3ebb09d50800000000000000
+      internalID: 6742095229863739696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_15
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 651
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a25a99477b06470800000000000000
+      internalID: 8385904217585691215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_16
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 631
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7db361bfacb5850800000000000000
+      internalID: 6366905677976950729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a560a464f3f62b960800000000000000
+      internalID: 7616272237389809242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc1b10a5f1b28af0800000000000000
+      internalID: -395558148743947046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_19
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27285b841afad01f0800000000000000
+      internalID: -1077011628627230094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_20
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c21f157170369970800000000000000
+      internalID: 8761243388950287044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_21
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 50
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79861829baecc3b90800000000000000
+      internalID: -7260701262935398249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_22
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 15
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ff8a464e47e99d0800000000000000
+      internalID: -2765644596868743317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_23
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 33
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9136a278dd7fd80800000000000000
+      internalID: -8216855422512719443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OvergrownFence_24
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 21
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7dc6d25bec99390800000000000000
+      internalID: -7810984801150904390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      OvergrownFence_0: 7215545177498556941
+      OvergrownFence_1: -3972541152377529223
+      OvergrownFence_10: -7548084561570304585
+      OvergrownFence_11: 1880670085780723062
+      OvergrownFence_12: 3677550762386877285
+      OvergrownFence_13: -6099597704254486645
+      OvergrownFence_14: 6742095229863739696
+      OvergrownFence_15: 8385904217585691215
+      OvergrownFence_16: 6366905677976950729
+      OvergrownFence_17: 7616272237389809242
+      OvergrownFence_18: -395558148743947046
+      OvergrownFence_19: -1077011628627230094
+      OvergrownFence_2: -3108495217569404604
+      OvergrownFence_20: 8761243388950287044
+      OvergrownFence_21: -7260701262935398249
+      OvergrownFence_22: -2765644596868743317
+      OvergrownFence_23: -8216855422512719443
+      OvergrownFence_24: -7810984801150904390
+      OvergrownFence_3: -3037306047376665459
+      OvergrownFence_4: 8930195587060504969
+      OvergrownFence_5: 4299404140321329259
+      OvergrownFence_6: 5100963753843863511
+      OvergrownFence_7: 8042612332401745909
+      OvergrownFence_8: 3565341546510787830
+      OvergrownFence_9: -4327613851933728334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1781 @@
+fileFormatVersion: 2
+guid: fbf07bf157711db4696974d33be9672b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2016242773039895214
+    second: FallingLeavesAndPetals_0
+  - first:
+      213: -3985282222225869562
+    second: FallingLeavesAndPetals_1
+  - first:
+      213: 8078047125009512438
+    second: FallingLeavesAndPetals_2
+  - first:
+      213: 4840485901910970651
+    second: FallingLeavesAndPetals_3
+  - first:
+      213: 7379923871147234722
+    second: FallingLeavesAndPetals_4
+  - first:
+      213: 9161977400702069745
+    second: FallingLeavesAndPetals_5
+  - first:
+      213: 2073043534574845763
+    second: FallingLeavesAndPetals_6
+  - first:
+      213: -1091747298578946000
+    second: FallingLeavesAndPetals_7
+  - first:
+      213: -175649830139362542
+    second: FallingLeavesAndPetals_8
+  - first:
+      213: 3317035897941199824
+    second: FallingLeavesAndPetals_9
+  - first:
+      213: 103322927079493892
+    second: FallingLeavesAndPetals_10
+  - first:
+      213: -8917069088392819545
+    second: FallingLeavesAndPetals_11
+  - first:
+      213: -5376097419371012680
+    second: FallingLeavesAndPetals_12
+  - first:
+      213: -2735034057963042897
+    second: FallingLeavesAndPetals_13
+  - first:
+      213: -8839713792928646416
+    second: FallingLeavesAndPetals_14
+  - first:
+      213: -13409025492503632
+    second: FallingLeavesAndPetals_15
+  - first:
+      213: 4316827726274645152
+    second: FallingLeavesAndPetals_16
+  - first:
+      213: 128524907308589619
+    second: FallingLeavesAndPetals_17
+  - first:
+      213: -3060110821233928171
+    second: FallingLeavesAndPetals_18
+  - first:
+      213: -8296098214564499150
+    second: FallingLeavesAndPetals_19
+  - first:
+      213: 703763667672846885
+    second: FallingLeavesAndPetals_20
+  - first:
+      213: 3175551489423852175
+    second: FallingLeavesAndPetals_21
+  - first:
+      213: -78082847768598944
+    second: FallingLeavesAndPetals_22
+  - first:
+      213: -4264424452373307302
+    second: FallingLeavesAndPetals_23
+  - first:
+      213: -8342310354901328354
+    second: FallingLeavesAndPetals_24
+  - first:
+      213: -7252535632144141676
+    second: FallingLeavesAndPetals_25
+  - first:
+      213: -7802413839827307945
+    second: FallingLeavesAndPetals_26
+  - first:
+      213: -617017505975997929
+    second: FallingLeavesAndPetals_27
+  - first:
+      213: -4150144206295158069
+    second: FallingLeavesAndPetals_28
+  - first:
+      213: -1171652611876003218
+    second: FallingLeavesAndPetals_29
+  - first:
+      213: -4995623008655121512
+    second: FallingLeavesAndPetals_30
+  - first:
+      213: 3932303763503183410
+    second: FallingLeavesAndPetals_31
+  - first:
+      213: 734356452065518502
+    second: FallingLeavesAndPetals_32
+  - first:
+      213: 7383725880486341941
+    second: FallingLeavesAndPetals_33
+  - first:
+      213: 7107910719511087138
+    second: FallingLeavesAndPetals_34
+  - first:
+      213: 3082099420724474277
+    second: FallingLeavesAndPetals_35
+  - first:
+      213: -4215135765815073706
+    second: FallingLeavesAndPetals_36
+  - first:
+      213: 3258730027703164352
+    second: FallingLeavesAndPetals_37
+  - first:
+      213: -8405243363742614532
+    second: FallingLeavesAndPetals_38
+  - first:
+      213: -3333501564605382060
+    second: FallingLeavesAndPetals_39
+  - first:
+      213: 2550928773763445124
+    second: FallingLeavesAndPetals_40
+  - first:
+      213: 2974358749985280419
+    second: FallingLeavesAndPetals_41
+  - first:
+      213: 712949610802925315
+    second: FallingLeavesAndPetals_42
+  - first:
+      213: 6322990672214590164
+    second: FallingLeavesAndPetals_43
+  - first:
+      213: 4497261864009014226
+    second: FallingLeavesAndPetals_44
+  - first:
+      213: -4536989276650126353
+    second: FallingLeavesAndPetals_45
+  - first:
+      213: 7501479682330573879
+    second: FallingLeavesAndPetals_46
+  - first:
+      213: -5218363013387334820
+    second: FallingLeavesAndPetals_47
+  - first:
+      213: -2915359822158972045
+    second: FallingLeavesAndPetals_48
+  - first:
+      213: 8424721520203527458
+    second: FallingLeavesAndPetals_49
+  - first:
+      213: 3682215393869426051
+    second: FallingLeavesAndPetals_50
+  - first:
+      213: 2621547699585438828
+    second: FallingLeavesAndPetals_51
+  - first:
+      213: 36793095939222536
+    second: FallingLeavesAndPetals_52
+  - first:
+      213: 6764474597745950063
+    second: FallingLeavesAndPetals_53
+  - first:
+      213: -962401733408280243
+    second: FallingLeavesAndPetals_54
+  - first:
+      213: -896698063773342640
+    second: FallingLeavesAndPetals_55
+  - first:
+      213: 3899422760338875489
+    second: FallingLeavesAndPetals_56
+  - first:
+      213: -4439091690437031371
+    second: FallingLeavesAndPetals_57
+  - first:
+      213: -5375313844461472767
+    second: FallingLeavesAndPetals_58
+  - first:
+      213: -8100822987058297860
+    second: FallingLeavesAndPetals_59
+  - first:
+      213: -1558464886356170939
+    second: FallingLeavesAndPetals_60
+  - first:
+      213: -7969900278322029635
+    second: FallingLeavesAndPetals_61
+  - first:
+      213: -3946596807051759413
+    second: FallingLeavesAndPetals_62
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 896
+        width: 252
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d220461edd404e0800000000000000
+      internalID: -2016242773039895214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1140
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6053c8e0fee61b8c0800000000000000
+      internalID: -3985282222225869562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1126
+        width: 146
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7be059f0dfa1070800000000000000
+      internalID: 8078047125009512438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_3
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1160
+        width: 85
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1190b3284cdc2340800000000000000
+      internalID: 4840485901910970651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_4
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1122
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5182909a1ca6660800000000000000
+      internalID: 7379923871147234722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_5
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1164
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbe00957e1e52f70800000000000000
+      internalID: 9161977400702069745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_6
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1209
+        width: 88
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ff04a7c1ee4cc10800000000000000
+      internalID: 2073043534574845763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_7
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1180
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038a5b3cd9559d0f0800000000000000
+      internalID: -1091747298578946000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_8
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1173
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2138fadf867ff8df0800000000000000
+      internalID: -175649830139362542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_9
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 839
+        width: 212
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db0104239a780e20800000000000000
+      internalID: 3317035897941199824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_10
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 771
+        width: 295
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4011abd97a31f6100800000000000000
+      internalID: 103322927079493892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_11
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1160
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7accab4a8e4304480800000000000000
+      internalID: -8917069088392819545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_12
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1160
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd1f7081e34465b0800000000000000
+      internalID: -5376097419371012680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_13
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 879
+        width: 231
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7848ed3053b0ad0800000000000000
+      internalID: -2735034057963042897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_14
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 966
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fafd50e327035580800000000000000
+      internalID: -8839713792928646416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_15
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 804
+        width: 212
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b33cb6ff8c50dff0800000000000000
+      internalID: -13409025492503632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_16
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 949
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac482d02f378eb30800000000000000
+      internalID: 4316827726274645152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_17
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 883
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3322be4e8bc98c100800000000000000
+      internalID: 128524907308589619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_18
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 867
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518d507db6d4885d0800000000000000
+      internalID: -3060110821233928171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 554
+        width: 272
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2317123e0a65edc80800000000000000
+      internalID: -8296098214564499150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_20
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 839
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5225779b35544c900800000000000000
+      internalID: 703763667672846885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_21
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 533
+        width: 253
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82421d3143d11c20800000000000000
+      internalID: 3175551489423852175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_22
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 813
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066a3bb40189aeef0800000000000000
+      internalID: -78082847768598944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_23
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 819
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50acc0fd88b1d4c0800000000000000
+      internalID: -4264424452373307302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_24
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 827
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e1b028ee82a3c80800000000000000
+      internalID: -8342310354901328354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_25
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 495
+        width: 254
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4927f25a441d95b90800000000000000
+      internalID: -7252535632144141676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_26
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 803
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752708e93f148b390800000000000000
+      internalID: -7802413839827307945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_27
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 544
+        width: 213
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a6a10f8d9ef67f0800000000000000
+      internalID: -617017505975997929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 168
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2b12135d9b766c0800000000000000
+      internalID: -4150144206295158069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_29
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 270
+        width: 208
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62e8fc38247dbfe0800000000000000
+      internalID: -1171652611876003218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_30
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 546
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893e751775bfbaab0800000000000000
+      internalID: -4995623008655121512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_31
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 280
+        width: 100
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236f98c4079529630800000000000000
+      internalID: 3932303763503183410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_32
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 270
+        width: 158
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3a1e76d45f03a00800000000000000
+      internalID: 734356452065518502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_33
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 485
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d2f315193487660800000000000000
+      internalID: 7383725880486341941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_34
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 463
+        width: 208
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22846abd32f54a260800000000000000
+      internalID: 7107910719511087138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_35
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 294
+        width: 240
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a138bee711d5ca20800000000000000
+      internalID: 3082099420724474277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_36
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 529
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6546c8e8a54d085c0800000000000000
+      internalID: -4215135765815073706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_37
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 536
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd5528d1b5593d20800000000000000
+      internalID: 3258730027703164352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_38
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 533
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb796d81b39a5b80800000000000000
+      internalID: -8405243363742614532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_39
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 513
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452cc771df50db1d0800000000000000
+      internalID: -3333501564605382060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_40
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 532
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4813e7f4438b66320800000000000000
+      internalID: 2550928773763445124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_41
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 520
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a19277368b074920800000000000000
+      internalID: 2974358749985280419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_42
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 331
+        width: 154
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f49a6c4e7e4e900800000000000000
+      internalID: 712949610802925315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_43
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 497
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d285770486cfb750800000000000000
+      internalID: 6322990672214590164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_44
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 433
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db1b2a76db796e30800000000000000
+      internalID: 4497261864009014226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_45
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 440
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe343877a406901c0800000000000000
+      internalID: -4536989276650126353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_46
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 272
+        width: 134
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cbf1bc60c9a1860800000000000000
+      internalID: 7501479682330573879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_47
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 271
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5bc206cc76a497b0800000000000000
+      internalID: -5218363013387334820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_48
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 276
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37bb4cf10bf8a87d0800000000000000
+      internalID: -2915359822158972045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_49
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 290
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225f157269f9ae470800000000000000
+      internalID: 8424721520203527458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_50
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 288
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38def0a346bd91330800000000000000
+      internalID: 3682215393869426051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_51
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 280
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6458834ebb916420800000000000000
+      internalID: 2621547699585438828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_52
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 250
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ce4a53027b28000800000000000000
+      internalID: 36793095939222536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_53
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 266
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6dfcc29ecd30ed50800000000000000
+      internalID: 6764474597745950063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 258
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41baf4f8bcd4a2f0800000000000000
+      internalID: -962401733408280243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_55
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 256
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0546206acd94e83f0800000000000000
+      internalID: -896698063773342640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_56
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 252
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164621b27588d1630800000000000000
+      internalID: 3899422760338875489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_57
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 39
+        width: 228
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53acc1a70ad2562c0800000000000000
+      internalID: -4439091690437031371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_58
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 33
+        width: 166
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10472a0c98c0765b0800000000000000
+      internalID: -5375313844461472767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_59
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0
+        width: 251
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3421cc968149f80800000000000000
+      internalID: -8100822987058297860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_60
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 83
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54722d561783f5ae0800000000000000
+      internalID: -1558464886356170939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_61
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 210
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb14575ce9356190800000000000000
+      internalID: -7969900278322029635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallingLeavesAndPetals_62
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 55
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc03dfb2d1fda39c0800000000000000
+      internalID: -3946596807051759413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FallingLeavesAndPetals_0: -2016242773039895214
+      FallingLeavesAndPetals_1: -3985282222225869562
+      FallingLeavesAndPetals_10: 103322927079493892
+      FallingLeavesAndPetals_11: -8917069088392819545
+      FallingLeavesAndPetals_12: -5376097419371012680
+      FallingLeavesAndPetals_13: -2735034057963042897
+      FallingLeavesAndPetals_14: -8839713792928646416
+      FallingLeavesAndPetals_15: -13409025492503632
+      FallingLeavesAndPetals_16: 4316827726274645152
+      FallingLeavesAndPetals_17: 128524907308589619
+      FallingLeavesAndPetals_18: -3060110821233928171
+      FallingLeavesAndPetals_19: -8296098214564499150
+      FallingLeavesAndPetals_2: 8078047125009512438
+      FallingLeavesAndPetals_20: 703763667672846885
+      FallingLeavesAndPetals_21: 3175551489423852175
+      FallingLeavesAndPetals_22: -78082847768598944
+      FallingLeavesAndPetals_23: -4264424452373307302
+      FallingLeavesAndPetals_24: -8342310354901328354
+      FallingLeavesAndPetals_25: -7252535632144141676
+      FallingLeavesAndPetals_26: -7802413839827307945
+      FallingLeavesAndPetals_27: -617017505975997929
+      FallingLeavesAndPetals_28: -4150144206295158069
+      FallingLeavesAndPetals_29: -1171652611876003218
+      FallingLeavesAndPetals_3: 4840485901910970651
+      FallingLeavesAndPetals_30: -4995623008655121512
+      FallingLeavesAndPetals_31: 3932303763503183410
+      FallingLeavesAndPetals_32: 734356452065518502
+      FallingLeavesAndPetals_33: 7383725880486341941
+      FallingLeavesAndPetals_34: 7107910719511087138
+      FallingLeavesAndPetals_35: 3082099420724474277
+      FallingLeavesAndPetals_36: -4215135765815073706
+      FallingLeavesAndPetals_37: 3258730027703164352
+      FallingLeavesAndPetals_38: -8405243363742614532
+      FallingLeavesAndPetals_39: -3333501564605382060
+      FallingLeavesAndPetals_4: 7379923871147234722
+      FallingLeavesAndPetals_40: 2550928773763445124
+      FallingLeavesAndPetals_41: 2974358749985280419
+      FallingLeavesAndPetals_42: 712949610802925315
+      FallingLeavesAndPetals_43: 6322990672214590164
+      FallingLeavesAndPetals_44: 4497261864009014226
+      FallingLeavesAndPetals_45: -4536989276650126353
+      FallingLeavesAndPetals_46: 7501479682330573879
+      FallingLeavesAndPetals_47: -5218363013387334820
+      FallingLeavesAndPetals_48: -2915359822158972045
+      FallingLeavesAndPetals_49: 8424721520203527458
+      FallingLeavesAndPetals_5: 9161977400702069745
+      FallingLeavesAndPetals_50: 3682215393869426051
+      FallingLeavesAndPetals_51: 2621547699585438828
+      FallingLeavesAndPetals_52: 36793095939222536
+      FallingLeavesAndPetals_53: 6764474597745950063
+      FallingLeavesAndPetals_54: -962401733408280243
+      FallingLeavesAndPetals_55: -896698063773342640
+      FallingLeavesAndPetals_56: 3899422760338875489
+      FallingLeavesAndPetals_57: -4439091690437031371
+      FallingLeavesAndPetals_58: -5375313844461472767
+      FallingLeavesAndPetals_59: -8100822987058297860
+      FallingLeavesAndPetals_6: 2073043534574845763
+      FallingLeavesAndPetals_60: -1558464886356170939
+      FallingLeavesAndPetals_61: -7969900278322029635
+      FallingLeavesAndPetals_62: -3946596807051759413
+      FallingLeavesAndPetals_7: -1091747298578946000
+      FallingLeavesAndPetals_8: -175649830139362542
+      FallingLeavesAndPetals_9: 3317035897941199824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

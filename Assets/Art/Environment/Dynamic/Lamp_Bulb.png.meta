@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 4aa292376f796fc4492f37d4a1070a94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5356353172058602804
+    second: Lamp_Bulb_0
+  - first:
+      213: 6668501507380494696
+    second: Lamp_Bulb_1
+  - first:
+      213: 7471335817061634047
+    second: Lamp_Bulb_2
+  - first:
+      213: -4642580968079662328
+    second: Lamp_Bulb_3
+  - first:
+      213: 7028716616701388730
+    second: Lamp_Bulb_4
+  - first:
+      213: -1466040938930954692
+    second: Lamp_Bulb_5
+  - first:
+      213: -8216682910423506324
+    second: Lamp_Bulb_6
+  - first:
+      213: 1652863310083658993
+    second: Lamp_Bulb_7
+  - first:
+      213: 1840703968593583580
+    second: Lamp_Bulb_8
+  - first:
+      213: -614614921035896658
+    second: Lamp_Bulb_9
+  - first:
+      213: -3820095084121347232
+    second: Lamp_Bulb_10
+  - first:
+      213: -1601616947883519306
+    second: Lamp_Bulb_11
+  - first:
+      213: -1261034783826228487
+    second: Lamp_Bulb_12
+  - first:
+      213: -3051043689474456094
+    second: Lamp_Bulb_13
+  - first:
+      213: -4036612331462208729
+    second: Lamp_Bulb_14
+  - first:
+      213: 6057416507438168549
+    second: Lamp_Bulb_15
+  - first:
+      213: -6292392655931295079
+    second: Lamp_Bulb_16
+  - first:
+      213: -624512464293239032
+    second: Lamp_Bulb_17
+  - first:
+      213: 2757867023898237107
+    second: Lamp_Bulb_18
+  - first:
+      213: -3601584733675373137
+    second: Lamp_Bulb_19
+  - first:
+      213: 7893005712589311568
+    second: Lamp_Bulb_20
+  - first:
+      213: -4918705316190290437
+    second: Lamp_Bulb_21
+  - first:
+      213: 8370527291104195354
+    second: Lamp_Bulb_22
+  - first:
+      213: -5833155930320841979
+    second: Lamp_Bulb_23
+  - first:
+      213: 7379906604120425698
+    second: Lamp_Bulb_24
+  - first:
+      213: -7898604094854507621
+    second: Lamp_Bulb_25
+  - first:
+      213: -4446580997212248482
+    second: Lamp_Bulb_26
+  - first:
+      213: 1821428625138378964
+    second: Lamp_Bulb_27
+  - first:
+      213: -2819005276092523655
+    second: Lamp_Bulb_28
+  - first:
+      213: -5363197949145362387
+    second: Lamp_Bulb_29
+  - first:
+      213: 2703424513044519107
+    second: Lamp_Bulb_30
+  - first:
+      213: -4370449872514422308
+    second: Lamp_Bulb_31
+  - first:
+      213: 4316879039294069626
+    second: Lamp_Bulb_32
+  - first:
+      213: 989608249229760947
+    second: Lamp_Bulb_33
+  - first:
+      213: -8340045545550383190
+    second: Lamp_Bulb_34
+  - first:
+      213: 7527938108616809537
+    second: Lamp_Bulb_35
+  - first:
+      213: 530613341327844601
+    second: Lamp_Bulb_36
+  - first:
+      213: -3210327587920975662
+    second: Lamp_Bulb_37
+  - first:
+      213: 6097444264181089890
+    second: Lamp_Bulb_38
+  - first:
+      213: -5574214472928873677
+    second: Lamp_Bulb_39
+  - first:
+      213: 4182790331974177748
+    second: Lamp_Bulb_40
+  - first:
+      213: -559539530324730417
+    second: Lamp_Bulb_41
+  - first:
+      213: 1822504697742569367
+    second: Lamp_Bulb_42
+  - first:
+      213: -4237113728390028090
+    second: Lamp_Bulb_43
+  - first:
+      213: 1803973355287798689
+    second: Lamp_Bulb_44
+  - first:
+      213: 4814474706545698601
+    second: Lamp_Bulb_45
+  - first:
+      213: -5202862542828887831
+    second: Lamp_Bulb_46
+  - first:
+      213: -5092920004475569043
+    second: Lamp_Bulb_47
+  - first:
+      213: -3137032757535499849
+    second: Lamp_Bulb_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lamp_Bulb_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1246
+        height: 1246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43df610b4d6955a40800000000000000
+      internalID: 5356353172058602804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_1
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1243
+        width: 96
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861429b2ac64b8c50800000000000000
+      internalID: 6668501507380494696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1211
+        width: 106
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff8c9d37548fa760800000000000000
+      internalID: 7471335817061634047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_3
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1224
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8036f9cf43d329fb0800000000000000
+      internalID: -4642580968079662328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1179
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab72f5de5840b8160800000000000000
+      internalID: 7028716616701388730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_5
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1173
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e17d0988397abe0800000000000000
+      internalID: -1466040938930954692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_6
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1189
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c622f244d6a78fd80800000000000000
+      internalID: -8216682910423506324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_7
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1181
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f410db5c6620f610800000000000000
+      internalID: 1652863310083658993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_8
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1154
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd1ca8c18e7b8910800000000000000
+      internalID: 1840703968593583580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_9
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1156
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea820065cf27877f0800000000000000
+      internalID: -614614921035896658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_10
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1159
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b2bbeb2cb4cfac0800000000000000
+      internalID: -3820095084121347232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_11
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1140
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b258232fd9e5c9e0800000000000000
+      internalID: -1601616947883519306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_12
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1149
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa40ac9b87ef7ee0800000000000000
+      internalID: -1261034783826228487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 963
+        width: 94
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e58da6fde388a5d0800000000000000
+      internalID: -3051043689474456094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_14
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1034
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723db3fa8721bf7c0800000000000000
+      internalID: -4036612331462208729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_15
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1075
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9707e4834401450800000000000000
+      internalID: 6057416507438168549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_16
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1004
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a30fbc73eeca8a0800000000000000
+      internalID: -6292392655931295079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_17
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 939
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8076ff7f8394557f0800000000000000
+      internalID: -624512464293239032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_18
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 923
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8d7394279e54620800000000000000
+      internalID: 2757867023898237107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_19
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 927
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad3fc844c9940ec0800000000000000
+      internalID: -3601584733675373137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_20
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 904
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ec30d60e6998d60800000000000000
+      internalID: 7893005712589311568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_21
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 883
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfdf6a9439f3dbbb0800000000000000
+      internalID: -4918705316190290437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_22
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 401
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a137af8e8361a2470800000000000000
+      internalID: 8370527291104195354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_23
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 371
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50353c536977c0fa0800000000000000
+      internalID: -5833155930320841979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_24
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 294
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4482eb4f1ba6660800000000000000
+      internalID: 7379906604120425698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_25
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 272
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9350c0ac65826290800000000000000
+      internalID: -7898604094854507621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_26
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 258
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56692c54229a42c0800000000000000
+      internalID: -4446580997212248482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_27
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 243
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8e9192fa3074910800000000000000
+      internalID: 1821428625138378964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_28
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 242
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b9d8a13a1e0e8d0800000000000000
+      internalID: -2819005276092523655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_29
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 162
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20561571e71295b0800000000000000
+      internalID: -5363197949145362387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_30
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 158
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c81a11754e748520800000000000000
+      internalID: 2703424513044519107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_31
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 160
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd960202ffa0953c0800000000000000
+      internalID: -4370449872514422308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_32
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 162
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bd37b4d92a8eb30800000000000000
+      internalID: 4316879039294069626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_33
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 101
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9d222a57bcbbd00800000000000000
+      internalID: 989608249229760947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 101
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7f3e683c4324c80800000000000000
+      internalID: -8340045545550383190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_35
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 102
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c1b3733db987860800000000000000
+      internalID: 7527938108616809537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_36
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 95
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4edeac50e1d5700800000000000000
+      internalID: 530613341327844601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_37
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 107
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8655d5110a273d0800000000000000
+      internalID: -3210327587920975662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_38
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 105
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266c14ca0497e9450800000000000000
+      internalID: 6097444264181089890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_39
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 81
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333bb37687964a2b0800000000000000
+      internalID: -5574214472928873677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_40
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 93
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3524345a14c0a30800000000000000
+      internalID: 4182790331974177748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 78
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd943103cd1c38f0800000000000000
+      internalID: -559539530324730417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_42
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 68
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f2d66dd56da4910800000000000000
+      internalID: 1822504697742569367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_43
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 74
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4a162638fb235c0800000000000000
+      internalID: -4237113728390028090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_44
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 55
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3e2327530090910800000000000000
+      internalID: 1803973355287798689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_45
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 35
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92762c7cc3370d240800000000000000
+      internalID: 4814474706545698601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_46
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 37
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0af7f4518bbc7b0800000000000000
+      internalID: -5202862542828887831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_47
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 31
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6cb0c74d305259b0800000000000000
+      internalID: -5092920004475569043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp_Bulb_48
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 15
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b91556e3550774d0800000000000000
+      internalID: -3137032757535499849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lamp_Bulb_0: 5356353172058602804
+      Lamp_Bulb_1: 6668501507380494696
+      Lamp_Bulb_10: -3820095084121347232
+      Lamp_Bulb_11: -1601616947883519306
+      Lamp_Bulb_12: -1261034783826228487
+      Lamp_Bulb_13: -3051043689474456094
+      Lamp_Bulb_14: -4036612331462208729
+      Lamp_Bulb_15: 6057416507438168549
+      Lamp_Bulb_16: -6292392655931295079
+      Lamp_Bulb_17: -624512464293239032
+      Lamp_Bulb_18: 2757867023898237107
+      Lamp_Bulb_19: -3601584733675373137
+      Lamp_Bulb_2: 7471335817061634047
+      Lamp_Bulb_20: 7893005712589311568
+      Lamp_Bulb_21: -4918705316190290437
+      Lamp_Bulb_22: 8370527291104195354
+      Lamp_Bulb_23: -5833155930320841979
+      Lamp_Bulb_24: 7379906604120425698
+      Lamp_Bulb_25: -7898604094854507621
+      Lamp_Bulb_26: -4446580997212248482
+      Lamp_Bulb_27: 1821428625138378964
+      Lamp_Bulb_28: -2819005276092523655
+      Lamp_Bulb_29: -5363197949145362387
+      Lamp_Bulb_3: -4642580968079662328
+      Lamp_Bulb_30: 2703424513044519107
+      Lamp_Bulb_31: -4370449872514422308
+      Lamp_Bulb_32: 4316879039294069626
+      Lamp_Bulb_33: 989608249229760947
+      Lamp_Bulb_34: -8340045545550383190
+      Lamp_Bulb_35: 7527938108616809537
+      Lamp_Bulb_36: 530613341327844601
+      Lamp_Bulb_37: -3210327587920975662
+      Lamp_Bulb_38: 6097444264181089890
+      Lamp_Bulb_39: -5574214472928873677
+      Lamp_Bulb_4: 7028716616701388730
+      Lamp_Bulb_40: 4182790331974177748
+      Lamp_Bulb_41: -559539530324730417
+      Lamp_Bulb_42: 1822504697742569367
+      Lamp_Bulb_43: -4237113728390028090
+      Lamp_Bulb_44: 1803973355287798689
+      Lamp_Bulb_45: 4814474706545698601
+      Lamp_Bulb_46: -5202862542828887831
+      Lamp_Bulb_47: -5092920004475569043
+      Lamp_Bulb_48: -3137032757535499849
+      Lamp_Bulb_5: -1466040938930954692
+      Lamp_Bulb_6: -8216682910423506324
+      Lamp_Bulb_7: 1652863310083658993
+      Lamp_Bulb_8: 1840703968593583580
+      Lamp_Bulb_9: -614614921035896658
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

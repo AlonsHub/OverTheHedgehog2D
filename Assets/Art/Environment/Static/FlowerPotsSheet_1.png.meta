@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 45608a7ac25cb4d419b90eba31bc1c72
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4290375582145263346
+    second: FlowerPotsSheet_1_0
+  - first:
+      213: -4262845052503790329
+    second: FlowerPotsSheet_1_1
+  - first:
+      213: -5144938824713142811
+    second: FlowerPotsSheet_1_2
+  - first:
+      213: -8415155930036197813
+    second: FlowerPotsSheet_1_3
+  - first:
+      213: -7733182794642418573
+    second: FlowerPotsSheet_1_4
+  - first:
+      213: 5245950463617465944
+    second: FlowerPotsSheet_1_5
+  - first:
+      213: -6491230055880364866
+    second: FlowerPotsSheet_1_6
+  - first:
+      213: 2630377298297087821
+    second: FlowerPotsSheet_1_7
+  - first:
+      213: 4946430588283956354
+    second: FlowerPotsSheet_1_8
+  - first:
+      213: -4594154043415019409
+    second: FlowerPotsSheet_1_9
+  - first:
+      213: 2012443133016585953
+    second: FlowerPotsSheet_1_10
+  - first:
+      213: 2377215092586307099
+    second: FlowerPotsSheet_1_11
+  - first:
+      213: 5055058025014597089
+    second: FlowerPotsSheet_1_12
+  - first:
+      213: -8607870708057535147
+    second: FlowerPotsSheet_1_13
+  - first:
+      213: 7721899529787498631
+    second: FlowerPotsSheet_1_14
+  - first:
+      213: -2757569092905805140
+    second: FlowerPotsSheet_1_15
+  - first:
+      213: -3141771557888029353
+    second: FlowerPotsSheet_1_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 547
+        width: 308
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09c831b3268574c0800000000000000
+      internalID: -4290375582145263346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 514
+        width: 560
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70deaf0a20557d4c0800000000000000
+      internalID: -4262845052503790329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_2
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 515
+        width: 272
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed7bd1e5618998b0800000000000000
+      internalID: -5144938824713142811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_3
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 513
+        width: 249
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46abac544c573b80800000000000000
+      internalID: -8415155930036197813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_4
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 234
+        width: 286
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3741d2e68373ea490800000000000000
+      internalID: -7733182794642418573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_5
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 723
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ef635072c5dc840800000000000000
+      internalID: 5245950463617465944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 254
+        width: 373
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc69ebf7a48ae5a0800000000000000
+      internalID: -6491230055880364866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_7
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 267
+        width: 229
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47ef3a673af08420800000000000000
+      internalID: 2630377298297087821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_8
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 267
+        width: 222
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28caac8a96045a440800000000000000
+      internalID: 4946430588283956354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_9
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 275
+        width: 234
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60c2d60d394e30c0800000000000000
+      internalID: -4594154043415019409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_10
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 13
+        width: 285
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6b02afd52adeb10800000000000000
+      internalID: 2012443133016585953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_11
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 269
+        width: 223
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1edd4c18809df020800000000000000
+      internalID: 2377215092586307099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 15
+        width: 221
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e59bfbad7c272640800000000000000
+      internalID: 5055058025014597089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_13
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 13
+        width: 215
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d8dbd8233ba8880800000000000000
+      internalID: -8607870708057535147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_14
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 13
+        width: 294
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7806d30c5b2b92b60800000000000000
+      internalID: 7721899529787498631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_15
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 17
+        width: 159
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caad0cd25852bb9d0800000000000000
+      internalID: -2757569092905805140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPotsSheet_1_16
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 17
+        width: 196
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d88a6f96f2664d0800000000000000
+      internalID: -3141771557888029353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlowerPotsSheet_1_0: -4290375582145263346
+      FlowerPotsSheet_1_1: -4262845052503790329
+      FlowerPotsSheet_1_10: 2012443133016585953
+      FlowerPotsSheet_1_11: 2377215092586307099
+      FlowerPotsSheet_1_12: 5055058025014597089
+      FlowerPotsSheet_1_13: -8607870708057535147
+      FlowerPotsSheet_1_14: 7721899529787498631
+      FlowerPotsSheet_1_15: -2757569092905805140
+      FlowerPotsSheet_1_16: -3141771557888029353
+      FlowerPotsSheet_1_2: -5144938824713142811
+      FlowerPotsSheet_1_3: -8415155930036197813
+      FlowerPotsSheet_1_4: -7733182794642418573
+      FlowerPotsSheet_1_5: 5245950463617465944
+      FlowerPotsSheet_1_6: -6491230055880364866
+      FlowerPotsSheet_1_7: 2630377298297087821
+      FlowerPotsSheet_1_8: 4946430588283956354
+      FlowerPotsSheet_1_9: -4594154043415019409
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

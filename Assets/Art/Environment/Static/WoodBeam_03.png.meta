@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: e75b4a75e3806ee42b48fc489847a0f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3628660362576404315
+    second: WoodBeam_03_0
+  - first:
+      213: -5598790432851613778
+    second: WoodBeam_03_1
+  - first:
+      213: -5723812682933095379
+    second: WoodBeam_03_2
+  - first:
+      213: -2242634218792245682
+    second: WoodBeam_03_3
+  - first:
+      213: -2186389600671472486
+    second: WoodBeam_03_4
+  - first:
+      213: -6192594249288367826
+    second: WoodBeam_03_5
+  - first:
+      213: -6486802221921667667
+    second: WoodBeam_03_6
+  - first:
+      213: -7439379547782271281
+    second: WoodBeam_03_7
+  - first:
+      213: 8056616328128466430
+    second: WoodBeam_03_8
+  - first:
+      213: -932748271191114390
+    second: WoodBeam_03_9
+  - first:
+      213: 7496079533172847211
+    second: WoodBeam_03_10
+  - first:
+      213: 5568692290516973742
+    second: WoodBeam_03_11
+  - first:
+      213: 4341824236214949680
+    second: WoodBeam_03_12
+  - first:
+      213: -1784354273367773623
+    second: WoodBeam_03_13
+  - first:
+      213: -1938420102981299286
+    second: WoodBeam_03_14
+  - first:
+      213: -5746304143309900194
+    second: WoodBeam_03_15
+  - first:
+      213: 6228790275947969975
+    second: WoodBeam_03_16
+  - first:
+      213: 8260863906063831651
+    second: WoodBeam_03_17
+  - first:
+      213: 6541782048108703473
+    second: WoodBeam_03_18
+  - first:
+      213: 3797229226057897079
+    second: WoodBeam_03_19
+  - first:
+      213: -5596142162221559185
+    second: WoodBeam_03_20
+  - first:
+      213: 1295607460167986441
+    second: WoodBeam_03_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WoodBeam_03_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 1665
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0e71e20a864adc0800000000000000
+      internalID: -3628660362576404315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_1
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 727
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea72606d3c91d42b0800000000000000
+      internalID: -5598790432851613778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_2
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 392
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24b5e0e0bee090b0800000000000000
+      internalID: -5723812682933095379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_3
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 392
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46a0cb5f0090e0e0800000000000000
+      internalID: -2242634218792245682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_4
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 386
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a946e5ffd3268a1e0800000000000000
+      internalID: -2186389600671472486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_5
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 370
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e214a0d075c7f0aa0800000000000000
+      internalID: -6192594249288367826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_6
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 360
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5f42a6fbf3af5a0800000000000000
+      internalID: -6486802221921667667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_7
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 374
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcea12187b302c890800000000000000
+      internalID: -7439379547782271281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_8
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 340
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd85b95dd9decf60800000000000000
+      internalID: 8056616328128466430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_9
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 346
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d3bc6a3663e03f0800000000000000
+      internalID: -932748271191114390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_10
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 355
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62f7d69e9c670860800000000000000
+      internalID: 7496079533172847211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_11
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 354
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea878bf4228f74d40800000000000000
+      internalID: 5568692290516973742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 323
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03716cc8322414c30800000000000000
+      internalID: 4341824236214949680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_13
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 336
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ea6760e33bc37e0800000000000000
+      internalID: -1784354273367773623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_14
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 334
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3d250cf295915e0800000000000000
+      internalID: -1938420102981299286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_15
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 321
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5678aea3d60140b0800000000000000
+      internalID: -5746304143309900194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_16
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 338
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd394221cb117650800000000000000
+      internalID: 6228790275947969975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_17
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 323
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362d7c264fb74a270800000000000000
+      internalID: 8260863906063831651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_18
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 323
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1feeb87ec1419ca50800000000000000
+      internalID: 6541782048108703473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_19
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 325
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77499edccd772b430800000000000000
+      internalID: 3797229226057897079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_20
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 137
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6292346a528652b0800000000000000
+      internalID: -5596142162221559185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodBeam_03_21
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 52
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90da8afde1ceaf110800000000000000
+      internalID: 1295607460167986441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WoodBeam_03_0: -3628660362576404315
+      WoodBeam_03_1: -5598790432851613778
+      WoodBeam_03_10: 7496079533172847211
+      WoodBeam_03_11: 5568692290516973742
+      WoodBeam_03_12: 4341824236214949680
+      WoodBeam_03_13: -1784354273367773623
+      WoodBeam_03_14: -1938420102981299286
+      WoodBeam_03_15: -5746304143309900194
+      WoodBeam_03_16: 6228790275947969975
+      WoodBeam_03_17: 8260863906063831651
+      WoodBeam_03_18: 6541782048108703473
+      WoodBeam_03_19: 3797229226057897079
+      WoodBeam_03_2: -5723812682933095379
+      WoodBeam_03_20: -5596142162221559185
+      WoodBeam_03_21: 1295607460167986441
+      WoodBeam_03_3: -2242634218792245682
+      WoodBeam_03_4: -2186389600671472486
+      WoodBeam_03_5: -6192594249288367826
+      WoodBeam_03_6: -6486802221921667667
+      WoodBeam_03_7: -7439379547782271281
+      WoodBeam_03_8: 8056616328128466430
+      WoodBeam_03_9: -932748271191114390
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
