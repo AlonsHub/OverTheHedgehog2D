@@ -34,6 +34,16 @@ Hand-painted 2D cartoon with a slight storybook / children's-picture-book feel (
 ## Characters
 Hedgehog is round, compact, big-headed, with a cream face and small stubby paws. Expressions are the main storytelling: determined, cheeky, dizzy, happy. Keep any "angry" brow playful (determined, not mean) to match the wholesome tone. Consistent 3/4 side view facing right in sheets.
 
+### Cast (keep these consistent)
+- **Neutral hog**: chocolate quills, cream face, determined-cheeky. The reference for every other character.
+- **Exploding hog**: same body, ember red-orange quills (`#C8673A` / `#F28C28` tips), jute-rope fuse headband with a lit spark, mischievous grin. Lands, puffs its cheeks, bursts into a cream-orange puff cloud.
+- **Cluster hog**: plumper, quills are 5-6 round grape-like bumps in sandy-cocoa (`#8A5A32` / `#C08A55` tips), tiny extra eye pairs peeking from the bumps, wide-eyed happy. Splits into **mini hogs**: huge head, tiny body, same sandy-cocoa, dizzy spiral eyes when landed.
+- **Hen (enemy)**: one big fluffy cream feather ball (`#F3E9D2`, shadow `#D9B57A`), tiny red comb/wattle, orange beak and feet, half-lidded grumpy stare with one raised brow, faces left. Pops into a burst of feathers, wholesome.
+- **Boss rooster**: huge, puffy, dark-green + terracotta tail, tall red comb, golden beak, bushy silly-angry brows, golden bell on a jute rope.
+
+### Generation workflow that works
+Always generate character sheets with `--ref` and an existing sheet (see Tools/ArtDirector/README.md): "Redraw the attached sheet keeping everything identical EXCEPT ...". Ask for "no background, no ground shadow, no glow" and run cleanalpha afterwards. Sheets come back as 4x4 or 4x3 grids; that's fine, the importer detects frames.
+
 ## Sprite specs
 - Delivered as PNG with transparent background, no drop shadow, no ground plane, no text.
 - Environment sprites: ~1000–2000 px on the long side, imported at **100 PPU**, bilinear filtering.
