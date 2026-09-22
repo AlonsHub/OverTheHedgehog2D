@@ -33,8 +33,8 @@ public class ButtonFeel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     void OnDisable()
     {
-        transform.DOKill();
-        if (_graphic != null) { _graphic.DOKill(); _graphic.color = _baseColor; }
+        DOTween.Kill(this);
+        if (_graphic != null) _graphic.color = _baseColor;
         transform.localScale = _baseScale;
         ((RectTransform)transform).anchoredPosition = _basePos;
         _hovered = _pressed = false;
@@ -74,13 +74,12 @@ public class ButtonFeel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         float lift = _pressed ? -hoverLift * 0.5f : _hovered ? hoverLift : 0f;
         float bright = _hovered && !_pressed ? hoverBrightness : _pressed ? 0.9f : 1f;
         var rt = (RectTransform)transform;
-        transform.DOKill();
-        transform.DOScale(_baseScale * scale, 0.18f).SetEase(_pressed ? Ease.OutQuad : Ease.OutBack).SetUpdate(true).SetLink(gameObject);
-        rt.DOAnchorPos(_basePos + Vector2.up * lift, 0.18f).SetEase(Ease.OutQuad).SetUpdate(true).SetLink(gameObject);
+        //only our own tweens are killed (by id): on touch, pointer-exit arrives right after the click, and
+        //killing everything on the transform used to cancel whatever the click itself had started
+        DOTween.Kill(this);
+        transform.DOScale(_baseScale * scale, 0.18f).SetEase(_pressed ? Ease.OutQuad : Ease.OutBack).SetUpdate(true).SetId(this).SetLink(gameObject);
+        rt.DOAnchorPos(_basePos + Vector2.up * lift, 0.18f).SetEase(Ease.OutQuad).SetUpdate(true).SetId(this).SetLink(gameObject);
         if (_graphic != null)
-        {
-            _graphic.DOKill();
-            _graphic.DOColor(new Color(_baseColor.r * bright, _baseColor.g * bright, _baseColor.b * bright, _baseColor.a), 0.15f).SetUpdate(true).SetLink(gameObject);
-        }
+            _graphic.DOColor(new Color(_baseColor.r * bright, _baseColor.g * bright, _baseColor.b * bright, _baseColor.a), 0.15f).SetUpdate(true).SetId(this).SetLink(gameObject);
     }
 }

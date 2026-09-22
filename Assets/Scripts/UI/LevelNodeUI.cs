@@ -18,6 +18,7 @@ public class LevelNodeUI : MonoBehaviour
     [SerializeField] private Sprite unearnedSprite;
 
     int _index;
+    bool _picked;
 
     public void Setup(int index, LevelDefinition level, bool unlocked, int best, int earnedStars = 0)
     {
@@ -59,9 +60,11 @@ public class LevelNodeUI : MonoBehaviour
 
     void Pick()
     {
-        transform.DOKill(true);
-        transform.DOPunchScale(Vector3.one * 0.2f, 0.25f, 8, 0.7f)
-            .SetLink(gameObject)
-            .OnComplete(() => LevelProgress.Play(_index));
+        if (_picked) return;
+        _picked = true;
+        transform.DOPunchScale(Vector3.one * 0.2f, 0.25f, 8, 0.7f).SetLink(gameObject);
+        //the load is on a timer of its own, not the punch tween: on touch that tween can be killed by the
+        //pointer-exit that follows the tap, which used to swallow the click entirely
+        DOVirtual.DelayedCall(0.25f, () => LevelProgress.Play(_index)).SetLink(gameObject);
     }
 }
