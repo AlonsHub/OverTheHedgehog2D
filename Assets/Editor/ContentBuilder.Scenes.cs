@@ -21,6 +21,23 @@ public static partial class ContentBuilder
 
     static Sprite UiSprite(string name) => LoadOrThrow<Sprite>($"Assets/Art/UI/{name}.png");
 
+    //the score daisies: a 2-frame sheet, open daisy (earned) | closed bud (not yet)
+    static (Sprite earned, Sprite unearned) DaisySprites()
+    {
+        const string path = "Assets/Art/UI/StarDaisy.png";
+        var sprites = SpriteSheetImporter.LoadSprites(path);
+        if (sprites.Length < 2) { SpriteSheetImporter.ImportBands(path, 100f); sprites = SpriteSheetImporter.LoadSprites(path); }
+        return (sprites[0], sprites[1]);
+    }
+
+    //GameObject.Find skips inactive objects, which is how rebuilds used to pile up hidden result windows.
+    //this removes every scene object with the name, active or not
+    static void DestroyAllNamed(string name)
+    {
+        foreach (var t in Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            if (t != null && t.name == name && t.gameObject.scene.IsValid()) Object.DestroyImmediate(t.gameObject);
+    }
+
     static RectTransform Rect(GameObject go, Vector2 anchorMin, Vector2 anchorMax, Vector2 anchoredPos, Vector2 size)
     {
         var rt = go.GetComponent<RectTransform>();
@@ -185,7 +202,7 @@ public static partial class ContentBuilder
         }
 
         //score, top right
-        var old = GameObject.Find("ScoreHUD"); if (old != null) Object.DestroyImmediate(old);
+        DestroyAllNamed("ScoreHUD");
         var scoreGo = UiObject("ScoreHUD", canvas.transform);
         var srt = Rect(scoreGo, new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(-30f, -24f), new Vector2(600f, 60f));
         srt.pivot = new Vector2(1f, 1f);
@@ -196,8 +213,13 @@ public static partial class ContentBuilder
         var hud = scoreGo.AddComponent<ScoreHUD>();
         { var s = new SerializedObject(hud); s.FindProperty("label").objectReferenceValue = scoreText; s.ApplyModifiedPropertiesWithoutUndo(); }
 
+        //restart: a small terracotta pill under the score so any level can be retried without the map
+        DestroyAllNamed("RestartButton");
+        var restart = ButtonAt("RestartButton", canvas.transform, UiSprite("Button_Terracotta"), "Restart", new Vector2(1f, 1f), new Vector2(-118f, -118f), new Vector2(176f, 62f), 24);
+        restart.gameObject.AddComponent<RestartButton>();
+
         //result window
-        var oldRw = GameObject.Find("ResultWindow"); if (oldRw != null) Object.DestroyImmediate(oldRw);
+        DestroyAllNamed("ResultWindow");
         var rwGo = UiObject("ResultWindow", canvas.transform);
         var rwRt = Rect(rwGo, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
         rwRt.offsetMin = Vector2.zero; rwRt.offsetMax = Vector2.zero;
@@ -213,20 +235,23 @@ public static partial class ContentBuilder
         var p = panel.transform;
 
         var title = Label("Title", p, "Level clear!", 64, Ink, new Vector2(0.5f, 1f), new Vector2(0f, -95f), new Vector2(800f, 90f));
+        var daisy = DaisySprites();
         var stars = new Image[3];
         for (int i = 0; i < 3; i++)
         {
-            stars[i] = ImageAt($"Star_{i + 1}", p, UiSprite("Star"), new Vector2(0.5f, 1f), new Vector2((i - 1) * 120f, -190f), new Vector2(i == 1 ? 120f : 100f, i == 1 ? 120f : 100f));
+            stars[i] = ImageAt($"Star_{i + 1}", p, daisy.earned, new Vector2(0.5f, 1f), new Vector2((i - 1) * 120f, -190f), new Vector2(i == 1 ? 120f : 100f, i == 1 ? 120f : 100f));
         }
         var score = Label("Score", p, "Score  0", 48, Ink, new Vector2(0.5f, 1f), new Vector2(0f, -290f), new Vector2(800f, 60f));
         var best = Label("Best", p, "Best  0", 36, new Color32(0x7A, 0x4A, 0x23, 0xFF), new Vector2(0.5f, 1f), new Vector2(0f, -345f), new Vector2(800f, 50f));
         var bonus = Label("Bonus", p, "+500 for spared hogs", 30, new Color32(0x3E, 0x7F, 0x1E, 0xFF), new Vector2(0.5f, 1f), new Vector2(0f, -390f), new Vector2(800f, 40f));
-        var record = Label("Record", p, "New record!", 34, new Color32(0xD6, 0x48, 0x30, 0xFF), new Vector2(0.5f, 1f), new Vector2(300f, -290f), new Vector2(320f, 50f));
+        //ribbon in the top-right corner, like a sticker slapped on the plank
+        var record = Label("Record", p, "New record!", 34, new Color32(0xD6, 0x48, 0x30, 0xFF), new Vector2(0.5f, 1f), new Vector2(330f, -100f), new Vector2(300f, 50f));
         record.transform.localRotation = Quaternion.Euler(0f, 0f, 8f);
 
-        var mapBtn = ButtonAt("MapButton", p, UiSprite("Button_Terracotta"), "Map", new Vector2(0.5f, 0f), new Vector2(-300f, 95f), new Vector2(260f, 110f), 36);
-        var againBtn = ButtonAt("PlayAgainButton", p, UiSprite("Button_Green"), "Play again", new Vector2(0.5f, 0f), new Vector2(0f, 95f), new Vector2(300f, 120f), 36);
-        var nextBtn = ButtonAt("NextButton", p, UiSprite("Button_Green"), "Next  >", new Vector2(0.5f, 0f), new Vector2(300f, 95f), new Vector2(260f, 110f), 36);
+        //one row well inside the rope edge, short enough to clear the painted daisy in the corner
+        var mapBtn = ButtonAt("MapButton", p, UiSprite("Button_Terracotta"), "Map", new Vector2(0.5f, 0f), new Vector2(-260f, 118f), new Vector2(220f, 84f), 32);
+        var againBtn = ButtonAt("PlayAgainButton", p, UiSprite("Button_Green"), "Play again", new Vector2(0.5f, 0f), new Vector2(0f, 118f), new Vector2(240f, 90f), 32);
+        var nextBtn = ButtonAt("NextButton", p, UiSprite("Button_Green"), "Next  >", new Vector2(0.5f, 0f), new Vector2(260f, 118f), new Vector2(220f, 84f), 32);
 
         var rso = new SerializedObject(rw);
         rso.FindProperty("panel").objectReferenceValue = panel.rectTransform;
@@ -238,6 +263,8 @@ public static partial class ContentBuilder
         rso.FindProperty("playAgainButton").objectReferenceValue = againBtn;
         rso.FindProperty("nextButton").objectReferenceValue = nextBtn;
         rso.FindProperty("mapButton").objectReferenceValue = mapBtn;
+        rso.FindProperty("earnedSprite").objectReferenceValue = daisy.earned;
+        rso.FindProperty("unearnedSprite").objectReferenceValue = daisy.unearned;
         var starsProp = rso.FindProperty("stars");
         starsProp.arraySize = 3;
         for (int i = 0; i < 3; i++) starsProp.GetArrayElementAtIndex(i).objectReferenceValue = stars[i];
@@ -245,7 +272,7 @@ public static partial class ContentBuilder
         rwGo.SetActive(false);
 
         //tutorial plank: top centre, only wakes up on tutorial levels
-        var oldTut = GameObject.Find("TutorialHints"); if (oldTut != null) Object.DestroyImmediate(oldTut);
+        DestroyAllNamed("TutorialHints");
         var tutGo = UiObject("TutorialHints", canvas.transform);
         Rect(tutGo, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -20f), new Vector2(10f, 10f));
         var plank = ImageAt("Plank", tutGo.transform, UiSprite("Panel_Planks"), new Vector2(0.5f, 1f), new Vector2(0f, -100f), new Vector2(980f, 190f), false);
@@ -254,10 +281,10 @@ public static partial class ContentBuilder
         var hintText = Label("Hint", plank.transform, "", 30, Ink, new Vector2(0.5f, 0.5f), new Vector2(-70f, 6f), new Vector2(720f, 150f));
         var next = ButtonAt("NextButton", plank.transform, UiSprite("Button_Green"), "Next  >", new Vector2(1f, 0.5f), new Vector2(-105f, 0f), new Vector2(150f, 64f), 24);
         //skip the whole lesson: tucked in the bottom-right, out of the way of the slingshot
-        var skipAll = ButtonAt("SkipTutorialButton", canvas.transform, UiSprite("Button_Terracotta"), "Skip tutorial", new Vector2(1f, 0f), new Vector2(-150f, 60f), new Vector2(240f, 70f), 24);
+        var skipAll = ButtonAt("SkipTutorialButton", canvas.transform, UiSprite("Button_Terracotta"), "Skip tutorial", new Vector2(1f, 1f), new Vector2(-118f, -198f), new Vector2(200f, 62f), 22);
         skipAll.transform.SetParent(tutGo.transform, true);
         //the pointing hand lives in the world so it can hover next to hogs and hens
-        var oldPtr = GameObject.Find("TutorialPointer"); if (oldPtr != null) Object.DestroyImmediate(oldPtr);
+        DestroyAllNamed("TutorialPointer");
         SpriteSheetImporter.ImportSingle("Assets/Art/UI/Pointer.png", 800f, new Vector2(0.17f, 0.15f));
         var ptrGo = new GameObject("TutorialPointer");
         ptrGo.transform.localScale = Vector3.one * 1.3f;
@@ -383,8 +410,13 @@ public static partial class ContentBuilder
         var colors = btn.colors; colors.disabledColor = new Color(0.75f, 0.75f, 0.75f, 1f); btn.colors = colors;
 
         var number = Label("Number", go.transform, "1", 44, Cream, new Vector2(0.5f, 0.5f), new Vector2(0f, -22f), new Vector2(150f, 60f));
-        var bestT = Label("Best", go.transform, "0", 24, Ink, new Vector2(0.5f, 0f), new Vector2(0f, -18f), new Vector2(220f, 36f));
+        var bestT = Label("Best", go.transform, "0", 22, Ink, new Vector2(0.5f, 0f), new Vector2(0f, -76f), new Vector2(220f, 32f));
         var badge = ImageAt("BossBadge", go.transform, UiSprite("Star"), new Vector2(1f, 1f), new Vector2(-10f, -10f), new Vector2(64f, 64f));
+        //three daisies in a row just under the pot rim
+        var nodeDaisy = DaisySprites();
+        var nodeStars = new Image[3];
+        for (int i = 0; i < 3; i++)
+            nodeStars[i] = ImageAt($"Star_{i + 1}", go.transform, nodeDaisy.earned, new Vector2(0.5f, 0f), new Vector2((i - 1) * 46f, -16f), new Vector2(38f, 38f));
 
         AddButtonSounds(go.transform);
         var node = go.AddComponent<LevelNodeUI>();
@@ -396,6 +428,11 @@ public static partial class ContentBuilder
         so.FindProperty("numberLabel").objectReferenceValue = number;
         so.FindProperty("bestLabel").objectReferenceValue = bestT;
         so.FindProperty("bossBadge").objectReferenceValue = badge.gameObject;
+        var nodeStarsProp = so.FindProperty("stars");
+        nodeStarsProp.arraySize = 3;
+        for (int i = 0; i < 3; i++) nodeStarsProp.GetArrayElementAtIndex(i).objectReferenceValue = nodeStars[i];
+        so.FindProperty("earnedSprite").objectReferenceValue = nodeDaisy.earned;
+        so.FindProperty("unearnedSprite").objectReferenceValue = nodeDaisy.unearned;
         so.ApplyModifiedPropertiesWithoutUndo();
 
         return SavePrefab(go, path);
@@ -438,7 +475,11 @@ public static partial class ContentBuilder
         }
 
         var back = ButtonAt("BackButton", canvas.transform, UiSprite("Button_Terracotta"), "<  Menu", new Vector2(0f, 1f), new Vector2(150f, -70f), new Vector2(240f, 90f), 30);
-        Label("Heading", canvas.transform, "Pick a level", 56, Cream, new Vector2(0.5f, 1f), new Vector2(0f, -70f), new Vector2(700f, 80f));
+        //heading on its own little plank so it reads over the busy painting
+        var headPlank = ImageAt("HeadingPlank", canvas.transform, UiSprite("Panel_Planks"), new Vector2(0.5f, 1f), new Vector2(0f, -70f), new Vector2(650f, 100f), false);
+        headPlank.type = Image.Type.Sliced;
+        headPlank.pixelsPerUnitMultiplier = 4f;
+        Label("Heading", headPlank.transform, "Pick a level", 48, Ink, new Vector2(0.5f, 0.5f), new Vector2(0f, 4f), new Vector2(600f, 80f));
 
         var hogSprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/SpriteSheets/Idle.png");
         var marker = ImageAt("HedgehogMarker", canvas.transform, hogSprite, new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(120f, 110f));
@@ -478,7 +519,8 @@ public static partial class ContentBuilder
         BuildHogPrefabs();
         BuildEnemyPrefabs();
         ReplaceEnemiesInBlockSets();
-        BuildBlockSets();
+        //BuildBlockSets() is deliberately not here: the block set prefabs are hand-tuned now and a rebuild
+        //would throw those layouts away. run it on its own if a set really needs regenerating
         SkinBlockSets();
         BuildLevels();
         BuildStartMenu();

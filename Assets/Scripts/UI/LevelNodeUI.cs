@@ -12,12 +12,25 @@ public class LevelNodeUI : MonoBehaviour
     [SerializeField] private Text numberLabel;
     [SerializeField] private Text bestLabel;
     [SerializeField] private GameObject bossBadge;
+    [Tooltip("Three daisies under the pot: open for each one earned, a closed bud for the rest")]
+    [SerializeField] private Image[] stars;
+    [SerializeField] private Sprite earnedSprite;
+    [SerializeField] private Sprite unearnedSprite;
 
     int _index;
 
-    public void Setup(int index, LevelDefinition level, bool unlocked, int best)
+    public void Setup(int index, LevelDefinition level, bool unlocked, int best, int earnedStars = 0)
     {
         _index = index;
+
+        //daisies only show once the level has been cleared at least once
+        if (stars != null)
+            for (int i = 0; i < stars.Length; i++)
+            {
+                if (stars[i] == null) continue;
+                stars[i].gameObject.SetActive(unlocked && best > 0);
+                stars[i].sprite = i < earnedStars ? earnedSprite : unearnedSprite;
+            }
 
         if (pot != null) pot.sprite = unlocked ? unlockedSprite : lockedSprite;
         if (numberLabel != null)

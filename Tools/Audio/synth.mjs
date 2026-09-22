@@ -159,6 +159,10 @@ const SOUNDS = {
   ui_click: () => normalize(mix(
     mul(osc("sine", t => 880 - 300 * t / 0.06, 0.07), decay(0.07, 0.02)),
     gain(mul(lowpass(noise(0.02, 7), 2500), decay(0.02, 0.005)), 0.15)), 0.55),
+  //a feather-light tick as the pointer lands on a button
+  ui_hover: () => normalize(mix(
+    mul(osc("sine", t => 1250 + 250 * Math.min(1, t / 0.03), 0.045), decay(0.045, 0.012)),
+    gain(mul(lowpass(noise(0.015, 8), 3000), decay(0.015, 0.004)), 0.1)), 0.32),
   ui_back: () => normalize(mul(osc("sine", t => 620 - 220 * t / 0.07, 0.08), decay(0.08, 0.025)), 0.5),
   node_pop: () => normalize(mul(osc("sine", t => 420 + 320 * Math.min(1, t / 0.05), 0.09), decay(0.09, 0.03)), 0.5),
   score_tick: () => normalize(mul(osc("sine", 1500, 0.03), decay(0.03, 0.01)), 0.3),
@@ -213,6 +217,16 @@ const SOUNDS = {
     return normalize(soft(mix(gain(sub, 0.9), gain(body, 0.8), gain(puff, 0.35))), 0.8);
   },
   dust_poof: () => normalize(mul(lowpass(noise(0.16, 41), t => 1300 * Math.exp(-t * 14) + 250), env([[0, 0], [0.012, 1], [0.16, 0]])), 0.45),
+  //a plank splintering: a low crack, a spray of splinters, and a couple of bits clattering down
+  wood_break: () => {
+    const crack = mix(
+      mul(bandpass(noise(0.14, 71), 300, 6), decay(0.14, 0.035)),
+      gain(mul(lowpass(noise(0.03, 73), 5000), decay(0.03, 0.006)), 0.9));
+    const splinters = mul(bandpass(noise(0.22, 79), t => 1800 + 900 * t, 3), env([[0, 0], [0.01, 1], [0.22, 0]]));
+    const bits = [];
+    for (let i = 0; i < 3; i++) bits.push([gain(mul(bandpass(noise(0.06, 83 + i), 900 + i * 350, 8), decay(0.06, 0.015)), 0.4), 0.12 + i * 0.07]);
+    return normalize(mix(crack, gain(splinters, 0.45), ...bits), 0.75);
+  },
   wood_knock: () => normalize(mix(
     mul(bandpass(noise(0.12, 43), 420, 9), decay(0.12, 0.03)),
     gain(mul(bandpass(noise(0.08, 47), 1250, 7), decay(0.08, 0.015)), 0.5),

@@ -12,6 +12,7 @@ public static partial class ContentBuilder
     {
         //ui: soft
         ("ui_click", 0.55f, 0.97f, 1.03f, 0.05f),
+        ("ui_hover", 0.35f, 0.97f, 1.05f, 0.04f),
         ("ui_back", 0.55f, 0.97f, 1.03f, 0.05f),
         ("node_pop", 0.5f, 0.9f, 1.25f, 0.03f),
         ("score_tick", 0.3f, 0.95f, 1.1f, 0.06f),
@@ -31,6 +32,7 @@ public static partial class ContentBuilder
         ("explosion", 0.7f, 0.95f, 1.05f, 0.2f),
         ("dust_poof", 0.4f, 0.85f, 1.15f, 0.05f),
         ("wood_knock", 0.6f, 0.9f, 1.1f, 0.05f),
+        ("wood_break", 0.8f, 0.9f, 1.1f, 0.05f),
         //hens: the stars of the show
         ("hen_cluck", 0.4f, 0.85f, 1.2f, 0.3f),
         ("hen_hit", 1f, 0.92f, 1.1f, 0.08f),
@@ -92,6 +94,10 @@ public static partial class ContentBuilder
             var so = new SerializedObject(sfx);
             so.FindProperty("sound").stringValue = back ? "ui_back" : "ui_click";
             so.ApplyModifiedPropertiesWithoutUndo();
+
+            //hover/press feel: ButtonFeel drives scale, lift and tint itself, so the Button stops tinting
+            if (button.GetComponent<ButtonFeel>() == null) button.gameObject.AddComponent<ButtonFeel>();
+            button.transition = Selectable.Transition.None;
         }
     }
 }

@@ -105,6 +105,12 @@ public static partial class ContentBuilder
         var cloudSprite = LoadOrThrow<Sprite>("Assets/Art/VFX/ExplosionCloud.png");
         var featherTex = LoadOrThrow<Texture2D>("Assets/Art/VFX/Feathers.png");
         var featherSprites = SpriteSheetImporter.LoadSprites("Assets/Art/VFX/Feathers.png");
+        //four puff shapes on a 2x2 sheet: the burst scatters them at random so no two clouds look alike
+        SpriteSheetImporter.ImportGrid("Assets/Art/VFX/ExplosionPuffs.png", 100f, 2, 2);
+        var puffTex = LoadOrThrow<Texture2D>("Assets/Art/VFX/ExplosionPuffs.png");
+        var puffSprites = SpriteSheetImporter.LoadSprites("Assets/Art/VFX/ExplosionPuffs.png");
+        //plank shards for Splinterable (sliced here, handed out by the block skinner)
+        SpriteSheetImporter.ImportGrid("Assets/Art/VFX/WoodShards.png", 100f, 2, 2);
 
         //dust poof: a handful of puffs that swell and fade
         {
@@ -127,34 +133,48 @@ public static partial class ContentBuilder
             SavePrefab(ps.gameObject, $"{VfxDir}/VFX_DustPoof.prefab");
         }
 
-        //explosion: a big orange bloom of clouds plus a ring of small cream puffs
+        //explosion: a big soft bloom of cream-orange puffs that swell and drift up, a bright cream flash
+        //underneath for the first few frames, and a ring of small dust puffs thrown further out
         {
-            var ps = NewSystem("VFX_Explosion", VfxMaterial("VFX_Explosion", cloudTex), new[] { cloudSprite }, 7);
+            var ps = NewSystem("VFX_Explosion", VfxMaterial("VFX_ExplosionPuffs", puffTex), puffSprites, 7);
             var main = ps.main;
-            main.startLifetime = new ParticleSystem.MinMaxCurve(0.55f, 0.9f);
-            main.startSpeed = new ParticleSystem.MinMaxCurve(2f, 5f);
-            main.startSize = new ParticleSystem.MinMaxCurve(1.2f, 2.2f);
-            main.startRotation = new ParticleSystem.MinMaxCurve(-Mathf.PI, Mathf.PI);
-            main.gravityModifier = -0.1f;
+            main.startLifetime = new ParticleSystem.MinMaxCurve(0.7f, 1.1f);
+            main.startSpeed = new ParticleSystem.MinMaxCurve(2.5f, 6f);
+            main.startSize = new ParticleSystem.MinMaxCurve(1.8f, 3.2f);
+            main.startRotation = new ParticleSystem.MinMaxCurve(-0.4f, 0.4f);
+            main.gravityModifier = -0.12f;
+            main.maxParticles = 96;
             var emission = ps.emission;
-            emission.SetBursts(new[] { new ParticleSystem.Burst(0f, 8, 10) });
+            emission.SetBursts(new[] { new ParticleSystem.Burst(0f, 12, 14), new ParticleSystem.Burst(0.06f, 5, 6) });
             var shape = ps.shape;
             shape.shapeType = ParticleSystemShapeType.Circle;
-            shape.radius = 0.3f;
+            shape.radius = 0.5f;
             var col = ps.colorOverLifetime; col.enabled = true; col.color = FadeOut(Color.white);
-            var size = ps.sizeOverLifetime; size.enabled = true; size.size = new ParticleSystem.MinMaxCurve(1f, Grow(0.5f, 1.3f));
-            Damp(ps, 0.5f, 0.5f);
+            var size = ps.sizeOverLifetime; size.enabled = true; size.size = new ParticleSystem.MinMaxCurve(1f, Grow(0.55f, 1.35f));
+            Spin(ps, -0.6f, 0.6f);
+            Damp(ps, 0.55f, 0.6f);
+
+            var flash = NewSystem("Flash", VfxMaterial("VFX_ExplosionPuffs", puffTex), new[] { puffSprites[0] }, 6);
+            flash.transform.SetParent(ps.transform, false);
+            var fm = flash.main;
+            fm.startLifetime = new ParticleSystem.MinMaxCurve(0.22f);
+            fm.startSpeed = new ParticleSystem.MinMaxCurve(0f);
+            fm.startSize = new ParticleSystem.MinMaxCurve(4.5f);
+            fm.startColor = new Color(1f, 0.96f, 0.85f, 0.9f);
+            var fe = flash.emission; fe.SetBursts(new[] { new ParticleSystem.Burst(0f, 1) });
+            var fcol = flash.colorOverLifetime; fcol.enabled = true; fcol.color = FadeOut(Color.white);
+            var fsize = flash.sizeOverLifetime; fsize.enabled = true; fsize.size = new ParticleSystem.MinMaxCurve(1f, Grow(0.6f, 1.5f));
 
             var puffs = NewSystem("Puffs", VfxMaterial("VFX_Dust", dustTex), new[] { dustSprite }, 8);
             puffs.transform.SetParent(ps.transform, false);
             var pm = puffs.main;
-            pm.startLifetime = new ParticleSystem.MinMaxCurve(0.5f, 0.8f);
-            pm.startSpeed = new ParticleSystem.MinMaxCurve(5f, 8f);
-            pm.startSize = new ParticleSystem.MinMaxCurve(0.4f, 0.7f);
+            pm.startLifetime = new ParticleSystem.MinMaxCurve(0.6f, 0.9f);
+            pm.startSpeed = new ParticleSystem.MinMaxCurve(6f, 10f);
+            pm.startSize = new ParticleSystem.MinMaxCurve(0.5f, 0.9f);
             pm.startRotation = new ParticleSystem.MinMaxCurve(-Mathf.PI, Mathf.PI);
             pm.startDelay = 0.03f;
-            var pe = puffs.emission; pe.SetBursts(new[] { new ParticleSystem.Burst(0f, 10, 12) });
-            var pshape = puffs.shape; pshape.shapeType = ParticleSystemShapeType.Circle; pshape.radius = 0.2f;
+            var pe = puffs.emission; pe.SetBursts(new[] { new ParticleSystem.Burst(0f, 12, 14) });
+            var pshape = puffs.shape; pshape.shapeType = ParticleSystemShapeType.Circle; pshape.radius = 0.3f;
             var pcol = puffs.colorOverLifetime; pcol.enabled = true; pcol.color = FadeOut(Color.white);
             Damp(puffs, 0.6f, 0.3f);
 

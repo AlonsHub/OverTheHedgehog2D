@@ -133,19 +133,34 @@ public static partial class ContentBuilder
         AssetDatabase.CreateFolder(parent, System.IO.Path.GetFileName(path));
     }
 
+    //the exploding hog sheets are 4x4 grids on 1024 px: uniform cells so the body never jumps between
+    //frames, PPU 160 so it is as wide as the neutral hog, pivot a little below centre so the fuse spark
+    //on top doesn't push the body down in the pouch
+    public static void ImportExplodingHogArt()
+    {
+        var pivot = new Vector2(0.5f, 0.42f);
+        foreach (var sheet in new[] { "ExplodingHog_Idle", "ExplodingHog_Fly", "ExplodingHog_Impact" })
+            SpriteSheetImporter.ImportBands($"Assets/Art/Hogs/Exploding/{sheet}.png", 160f, 24, 4, 1.6f, pivot, true, false);
+    }
+
     //all hog + hen clips and controllers. returns the controllers keyed by name
     public static Dictionary<string, AnimatorController> BuildAnimations()
     {
         var result = new Dictionary<string, AnimatorController>();
 
+        ImportExplodingHogArt();
         var expIdle = SpriteSheetImporter.LoadSprites("Assets/Art/Hogs/Exploding/ExplodingHog_Idle.png");
         var expFly = SpriteSheetImporter.LoadSprites("Assets/Art/Hogs/Exploding/ExplodingHog_Fly.png");
         var expImpact = SpriteSheetImporter.LoadSprites("Assets/Art/Hogs/Exploding/ExplodingHog_Impact.png");
+        //landing = the fly sheet's curl played backwards, then the impact sheet's wide-eyed puffing frames
+        //while the fuse burns (the ExplodingHog script swells and flushes the sprite on top of this)
+        var landing = new List<Sprite> { expFly[7], expFly[6], expFly[5], expFly[4] };
+        landing.AddRange(Range(expImpact, 8, 15));
         result["ExplodingHog"] = MakeHogController("ExplodingHog",
             MakeClip("ExplodingHog_Idle", expIdle, 6f, true),
             MakeClip("ExplodingHog_Flying", Range(expFly, 0, 5), 12f, false),
             MakeClip("ExplodingHog_FlyingLoop", Range(expFly, 6, 15), 12f, true),
-            MakeClip("ExplodingHog_Impact", expImpact, 10f, false));
+            MakeClip("ExplodingHog_Impact", landing.ToArray(), 10f, false));
 
         var cluIdle = SpriteSheetImporter.LoadSprites("Assets/Art/Hogs/Cluster/ClusterHog_Idle.png");
         var cluFly = SpriteSheetImporter.LoadSprites("Assets/Art/Hogs/Cluster/ClusterHog_Fly.png");

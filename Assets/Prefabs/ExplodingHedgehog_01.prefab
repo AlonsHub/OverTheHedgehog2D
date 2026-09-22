@@ -242,5 +242,8 @@ MonoBehaviour:
   explosionRadius: 4
   explosionForce: 12
   lethalRadius: 2
+  shatterRadius: 3
   explosionVfx: {fileID: 3925434565071710494, guid: 9edd581fb4a27034398de4a9310d527e, type: 3}
   fuseDelay: 1
+  puffScale: 1.3
+  puffTint: {r: 1, g: 0.75, b: 0.7, a: 1}

@@ -33,6 +33,9 @@ and say "FIRST"/"SECOND" in the prompt.
   variant that keeps the outline and silhouette (the edits endpoint re-frames and washes out `--ref` recolours).
 - `node Tools/ArtDirector/tile.mjs <in.png> <out.png> [--size 256] [--fill 0.5]` shrinks a sprite onto a square
   transparent canvas for textures that repeat along a LineRenderer (the aim dots): the margin is the gap.
+- `node Tools/ArtDirector/defringe.mjs <png...> [--lum 0.42 --sat 0.6]` removes the OPAQUE pale rim / baked
+  drop shadow the model paints around UI props (cleanalpha only handles semi-transparent halos): it floods
+  from the canvas edge through light pixels and clears them, so anything inside the outline is safe.
 - In Unity, `SpriteSheetImporter.ImportBands(path, ppu)` slices a sheet by detecting the frame rows/columns
   (grids come out slightly uneven); `ImportGrid` for scattered frames (particle bursts); `ImportSingle` for
   single sprites. `ContentBuilder` (menu *Over The Hedgehog > Build > Everything*) rebuilds clips, controllers,

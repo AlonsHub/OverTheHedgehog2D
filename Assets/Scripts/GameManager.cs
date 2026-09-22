@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
     //nothing left to throw and nothing still flying
     bool OutOfHogs =>
         stock != null && stock.Count == 0 &&
-        thrower != null && !thrower.IsLoaded && !thrower.IsThrowing &&
+        thrower != null && !thrower.IsLoaded && !thrower.IsLoading && !thrower.IsThrowing &&
         Hog.airborne.Count == 0;
 
     public void AddScore(int amount)
@@ -140,12 +140,13 @@ public class GameManager : MonoBehaviour
     {
         IsOver = true;
 
-        int spared = stock.Count + (thrower.IsLoaded ? 1 : 0);
+        int spared = stock.Count + (thrower.IsLoaded || thrower.IsLoading ? 1 : 0);
         int bonus = spared * bonusPerSparedHog;
         Score += bonus;
         ScoreChanged?.Invoke(Score);
 
         bool record = LevelProgress.ReportScore(LevelIndex, Score);
+        LevelProgress.ReportStars(LevelIndex, LevelProgress.StarsFor(Score, HensAtStart));
         LevelProgress.Unlock(LevelIndex + 1);
 
         resultWindow?.Show(true, Score, LevelProgress.BestScore(LevelIndex), record, bonus, LevelProgress.HasNext);

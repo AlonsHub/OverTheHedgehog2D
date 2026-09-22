@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -20,6 +21,8 @@ public static partial class ContentBuilder
     public struct BlockArt
     {
         public Sprite beam, post, crate;
+        public Sprite[] shards;
+        public GameObject dust;
         public Material material;
     }
 
@@ -47,6 +50,8 @@ public static partial class ContentBuilder
             beam = ImportBlockSprite(BlockArtPath(set, "Beam_H"), true),
             post = ImportBlockSprite(BlockArtPath(set, "Post_V"), false),
             crate = LoadOrThrow<Sprite>("Assets/Art/Environment/Static/Box_Texture.png"),
+            shards = SpriteSheetImporter.LoadSprites("Assets/Art/VFX/WoodShards.png"),
+            dust = AssetDatabase.LoadAssetAtPath<GameObject>($"{VfxDir}/VFX_DustPoof.prefab"),
             //same lit sprite material the rest of the playfield uses
             material = LoadOrThrow<GameObject>($"{PrefabDir}/Hedgehog_01.prefab").GetComponentInChildren<SpriteRenderer>().sharedMaterial,
         };
@@ -65,10 +70,11 @@ public static partial class ContentBuilder
 
         //the old look was the renderer on the root, sized by hand. it goes
         var oldSr = block.GetComponent<SpriteRenderer>();
-        int order = oldSr != null ? oldSr.sortingOrder : 0;
+        var gfxT = block.transform.Find("GFX");
+        var gfxSr = gfxT != null ? gfxT.GetComponent<SpriteRenderer>() : null;
+        int order = oldSr != null ? oldSr.sortingOrder : gfxSr != null ? gfxSr.sortingOrder : 0;
         if (oldSr != null) Object.DestroyImmediate(oldSr);
 
-        var gfxT = block.transform.Find("GFX");
         var gfx = gfxT != null ? gfxT.gameObject : new GameObject("GFX");
         gfx.transform.SetParent(block.transform, false);
         gfx.transform.localPosition = (Vector3)box.offset;
@@ -106,13 +112,28 @@ public static partial class ContentBuilder
             Vector3 s = art.crate.bounds.size;
             gfx.transform.localScale = new Vector3(w / s.x / sx, h / s.y / sy, 1f);
         }
+
+        //planks splinter in an explosion, crates only get shoved
+        bool plank = aspect > 1.35f || aspect < 1f / 1.35f;
+        var splinter = block.GetComponent<Splinterable>();
+        if (plank && art.shards != null)
+        {
+            if (splinter == null) splinter = block.AddComponent<Splinterable>();
+            var so = new SerializedObject(splinter);
+            var shards = so.FindProperty("shardSprites");
+            shards.arraySize = art.shards.Length;
+            for (int i = 0; i < art.shards.Length; i++) shards.GetArrayElementAtIndex(i).objectReferenceValue = art.shards[i];
+            so.FindProperty("dustVfx").objectReferenceValue = art.dust;
+            so.ApplyModifiedPropertiesWithoutUndo();
+        }
+        else if (!plank && splinter != null) Object.DestroyImmediate(splinter);
     }
 
     public static void SkinBlockSets()
     {
         var arts = new BlockArt[BlockArtSets.Length];
         for (int i = 0; i < arts.Length; i++) arts[i] = ImportBlockArt(BlockArtSets[i]);
-        foreach (string name in new[] { "BlockSet_01", "BlockSet_02", "BlockSet_03", "BlockSet_04", "BlockSet_Boss", "BlockSet_Tutorial" })
+        foreach (string name in BlockSetNames)
         {
             string path = $"{PrefabDir}/{name}.prefab";
             if (AssetDatabase.LoadAssetAtPath<GameObject>(path) == null) continue;
@@ -134,6 +155,89 @@ public static partial class ContentBuilder
         }
         AssetDatabase.SaveAssets();
     }
+
+    public static readonly string[] BlockSetNames = { "BlockSet_01", "BlockSet_02", "BlockSet_03", "BlockSet_04", "BlockSet_Boss", "BlockSet_Tutorial" };
+
+    //hand edits in the prefabs sometimes move or stretch the GFX child instead of the block root, which
+    //leaves the collider somewhere else than the wood. this makes each GFX the truth: the root is moved,
+    //rotated and scaled onto the GFX's visual rect (collider reset to a unit box), a second GFX under one
+    //root becomes a block of its own, and a root with no GFX at all is removed. then everything is re-skinned
+    public static string ReseatBlocks()
+    {
+        var log = new System.Text.StringBuilder();
+        foreach (string name in BlockSetNames)
+        {
+            string path = $"{PrefabDir}/{name}.prefab";
+            if (AssetDatabase.LoadAssetAtPath<GameObject>(path) == null) continue;
+            var root = PrefabUtility.LoadPrefabContents(path);
+            var blocks = new System.Collections.Generic.List<Transform>();
+            foreach (Transform c in root.transform)
+                if (c.GetComponent<Enemy>() == null && c.GetComponent<BoxCollider2D>() != null) blocks.Add(c);
+
+            foreach (var block in blocks)
+            {
+                var gfxs = new System.Collections.Generic.List<SpriteRenderer>();
+                foreach (Transform c in block) { var sr = c.GetComponent<SpriteRenderer>(); if (sr != null && sr.sprite != null) gfxs.Add(sr); }
+
+                if (gfxs.Count == 0)
+                {
+                    log.AppendLine($"{name}/{block.name}: no GFX, removed (collider was at {Fmt(block.localPosition)} size {Fmt(block.localScale)})");
+                    Object.DestroyImmediate(block.gameObject);
+                    continue;
+                }
+
+                for (int i = 0; i < gfxs.Count; i++)
+                {
+                    var target = block;
+                    if (i > 0)
+                    {
+                        //an extra GFX is a block the level designer meant to add: clone the root for it
+                        var clone = Object.Instantiate(block.gameObject, root.transform);
+                        clone.name = block.name + "_" + i;
+                        target = clone.transform;
+                        foreach (Transform c in clone.transform.Cast<Transform>().ToArray()) Object.DestroyImmediate(c.gameObject);
+                        log.AppendLine($"{name}/{block.name}: extra GFX \"{gfxs[i].name}\" became block {clone.name}");
+                    }
+                    Seat(name, target, gfxs[i], log);
+                }
+                //the GFX children are rebuilt by the skinner from the seated root
+                foreach (Transform c in block.Cast<Transform>().ToArray()) Object.DestroyImmediate(c.gameObject);
+            }
+            PrefabUtility.SaveAsPrefabAsset(root, path);
+            PrefabUtility.UnloadPrefabContents(root);
+        }
+        SkinBlockSets();
+        Debug.Log("ContentBuilder: reseat\n" + log);
+        return log.ToString();
+    }
+
+    //move a block root onto its GFX's visual rectangle. the visual is the sprite quad (sliced size or the
+    //sprite's own size) under the GFX's full transform, so stretches done on either level are folded in
+    static void Seat(string set, Transform block, SpriteRenderer gfx, System.Text.StringBuilder log)
+    {
+        Vector2 quad = gfx.drawMode == SpriteDrawMode.Simple ? (Vector2)gfx.sprite.bounds.size : gfx.size;
+        Vector3 ls = gfx.transform.lossyScale;
+        var size = new Vector2(Mathf.Abs(quad.x * ls.x), Mathf.Abs(quad.y * ls.y));
+        Vector3 centre = gfx.transform.position;
+        Quaternion rot = gfx.transform.rotation;
+        //sliced posts that were drawn rotated (an old beam trick) count as lying down
+        float z = rot.eulerAngles.z;
+        if (Mathf.Abs(Mathf.DeltaAngle(z, 90f)) < 1f || Mathf.Abs(Mathf.DeltaAngle(z, -90f)) < 1f) { size = new Vector2(size.y, size.x); rot = Quaternion.identity; }
+
+        var box = block.GetComponent<BoxCollider2D>();
+        Vector3 oldPos = block.localPosition, oldScale = block.localScale;
+        bool moved = (oldPos - centre).sqrMagnitude > 1e-4f || ((Vector2)oldScale - size).sqrMagnitude > 1e-4f || box.size != Vector2.one || box.offset != Vector2.zero;
+        block.position = centre;
+        block.rotation = rot;
+        block.localScale = new Vector3(size.x, size.y, 1f);
+        box.size = Vector2.one;
+        box.offset = Vector2.zero;
+        var rb = block.GetComponent<Rigidbody2D>();
+        if (rb != null) rb.mass = Mathf.Max(0.5f, size.x * size.y);
+        if (moved) log.AppendLine($"{set}/{block.name}: {Fmt(oldPos)} {Fmt(oldScale)} -> {Fmt(block.localPosition)} {Fmt(block.localScale)}");
+    }
+
+    static string Fmt(Vector3 v) => $"({v.x:0.00}, {v.y:0.00})";
 
     //a row per art set of the real block sizes, each with its collider drawn as a thin frame, dropped into
     //the active scene as "BlockArtPreview" so the options can be compared side by side. destroy it after

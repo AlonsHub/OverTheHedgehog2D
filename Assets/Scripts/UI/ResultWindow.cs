@@ -15,6 +15,8 @@ public class ResultWindow : MonoBehaviour
     [SerializeField] private Button nextButton;
     [SerializeField] private Button mapButton;
     [SerializeField] private Image[] stars;
+    [SerializeField] private Sprite earnedSprite;
+    [SerializeField] private Sprite unearnedSprite;
 
     [Header("Copy")]
     [SerializeField] private string winTitle = "Level clear!";
@@ -35,6 +37,9 @@ public class ResultWindow : MonoBehaviour
     public void Show(bool won, int score, int best, bool isRecord, int bonus, bool hasNext)
     {
         gameObject.SetActive(true);
+        //the HUD restart pill has no job once the results are up; Play again covers it
+        var restart = FindFirstObjectByType<RestartButton>();
+        if (restart != null) restart.gameObject.SetActive(false);
 
         bool boss = GameManager.Instance != null && GameManager.Instance.Level != null && GameManager.Instance.Level.isBoss;
         if (titleLabel) titleLabel.text = won ? (boss ? bossWinTitle : winTitle) : loseTitle;
@@ -50,18 +55,14 @@ public class ResultWindow : MonoBehaviour
         if (nextButton) nextButton.gameObject.SetActive(won && hasNext);
 
         //stars: one for the win, more for doing it with hogs to spare
-        int earned = 0;
-        if (won)
-        {
-            int hens = GameManager.Instance != null ? Mathf.Max(1, GameManager.Instance.HensAtStart) : 1;
-            int par = hens * 1000;
-            earned = score >= par + 1500 ? 3 : score >= par + 500 ? 2 : 1;
-        }
+        int earned = won ? LevelProgress.StarsFor(score, GameManager.Instance != null ? GameManager.Instance.HensAtStart : 1) : 0;
         for (int i = 0; i < stars.Length; i++)
         {
             if (stars[i] == null) continue;
             stars[i].gameObject.SetActive(true);
-            stars[i].color = i < earned ? Color.white : new Color(0.35f, 0.3f, 0.25f, 0.5f);
+            //an open daisy for each one earned, a closed bud for the rest
+            if (earnedSprite != null && unearnedSprite != null) stars[i].sprite = i < earned ? earnedSprite : unearnedSprite;
+            stars[i].color = i < earned ? Color.white : new Color(0.85f, 0.85f, 0.8f, 0.9f);
             stars[i].transform.localScale = Vector3.zero;
             stars[i].transform.DOScale(1f, 0.35f).SetEase(Ease.OutBack).SetDelay(dropDuration + 0.15f * i).SetUpdate(true).SetLink(gameObject);
             if (i < earned) Sfx.PlayDelayed("star", dropDuration + 0.15f * i, 1f);

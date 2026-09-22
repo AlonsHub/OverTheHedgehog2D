@@ -15,6 +15,8 @@ public class Thrower : MonoBehaviour
 
     [SerializeField] private bool isLoaded; //this is also isActive
     public bool IsLoaded { get { return isLoaded; } }
+    //a hog is bounding into the pouch but has not settled yet: not grabbable, but not out of hogs either
+    public bool IsLoading => !isLoaded && loadedHog != null && !IsThrowing;
     //between letting go and the next hog being loaded: the band is snapping, the hog is on its way
     public bool IsThrowing { get; private set; }
     //[SerializeField] private bool ;
@@ -45,14 +47,14 @@ public class Thrower : MonoBehaviour
         {
             //game over
             isLoaded = false;
+            loadedHog = null;
             return;
         }
 
         loadedHog = hog;
-        loadedHog.transform.parent = grabber.transform;
-        loadedHog.transform.localPosition = Vector3.zero;
-
-        isLoaded = true;
+        //it bounds from the front of the line into the pouch; grabbable once it has settled
+        isLoaded = false;
+        loadedHog.HopInto(grabber.transform, 0.4f, () => isLoaded = true);
     }
     public void Throw()
     {

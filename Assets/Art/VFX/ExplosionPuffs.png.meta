@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 5d6f6989459bd7b47937309b278f1d81
+guid: a5937a40de30bc540baba0e54221a83c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8254418692071335076
-    second: WhiteWood_Post_V_0
+      213: -8636119205496537077
+    second: ExplosionPuffs_0
+  - first:
+      213: 1811235986646296003
+    second: ExplosionPuffs_1
+  - first:
+      213: -8134245045751644821
+    second: ExplosionPuffs_2
+  - first:
+      213: -8573051237305539201
+    second: ExplosionPuffs_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,13 +55,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
-  alignment: 9
+  spriteMeshType: 1
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 338.25, z: 0, w: 338.25}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -126,23 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WhiteWood_Post_V_0
+      name: ExplosionPuffs_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 297
-        height: 1353
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 512
+        width: 512
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a4a14011169d8270800000000000000
-      internalID: 8254418692071335076
+      spriteID: b004376b657562880800000000000000
+      internalID: -8636119205496537077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionPuffs_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5e474988dc22910800000000000000
+      internalID: 1811235986646296003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionPuffs_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dfdfb5a3b5d1f80800000000000000
+      internalID: -8134245045751644821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionPuffs_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f752e275257660980800000000000000
+      internalID: -8573051237305539201
       vertices: []
       indices: 
       edges: []
@@ -151,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: b331ccf95eb55ad48b5abc8a997f8f21
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WhiteWood_Post_V_0: 8254418692071335076
+      ExplosionPuffs_0: -8636119205496537077
+      ExplosionPuffs_1: 1811235986646296003
+      ExplosionPuffs_2: -8134245045751644821
+      ExplosionPuffs_3: -8573051237305539201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

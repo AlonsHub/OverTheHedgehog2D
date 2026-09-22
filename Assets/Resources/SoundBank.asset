@@ -195,4 +195,18 @@ MonoBehaviour:
     pitchMin: 1
     pitchMax: 1
     cooldown: 0.5
+  - name: ui_hover
+    clips:
+    - {fileID: 8300000, guid: 8ca4721ab4cbd884cb22fcb5e68d3d23, type: 3}
+    volume: 0.35
+    pitchMin: 0.97
+    pitchMax: 1.05
+    cooldown: 0.04
+  - name: wood_break
+    clips:
+    - {fileID: 8300000, guid: d0009d10d454db74496c94ba8341c6e0, type: 3}
+    volume: 0.8
+    pitchMin: 0.9
+    pitchMax: 1.1
+    cooldown: 0.05
   masterVolume: 1

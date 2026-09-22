@@ -29,7 +29,7 @@ public class LevelMapUI : MonoBehaviour
             var rect = (RectTransform)node.transform;
             rect.anchoredPosition = Vector2.zero;
 
-            node.Setup(i, catalogue.Get(i), LevelProgress.IsUnlocked(i), LevelProgress.BestScore(i));
+            node.Setup(i, catalogue.Get(i), LevelProgress.IsUnlocked(i), LevelProgress.BestScore(i), LevelProgress.BestStars(i));
 
             //stagger them sprouting up the path
             rect.localScale = Vector3.zero;
@@ -42,9 +42,10 @@ public class LevelMapUI : MonoBehaviour
         if (hedgehogMarker != null && nodeAnchors.Length > 0)
         {
             hedgehogMarker.SetParent(nodeAnchors[Mathf.Min(furthest, nodeAnchors.Length - 1)], false);
-            hedgehogMarker.anchoredPosition = new Vector2(-70f, 40f);
+            //to the left of the pot at its base, clear of the daisies under the pot above
+            hedgehogMarker.anchoredPosition = new Vector2(-105f, 6f);
             hedgehogMarker.SetAsLastSibling();
-            hedgehogMarker.DOAnchorPosY(52f, 0.9f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo).SetLink(hedgehogMarker.gameObject);
+            hedgehogMarker.DOAnchorPosY(16f, 0.9f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo).SetLink(hedgehogMarker.gameObject);
         }
     }
 }

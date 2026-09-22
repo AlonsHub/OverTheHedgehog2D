@@ -26,6 +26,9 @@ public class Trajectory : MonoBehaviour
     const float TimeStep = 0.02f;
     const int MaxPoints = 400;
 
+    //URP particle/unlit shaders sample _BaseMap; _MainTex is kept for anything older. the 2D sprite shaders
+    //ignore texture offsets entirely, so the material must not be one of those
+    static readonly int BaseMap = Shader.PropertyToID("_BaseMap");
     static readonly int MainTex = Shader.PropertyToID("_MainTex");
     readonly Vector3[] _points = new Vector3[MaxPoints];
     Material _material;
@@ -75,7 +78,9 @@ public class Trajectory : MonoBehaviour
         //offset decreases so the pattern moves toward the end of the line
         _scroll -= scrollSpeed * Time.deltaTime * lineRenderer.textureScale.x;
         _scroll = Mathf.Repeat(_scroll, 1f);
-        _material.SetTextureOffset(MainTex, new Vector2(_scroll, 0f));
+        var offset = new Vector2(_scroll, 0f);
+        if (_material.HasProperty(BaseMap)) _material.SetTextureOffset(BaseMap, offset);
+        if (_material.HasProperty(MainTex)) _material.SetTextureOffset(MainTex, offset);
     }
 
     //walk the ballistic arc until visibleLength of it has been laid down

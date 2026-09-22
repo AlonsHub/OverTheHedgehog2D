@@ -13,7 +13,7 @@ public class HogCounterHUD : MonoBehaviour
 
     private void Update()
     {
-        int remaining = stock.Count + (thrower.IsLoaded ? 1 : 0);
+        int remaining = stock.Count + (thrower.IsLoaded || thrower.IsLoading ? 1 : 0);
         if (remaining == _shown) return;
 
         _shown = remaining;

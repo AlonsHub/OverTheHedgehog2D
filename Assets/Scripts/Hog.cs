@@ -80,17 +80,70 @@ public class Hog : MonoBehaviour
         airborne.Remove(this);
     }
 
-    //shuffles forward to a new spot in the stock line at a steady walkSpeed (no speed set = snap there)
+    [Header("Walk")]
+    [Tooltip("Length of one waddle hop in world units; the walk is chopped into hops of this size")]
+    [SerializeField] private float hopLength = 0.45f;
+    [SerializeField] private float hopHeight = 0.12f;
+    [Tooltip("How much the body squashes on landing and stretches at the top of a hop")]
+    [SerializeField] private float hopSquash = 0.08f;
+    [Tooltip("Degrees the body rocks side to side while waddling")]
+    [SerializeField] private float waddleTilt = 5f;
+
+    //shuffles forward to a new spot in the stock line: a string of little hops with a squash on each
+    //landing and a side-to-side rock, at walkSpeed (no speed set = snap there)
     public void WalkTo(Vector3 target, float delay = 0f)
     {
         StopWalking();
 
-        float duration = walkSpeed > 0f ? Vector3.Distance(transform.position, target) / walkSpeed : 0f;
-        _walkTween = transform.DOMove(target, duration)
-            .SetEase(Ease.Linear)
-            .SetDelay(delay)
-            .SetLink(gameObject);
+        float distance = Vector3.Distance(transform.position, target);
+        if (walkSpeed <= 0f || distance < 0.01f) { transform.position = target; return; }
+
+        float duration = distance / walkSpeed;
+        int hops = Mathf.Max(1, Mathf.RoundToInt(distance / hopLength));
+        var seq = DOTween.Sequence().SetDelay(delay).SetLink(gameObject);
+        seq.Append(transform.DOJump(target, hopHeight, hops, duration).SetEase(Ease.Linear));
+        Transform body = anim != null ? anim.transform : null;
+        if (body != null)
+        {
+            Vector3 baseScale = body.localScale;
+            float hop = duration / hops;
+            //stretch going up, squash on landing, once per hop; rock the other way each hop
+            for (int i = 0; i < hops; i++)
+            {
+                float tilt = (i % 2 == 0 ? 1f : -1f) * waddleTilt;
+                seq.Insert(i * hop, body.DOScale(new Vector3(baseScale.x * (1f - hopSquash), baseScale.y * (1f + hopSquash), 1f), hop * 0.4f).SetEase(Ease.OutQuad));
+                seq.Insert(i * hop + hop * 0.4f, body.DOScale(new Vector3(baseScale.x * (1f + hopSquash), baseScale.y * (1f - hopSquash), 1f), hop * 0.3f).SetEase(Ease.InQuad));
+                seq.Insert(i * hop + hop * 0.7f, body.DOScale(baseScale, hop * 0.3f).SetEase(Ease.OutBack));
+                seq.Insert(i * hop, body.DOLocalRotate(new Vector3(0f, 0f, tilt), hop * 0.5f).SetEase(Ease.InOutSine));
+                seq.Insert(i * hop + hop * 0.5f, body.DOLocalRotate(Vector3.zero, hop * 0.5f).SetEase(Ease.InOutSine));
+            }
+            seq.OnKill(() => { if (body != null) { body.localScale = baseScale; body.localRotation = Quaternion.identity; } });
+        }
+        _walkTween = seq;
     }
+
+    //one eager bound from the front of the line into the pouch: a high hop with a stretch, then a big
+    //squash and settle on landing. the callback fires when it has settled
+    public Tween HopInto(Transform holder, float duration = 0.4f, System.Action onLanded = null)
+    {
+        StopWalking();
+        transform.SetParent(holder);
+        Transform body = anim != null ? anim.transform : null;
+        Vector3 baseScale = body != null ? body.localScale : Vector3.one;
+        var seq = DOTween.Sequence().SetLink(gameObject);
+        seq.Append(transform.DOLocalJump(Vector3.zero, 0.7f, 1, duration).SetEase(Ease.Linear));
+        if (body != null)
+        {
+            seq.Insert(0f, body.DOScale(new Vector3(baseScale.x * 0.85f, baseScale.y * 1.15f, 1f), duration * 0.5f).SetEase(Ease.OutQuad));
+            seq.Insert(duration * 0.5f, body.DOScale(new Vector3(baseScale.x * 1.2f, baseScale.y * 0.8f, 1f), duration * 0.5f).SetEase(Ease.InQuad));
+            seq.Append(body.DOScale(baseScale, 0.25f).SetEase(Ease.OutElastic, 1.2f, 0.4f));
+            seq.OnKill(() => { if (body != null) body.localScale = baseScale; });
+        }
+        seq.OnComplete(() => onLanded?.Invoke());
+        _walkTween = seq;
+        return seq;
+    }
+
     public void StopWalking()
     {
         _walkTween?.Kill();

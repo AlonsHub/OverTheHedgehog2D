@@ -11,6 +11,7 @@ public static class LevelProgress
 
     const string UnlockedKey = "levels.unlocked";
     const string BestKeyPrefix = "levels.best.";
+    const string StarsKeyPrefix = "levels.stars.";
 
     //index into the LevelCatalogue of the level the GameScene should set up
     public static int CurrentIndex { get; private set; } = 0;
@@ -47,6 +48,20 @@ public static class LevelProgress
     }
 
     public static int BestScore(int index) => PlayerPrefs.GetInt(BestKeyPrefix + index, 0);
+
+    //daisies: one for the win, more for doing it with hogs to spare (par is 1000 a hen)
+    public static int StarsFor(int score, int hensAtStart)
+    {
+        int par = Mathf.Max(1, hensAtStart) * 1000;
+        return score >= par + 1500 ? 3 : score >= par + 500 ? 2 : 1;
+    }
+    public static int BestStars(int index) => PlayerPrefs.GetInt(StarsKeyPrefix + index, 0);
+    public static void ReportStars(int index, int stars)
+    {
+        if (stars <= BestStars(index)) return;
+        PlayerPrefs.SetInt(StarsKeyPrefix + index, stars);
+        PlayerPrefs.Save();
+    }
     public static bool IsCompleted(int index) => BestScore(index) > 0;
 
     //returns true if this was a new record

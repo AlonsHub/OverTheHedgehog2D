@@ -153,10 +153,10 @@ TextureImporter:
       name: ExplodingHog_Idle_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 718
-        width: 236
-        height: 262
+        x: 29
+        y: 742
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: ExplodingHog_Idle_1
       rect:
         serializedVersion: 2
-        x: 292
-        y: 718
-        width: 236
-        height: 262
+        x: 281
+        y: 742
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: ExplodingHog_Idle_2
       rect:
         serializedVersion: 2
-        x: 542
-        y: 718
-        width: 236
-        height: 262
+        x: 525
+        y: 742
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: ExplodingHog_Idle_3
       rect:
         serializedVersion: 2
-        x: 770
-        y: 718
-        width: 236
-        height: 262
+        x: 760
+        y: 742
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: ExplodingHog_Idle_4
       rect:
         serializedVersion: 2
-        x: 38
-        y: 409
-        width: 236
-        height: 262
+        x: 20
+        y: 476
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: ExplodingHog_Idle_5
       rect:
         serializedVersion: 2
-        x: 291
-        y: 409
-        width: 236
-        height: 262
+        x: 275
+        y: 476
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: ExplodingHog_Idle_6
       rect:
         serializedVersion: 2
-        x: 542
-        y: 409
-        width: 236
-        height: 262
+        x: 519
+        y: 476
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: ExplodingHog_Idle_7
       rect:
         serializedVersion: 2
-        x: 770
-        y: 409
-        width: 236
-        height: 262
+        x: 758
+        y: 476
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +329,10 @@ TextureImporter:
       name: ExplodingHog_Idle_8
       rect:
         serializedVersion: 2
-        x: 38
-        y: 99
-        width: 236
-        height: 262
+        x: 19
+        y: 224
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +351,10 @@ TextureImporter:
       name: ExplodingHog_Idle_9
       rect:
         serializedVersion: 2
-        x: 292
-        y: 99
-        width: 236
-        height: 262
+        x: 277
+        y: 224
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: ExplodingHog_Idle_10
       rect:
         serializedVersion: 2
-        x: 541
-        y: 99
-        width: 236
-        height: 262
+        x: 518
+        y: 224
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +395,10 @@ TextureImporter:
       name: ExplodingHog_Idle_11
       rect:
         serializedVersion: 2
-        x: 767
-        y: 99
-        width: 236
-        height: 262
+        x: 759
+        y: 224
+        width: 261
+        height: 229
       alignment: 9
       pivot: {x: 0.5, y: 0.42}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -409,6 +409,94 @@ TextureImporter:
       bones: []
       spriteID: ebdd7abacc926bf4681958d6a8c17ba5
       internalID: -1611209698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 261
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c1f470db378434dad4a7a398a5778d
+      internalID: -78746117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 261
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9abd1e6ca9a7b4d93d825103715a38
+      internalID: -1332814588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0
+        width: 261
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7510e324da88214409ed987d203f095f
+      internalID: 614419588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodingHog_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 0
+        width: 261
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc8ee4e90651a04b8677c0b62568565
+      internalID: -1811875145
       vertices: []
       indices: 
       edges: []
@@ -431,6 +519,10 @@ TextureImporter:
       ExplodingHog_Idle_1: -2949912396880784052
       ExplodingHog_Idle_10: -602195709
       ExplodingHog_Idle_11: -1611209698
+      ExplodingHog_Idle_12: -78746117
+      ExplodingHog_Idle_13: -1332814588
+      ExplodingHog_Idle_14: 614419588
+      ExplodingHog_Idle_15: -1811875145
       ExplodingHog_Idle_2: -136995386046264346
       ExplodingHog_Idle_3: 8841880057110020150
       ExplodingHog_Idle_4: -1850696653127023188

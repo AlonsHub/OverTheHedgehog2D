@@ -36,7 +36,7 @@ Hedgehog is round, compact, big-headed, with a cream face and small stubby paws.
 
 ### Cast (keep these consistent)
 - **Neutral hog**: chocolate quills, cream face, determined-cheeky. The reference for every other character.
-- **Exploding hog**: same body, ember red-orange quills (`#C8673A` / `#F28C28` tips), jute-rope fuse headband with a lit spark, mischievous grin. Lands, puffs its cheeks, bursts into a cream-orange puff cloud.
+- **Exploding hog** (redesigned 2026-09-22 with the AD): same body, ember-red quills (`#C8673A`, sunflower-yellow tips were asked for but the generator drops them), jute-rope fuse headband with a lit spark. The pre-bang tell is done in code (ExplodingHog swells 1.3x and flushes over the fuse); the bang is the VFX_Explosion puff cloud, the sprite just vanishes in the flash. Sheets in Assets/Art/Hogs/Exploding: Idle and Fly are full 16-frame 4x4 grids; the Impact clip is the Fly sheet's curl played backwards plus the wide-eyed frames 8-15 of the Impact sheet.
 - **Cluster hog**: plumper, quills are 5-6 round grape-like bumps in sandy-cocoa (`#8A5A32` / `#C08A55` tips), tiny extra eye pairs peeking from the bumps, wide-eyed happy. Splits into **mini hogs**: huge head, tiny body, same sandy-cocoa, dizzy spiral eyes when landed.
 - **Hen (enemy)**: one big fluffy cream feather ball (`#F3E9D2`, shadow `#D9B57A`), tiny red comb/wattle, orange beak and feet, half-lidded grumpy stare with one raised brow, faces left. Pops into a burst of feathers, wholesome.
 - **Boss rooster**: huge, puffy, dark-green + terracotta tail, tall red comb, golden beak, bushy silly-angry brows, golden bell on a jute rope.
@@ -55,6 +55,9 @@ Always generate character sheets with `--ref` and an existing sheet (see Tools/A
 - Props that get stacked/physicsed (beams, boxes, pots) need simple convex silhouettes and clear top/bottom faces.
 - **Physics blocks** (posts/beams) are separate horizontal and vertical sprites, never one rotated: light stays upper-left and grain runs along the length. Generate the beam at 1536x1024 and the post at 1024x1536 spanning the full long axis, trim to alpha, and keep every detail (worn ends, a nail, the daisy, moss) inside the outer 25% end caps; the middle 50% is plain grain because it is 9-sliced and stretched up to 11:1. Nothing may poke outside the rectangle (what you see is what collides). **Chosen 2026-09-21: natural honey oak** (`Assets/Art/Blocks/Oak_*`) with a sun-bleached `OakLight_*` variant (made with variant.mjs) mixed in per block so structures don't read as one slab. Rejected options WhiteWood and Birch stay in Assets/Art/Generated/Blocks for reference.
 - Sizes for generation: use 1024x1024 for single props/textures, 1536x1024 for wide props (fences, signs, ground strips), 1024x1536 for tall ones (posts, towers).
+
+## Score daisies
+Level results and map nodes show 0-3 daisies (`Assets/Art/UI/StarDaisy.png`: open white daisy = earned, closed grey-green bud = not yet). Never generic stars on player-facing UI; the star sprite only marks the boss level.
 
 ## Aim trajectory
 Terracotta pebble dots (`Assets/Art/Thrower/AimDot_Tile.png`, brown outline, upper-left highlight) tiled along the arc, scrolling toward the landing point and fading out over the last stretch. Never a solid line, never green.
