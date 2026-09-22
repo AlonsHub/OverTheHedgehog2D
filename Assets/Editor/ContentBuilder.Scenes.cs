@@ -115,7 +115,10 @@ public static partial class ContentBuilder
         colors.pressedColor = new Color(0.8f, 0.8f, 0.75f);
         colors.disabledColor = new Color(0.6f, 0.6f, 0.6f, 0.7f);
         btn.colors = colors;
-        Label("Label", go.transform, label, fontSize, Cream, new Vector2(0.5f, 0.5f), new Vector2(0f, 4f), size);
+        //the pill art has a daisy in its left cap, so the label sits a touch right of centre in a box that
+        //stops short of the caps, and never wraps
+        var text = Label("Label", go.transform, label, fontSize, Cream, new Vector2(0.5f, 0.5f), new Vector2(size.y * 0.12f, 4f), new Vector2(size.x - size.y * 0.5f, size.y));
+        text.horizontalOverflow = HorizontalWrapMode.Overflow;
         return btn;
     }
 
@@ -256,9 +259,9 @@ public static partial class ContentBuilder
         record.transform.localRotation = Quaternion.Euler(0f, 0f, 8f);
 
         //one row well inside the rope edge, short enough to clear the painted daisy in the corner
-        var mapBtn = ButtonAt("MapButton", p, UiSprite("Button_Terracotta"), "Map", new Vector2(0.5f, 0f), new Vector2(-260f, 118f), new Vector2(220f, 84f), 32);
-        var againBtn = ButtonAt("PlayAgainButton", p, UiSprite("Button_Green"), "Play again", new Vector2(0.5f, 0f), new Vector2(0f, 118f), new Vector2(240f, 90f), 32);
-        var nextBtn = ButtonAt("NextButton", p, UiSprite("Button_Green"), "Next  >", new Vector2(0.5f, 0f), new Vector2(260f, 118f), new Vector2(220f, 84f), 32);
+        var mapBtn = ButtonAt("MapButton", p, UiSprite("Button_Terracotta"), "Map", new Vector2(0.5f, 0f), new Vector2(-275f, 120f), new Vector2(240f, 92f), 34);
+        var againBtn = ButtonAt("PlayAgainButton", p, UiSprite("Button_Green"), "Play again", new Vector2(0.5f, 0f), new Vector2(0f, 120f), new Vector2(280f, 100f), 34);
+        var nextBtn = ButtonAt("NextButton", p, UiSprite("Button_Green"), "Next  >", new Vector2(0.5f, 0f), new Vector2(275f, 120f), new Vector2(240f, 92f), 34);
 
         var rso = new SerializedObject(rw);
         rso.FindProperty("panel").objectReferenceValue = panel.rectTransform;
