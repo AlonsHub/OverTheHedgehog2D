@@ -45,8 +45,28 @@ public static partial class ContentBuilder
         ("lose", 0.7f, 1f, 1f, 0.5f),
     };
 
+    //the looping tracks from Tools/Audio/music.mjs: streamed Vorbis, so the 2.5 MB wavs cost nothing in memory
+    public static void ImportMusic()
+    {
+        foreach (var guid in AssetDatabase.FindAssets("t:AudioClip", new[] { "Assets/Resources/Music" }))
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            var importer = AssetImporter.GetAtPath(path) as AudioImporter;
+            if (importer == null) continue;
+            var settings = importer.defaultSampleSettings;
+            settings.loadType = AudioClipLoadType.Streaming;
+            settings.compressionFormat = AudioCompressionFormat.Vorbis;
+            settings.quality = 0.6f;
+            importer.defaultSampleSettings = settings;
+            importer.forceToMono = true;
+            importer.loadInBackground = true;
+            importer.SaveAndReimport();
+        }
+    }
+
     public static void BuildSoundBank()
     {
+        ImportMusic();
         EnsureFolder("Assets/Resources");
         string path = $"Assets/Resources/{SoundBank.ResourcePath}.asset";
         var bank = AssetDatabase.LoadAssetAtPath<SoundBank>(path);

@@ -7,6 +7,8 @@ public class Grabber : MonoBehaviour
     [SerializeField] private Trajectory trajectory;
 
     public bool isGrabbing;
+    //true while a cutscene (boss intro) owns the camera: the pouch ignores the mouse
+    public bool locked;
 
     //the band creaks as it's pulled further, one creak per this much extra stretch
     [SerializeField] private float creakEvery = 0.6f;
@@ -22,7 +24,7 @@ public class Grabber : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (thrower.IsLoaded)
+        if (thrower.IsLoaded && !locked)
         {
             isGrabbing = true;
             trajectory.gameObject.SetActive(true);
@@ -32,6 +34,7 @@ public class Grabber : MonoBehaviour
     }
     private void OnMouseDrag()
     {
+        if (!isGrabbing) return;
         //limit from thrower
 
         Ray ray = m_Camera.ScreenPointToRay(Input.mousePosition);
@@ -58,6 +61,7 @@ public class Grabber : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (!isGrabbing) return;
         //Throw!
         thrower.Throw();
         isGrabbing = false;

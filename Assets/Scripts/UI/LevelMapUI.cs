@@ -14,6 +14,7 @@ public class LevelMapUI : MonoBehaviour
 
     void Start()
     {
+        Music.Play("music_garden", 1.5f, 0.5f);
         backButton?.onClick.AddListener(LevelProgress.OpenStart);
 
         var catalogue = LevelCatalogue.Load();

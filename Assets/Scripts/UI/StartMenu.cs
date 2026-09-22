@@ -11,6 +11,7 @@ public class StartMenu : MonoBehaviour
 
     void Start()
     {
+        Music.Play("ambience_menu", 1.5f, 0.45f);
         playButton?.onClick.AddListener(LevelProgress.OpenMap);
         resetProgressButton?.onClick.AddListener(() => { PlayerPrefs.DeleteAll(); PlayerPrefs.Save(); });
 

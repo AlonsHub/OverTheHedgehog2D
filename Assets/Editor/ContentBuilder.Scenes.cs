@@ -178,6 +178,13 @@ public static partial class ContentBuilder
         var groundCol = GameObject.Find("Ground (1)")?.GetComponent<Collider2D>();
         if (groundCol != null) floorCol.sharedMaterial = groundCol.sharedMaterial;
 
+        //invisible wall on the right edge of the view, placed from the live camera at start
+        var wall = GameObject.Find("ScreenWallRight");
+        if (wall == null) wall = new GameObject("ScreenWallRight");
+        if (wall.GetComponent<BoxCollider2D>() == null) wall.AddComponent<BoxCollider2D>();
+        if (wall.GetComponent<ScreenWall>() == null) wall.AddComponent<ScreenWall>();
+        if (groundCol != null) wall.GetComponent<BoxCollider2D>().sharedMaterial = groundCol.sharedMaterial;
+
         var stock = Object.FindFirstObjectByType<HogStock>();
         var thrower = Object.FindFirstObjectByType<Thrower>();
         var canvasGo = GameObject.Find("Canvas");
@@ -340,6 +347,13 @@ public static partial class ContentBuilder
         gso.FindProperty("resultWindow").objectReferenceValue = rw;
         gso.FindProperty("fallbackLevel").objectReferenceValue = AssetDatabase.LoadAssetAtPath<LevelDefinition>($"{LevelDir}/Level_01.asset");
         gso.ApplyModifiedPropertiesWithoutUndo();
+
+        //boss levels open with the camera on the boss
+        var intro = gmGo.GetComponent<BossIntro>();
+        if (intro == null) intro = gmGo.AddComponent<BossIntro>();
+        var iso = new SerializedObject(intro);
+        iso.FindProperty("grabber").objectReferenceValue = Object.FindFirstObjectByType<Grabber>();
+        iso.ApplyModifiedPropertiesWithoutUndo();
 
         EnsureEventSystem();
         EditorSceneManager.MarkSceneDirty(scene);

@@ -62,6 +62,12 @@ Level results and map nodes show 0-3 daisies (`Assets/Art/UI/StarDaisy.png`: ope
 ## Aim trajectory
 Terracotta pebble dots (`Assets/Art/Thrower/AimDot_Tile.png`, brown outline, upper-left highlight) tiled along the arc, scrolling toward the landing point and fading out over the last stretch. Never a solid line, never green.
 
+## Music (Tools/Audio/music.mjs, all procedural and original)
+- `music_garden`: F major, 96 bpm, music-box lead over a soft pad, plucked bass, shaker. Warm, sweet, bright (MapleStory town feel). Plays on the map and in normal levels.
+- `music_boss`: D minor swing, 124 bpm, walking bass, swung hats, brass stabs, a sneaky pulse lead. The back-alley-band energy of Kerning City without its tune.
+- `ambience_menu`: no melody. Wind, leaf rustle, bird phrases, a bee passing twice. Start menu only.
+- Music.cs crossfades between them; the same track carries across scenes without restarting.
+
 ## UI (when it comes up)
 Same world materials: rounded wooden plank panels with jute-rope hangers, cream parchment for text areas, daisy/leaf corner accents, chunky rounded buttons in terracotta or leaf green with the same brown outline. Font feel: soft rounded sans or a friendly hand-lettered display face. No glossy, glassy, neon, or sci-fi UI.
 

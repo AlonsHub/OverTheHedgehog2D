@@ -13,10 +13,16 @@ public class Trajectory : MonoBehaviour
     [SerializeField] private float dotSize = 0.26f;
 
     [Header("Length")]
-    [Tooltip("How far along the arc the preview reaches, in world units.")]
-    public float visibleLength = 7f;
+    [Tooltip("Arc length shown per unit of launch speed: a harder pull shows a longer preview.")]
+    public float lengthPerSpeed = 0.7f;
+    [Tooltip("Shortest and longest the preview can get, in world units.")]
+    public float minLength = 1.5f;
+    public float maxLength = 14f;
     [Tooltip("The last this many units of the preview fade to nothing; everything before is fully opaque.")]
     public float fadeLength = 3f;
+
+    //the length of the arc currently drawn (from the last DrawTrajectory)
+    float _visibleLength = 7f;
 
     [Header("Motion")]
     [Tooltip("How fast the dots travel along the arc, in world units per second (negative to reverse).")]
@@ -48,8 +54,9 @@ public class Trajectory : MonoBehaviour
     void OnValidate()
     {
         if (lineRenderer == null) lineRenderer = GetComponent<LineRenderer>();
-        visibleLength = Mathf.Max(0.1f, visibleLength);
-        fadeLength = Mathf.Clamp(fadeLength, 0f, visibleLength);
+        minLength = Mathf.Max(0.1f, minLength);
+        maxLength = Mathf.Max(minLength, maxLength);
+        fadeLength = Mathf.Max(0f, fadeLength);
         dotSize = Mathf.Max(0.02f, dotSize);
         if (lineRenderer != null) ApplyLook();
     }
@@ -63,7 +70,7 @@ public class Trajectory : MonoBehaviour
         lineRenderer.textureScale = new Vector2(1f / tile, 1f);
 
         //opaque until the fade section, then out. keys are in normalised line length
-        float fadeStart = visibleLength <= 0f ? 1f : 1f - Mathf.Clamp01(fadeLength / visibleLength);
+        float fadeStart = 1f - Mathf.Clamp01(fadeLength / Mathf.Max(0.01f, _visibleLength));
         var g = new Gradient();
         g.SetKeys(
             new[] { new GradientColorKey(Color.white, 0f), new GradientColorKey(Color.white, 1f) },
@@ -83,9 +90,11 @@ public class Trajectory : MonoBehaviour
         if (_material.HasProperty(MainTex)) _material.SetTextureOffset(MainTex, offset);
     }
 
-    //walk the ballistic arc until visibleLength of it has been laid down
+    //walk the ballistic arc until the visible length (scaled by launch speed) has been laid down
     public void DrawTrajectory(Vector2 startPosition, Vector2 startVelocity)
     {
+        float visibleLength = Mathf.Clamp(startVelocity.magnitude * lengthPerSpeed, minLength, maxLength);
+        if (!Mathf.Approximately(visibleLength, _visibleLength)) { _visibleLength = visibleLength; ApplyLook(); }
         int count = 0;
         float laid = 0f;
         Vector2 prev = startPosition;

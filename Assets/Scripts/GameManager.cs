@@ -81,6 +81,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        //the garden theme carries in from the map; boss levels get their own band
+        if (Level != null) Music.Play(Level.isBoss ? "music_boss" : "music_garden", 1.2f, Level.isBoss ? 0.55f : 0.5f);
         _hensAtStart = Enemy.enemies.Count;
         ScoreChanged?.Invoke(Score);
     }
