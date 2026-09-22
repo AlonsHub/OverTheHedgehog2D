@@ -76,3 +76,7 @@ crashlytics-build.properties
 
 # Secrets
 .env
+
+# Player builds
+/Build/
+/Builds/
