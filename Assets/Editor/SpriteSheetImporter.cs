@@ -184,7 +184,8 @@ public static class SpriteSheetImporter
         importer.filterMode = FilterMode.Bilinear;
         importer.mipmapEnabled = false;
         importer.alphaIsTransparency = true;
-        importer.maxTextureSize = 2048;
+        //1024 is plenty for anything drawn at game size; only full-screen paintings keep 2048 (see CapTextureSizes)
+        importer.maxTextureSize = 1024;
         //web build: crunched DXT is ~8x smaller on disk than raw RGBA and invisible at game size
         importer.textureCompression = TextureImporterCompression.Compressed;
         importer.crunchedCompression = true;

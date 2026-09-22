@@ -291,7 +291,7 @@ public static partial class ContentBuilder
         var hintText = Label("Hint", plank.transform, "", 30, Ink, new Vector2(0.5f, 0.5f), new Vector2(-70f, 6f), new Vector2(720f, 150f));
         var next = ButtonAt("NextButton", plank.transform, UiSprite("Button_Green"), "Next  >", new Vector2(1f, 0.5f), new Vector2(-105f, 0f), new Vector2(150f, 64f), 24);
         //skip the whole lesson: tucked in the bottom-right, out of the way of the slingshot
-        var skipAll = ButtonAt("SkipTutorialButton", canvas.transform, UiSprite("Button_Terracotta"), "Skip tutorial", new Vector2(1f, 1f), new Vector2(-118f, -198f), new Vector2(200f, 62f), 22);
+        var skipAll = ButtonAt("SkipTutorialButton", canvas.transform, UiSprite("Button_Terracotta"), "Skip tutorial", new Vector2(1f, 1f), new Vector2(-170f, -198f), new Vector2(220f, 62f), 22);
         skipAll.transform.SetParent(tutGo.transform, true);
         //the pointing hand lives in the world so it can hover next to hogs and hens
         DestroyAllNamed("TutorialPointer");
