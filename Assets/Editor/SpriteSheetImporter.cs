@@ -185,7 +185,10 @@ public static class SpriteSheetImporter
         importer.mipmapEnabled = false;
         importer.alphaIsTransparency = true;
         importer.maxTextureSize = 2048;
-        importer.textureCompression = TextureImporterCompression.Uncompressed;
+        //web build: crunched DXT is ~8x smaller on disk than raw RGBA and invisible at game size
+        importer.textureCompression = TextureImporterCompression.Compressed;
+        importer.crunchedCompression = true;
+        importer.compressionQuality = 60;
         var settings = new TextureImporterSettings();
         importer.ReadTextureSettings(settings);
         settings.spriteMeshType = fullRect ? SpriteMeshType.FullRect : SpriteMeshType.Tight;
